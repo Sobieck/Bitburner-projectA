@@ -17,7 +17,7 @@ describe("Hack thread calculate verification", () => {
       ns as NS,
       "testServer",
       (0.99 * ns.getServerMoneyAvailable("testServer")) /
-        ns.getServerMaxMoney("testServer")
+      ns.getServerMaxMoney("testServer")
     );
     expect(threadCalculated).toBeGreaterThan(0);
     expect(threadCalculated).toBeLessThanOrEqual(CONST.MAX_THREAD_PER_SCRIPT);
@@ -39,7 +39,7 @@ describe("Hack thread calculate verification", () => {
       ns as NS,
       "testServer",
       (1.1 * ns.getServerMoneyAvailable("testServer")) /
-        ns.getServerMaxMoney("testServer")
+      ns.getServerMaxMoney("testServer")
     );
     expect(threadCalculated).toBe(-1);
   });
@@ -48,7 +48,7 @@ describe("Hack thread calculate verification", () => {
       ns as NS,
       "testServer",
       ns.getServerMoneyAvailable("testServer") /
-        ns.getServerMaxMoney("testServer")
+      ns.getServerMaxMoney("testServer")
     );
     expect(threadCalculated).toBeGreaterThan(0);
   });
@@ -82,7 +82,7 @@ describe("Weaken Thread For Hack calculate verification", () => {
       ns as NS,
       "testServer",
       ns.getServerMoneyAvailable("testServer") /
-        ns.getServerMaxMoney("testServer")
+      ns.getServerMaxMoney("testServer")
     );
     expect(threadCalculated).toBeGreaterThan(0);
     expect(threadCalculated).toBeLessThanOrEqual(CONST.MAX_THREAD_PER_SCRIPT);
@@ -92,7 +92,7 @@ describe("Weaken Thread For Hack calculate verification", () => {
       ns as NS,
       "nonExistServer",
       ns.getServerMoneyAvailable("testServer") /
-        ns.getServerMaxMoney("testServer")
+      ns.getServerMaxMoney("testServer")
     );
     expect(threadCalculated).toBe(-1);
   });
@@ -101,7 +101,7 @@ describe("Weaken Thread For Hack calculate verification", () => {
       ns as NS,
       "nonExistServer",
       (1.1 * ns.getServerMoneyAvailable("testServer")) /
-        ns.getServerMaxMoney("testServer")
+      ns.getServerMaxMoney("testServer")
     );
     expect(threadCalculated).toBe(-1);
   });
@@ -114,7 +114,7 @@ describe("Weaken Thread For Grow calculate verification", () => {
       ns as NS,
       "testServer",
       ns.getServerMoneyAvailable("testServer") /
-        ns.getServerMaxMoney("testServer")
+      ns.getServerMaxMoney("testServer")
     );
     expect(threadCalculated).toBeGreaterThan(0);
     expect(threadCalculated).toBeLessThanOrEqual(CONST.MAX_THREAD_PER_SCRIPT);
@@ -124,7 +124,7 @@ describe("Weaken Thread For Grow calculate verification", () => {
       ns as NS,
       "nonExistServer",
       ns.getServerMoneyAvailable("testServer") /
-        ns.getServerMaxMoney("testServer")
+      ns.getServerMaxMoney("testServer")
     );
     expect(threadCalculated).toBe(-1);
   });
