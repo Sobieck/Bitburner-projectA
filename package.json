@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "npx tsc -w",
+    "build": "npx tsc",
     "lint": "eslint . --ext .ts",
     "defs": "node ./updateDefs.js",
     "test": "jest"

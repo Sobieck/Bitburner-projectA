@@ -1,6 +1,6 @@
-import { main } from "../../src/infrastructure/scriptToRun"
+import { main } from "../../../src/scripts/runLoop/scriptsToRun"
 import { NS } from "@ns";
-import { nsMock } from "../mocks/ns.mock";
+import { nsMock } from "../../mocks/ns.mock";
 
 
 describe('ScriptsToRun', () => {
@@ -15,7 +15,7 @@ describe('ScriptsToRun', () => {
 
       const writtenData = mockedNs.writeTuples[0]
 
-      expect(writtenData[0]).toBe("/data/scripts-to-run.txt")
+      expect(writtenData[0]).toBe("/data/runLoop/scripts-to-run.txt")
       expect(writtenData[2]).toBe("w")
 
       expect(writtenData[1][0]).toBe("[")
