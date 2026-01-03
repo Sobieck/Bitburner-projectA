@@ -2,10 +2,10 @@
 
 import { NS } from "@ns";
 
-export async function main(ns: NS) : Promise<void> {
+export async function main(ns: NS): Promise<void> {
 
     const scriptsToRun = [
-        '/scripts/runLoop/mapEnvironment/scriptsToRun.js',
+        '/scripts/runLoop/mapEnvironment.js',
     ]
 
     ns.write("/data/runLoop/scripts-to-run.txt", JSON.stringify(scriptsToRun), "w")

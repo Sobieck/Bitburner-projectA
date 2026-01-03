@@ -39,7 +39,7 @@ export class nsMock {
 
 
   public readFilenames: string[] = []
-  
+
   public readReturns = new Map<string, string[]>()
   private readCount = 0
 
@@ -51,4 +51,29 @@ export class nsMock {
     this.readCount++
     return this.readReturns.get(filename)![this.readCount - 1]
   }
+
+
+
+  public scanHostnames: (string | undefined)[] = []
+  public scanReturns = new Map<(string | undefined), string[]>()
+
+  public scan(hostname?: string): string[] {
+    this.callOrder.push("scan")
+
+    this.scanHostnames.push(hostname)
+
+    return this.scanReturns.get(hostname)!;
+  }
+
+
+  public getServerReturns = new Map<(string | undefined), { hostname: string, hackDifficulty?: number }>()
+  public getServerHosts: (string | undefined)[] = []
+
+  public getServer(host?: string) {
+    this.callOrder.push("getServer")
+    this.getServerHosts.push(host)
+
+    return this.getServerReturns.get(host)
+  }
+
 }
