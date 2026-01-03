@@ -100,7 +100,7 @@ describe('MapEnvironment', () => {
 
         ]
 
-        expect(mockedNs.writeTuples[0][0]).toBe("/data/runLoop/environment.txt")
+        expect(mockedNs.writeTuples[0][0]).toBe("/data/runLoop/environment.json")
         expect(mockedNs.writeTuples[0][2]).toBe("w")
         expect(mockedNs.writeTuples[0][1]).toBe(JSON.stringify(result))
     })

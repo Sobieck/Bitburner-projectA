@@ -8,6 +8,6 @@ export async function main(ns: NS): Promise<void> {
         '/scripts/runLoop/mapEnvironment.js',
     ]
 
-    ns.write("/data/runLoop/scripts-to-run.txt", JSON.stringify(scriptsToRun), "w")
+    ns.write("/data/runLoop/scripts-to-run.json", JSON.stringify(scriptsToRun), "w")
 
 }

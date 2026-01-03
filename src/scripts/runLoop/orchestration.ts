@@ -8,7 +8,7 @@ export async function main(ns: NS): Promise<void> {
     
     const sleepAmount = 600
 
-    const scriptsToRun = JSON.parse(ns.read("/data/runLoop/scripts-to-run.txt")) as string[]
+    const scriptsToRun = JSON.parse(ns.read("/data/runLoop/scripts-to-run.json")) as string[]
 
     for (const script of scriptsToRun) {
         await ns.sleep(sleepAmount)

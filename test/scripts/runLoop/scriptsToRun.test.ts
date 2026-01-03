@@ -15,7 +15,7 @@ describe('ScriptsToRun', () => {
 
       const writtenData = mockedNs.writeTuples[0]
 
-      expect(writtenData[0]).toBe("/data/runLoop/scripts-to-run.txt")
+      expect(writtenData[0]).toBe("/data/runLoop/scripts-to-run.json")
       expect(writtenData[2]).toBe("w")
 
       expect(writtenData[1][0]).toBe("[")

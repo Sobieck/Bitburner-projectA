@@ -17,7 +17,7 @@ describe('Orchestration', () => {
       runScripts.push(i.toString())      
     }
 
-    nsSetup.readReturns.set("/data/runLoop/scripts-to-run.txt", [JSON.stringify(runScripts)])
+    nsSetup.readReturns.set("/data/runLoop/scripts-to-run.json", [JSON.stringify(runScripts)])
     
     const ns = nsSetup as unknown
 

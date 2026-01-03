@@ -43,5 +43,5 @@ export async function main(ns: NS): Promise<void> {
             return aSkill - bSkill
         })
 
-    ns.write("/data/runLoop/environment.txt", JSON.stringify(sortedByDifficultyResult), "w")
+    ns.write("/data/runLoop/environment.json", JSON.stringify(sortedByDifficultyResult), "w")
 }
