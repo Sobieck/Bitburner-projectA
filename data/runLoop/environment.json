@@ -24,6 +24,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1,
         "serverGrowth": 1,
+        "freeRam": 1.5999999999999996,
         "path": []
     },
     {
@@ -51,6 +52,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1,
         "serverGrowth": 3000,
+        "freeRam": 4,
         "path": [
             "n00dles"
         ]
@@ -80,6 +82,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1,
         "serverGrowth": 5,
+        "freeRam": 16,
         "path": [
             "foodnstuff"
         ]
@@ -109,6 +112,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 5,
         "serverGrowth": 10,
+        "freeRam": 16,
         "path": [
             "sigma-cosmetics"
         ]
@@ -138,6 +142,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 10,
         "serverGrowth": 20,
+        "freeRam": 16,
         "path": [
             "joesguns"
         ]
@@ -167,6 +172,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 20,
         "serverGrowth": 25,
+        "freeRam": 16,
         "path": [
             "foodnstuff",
             "nectar-net"
@@ -197,6 +203,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 30,
         "serverGrowth": 20,
+        "freeRam": 16,
         "path": [
             "hong-fang-tea"
         ]
@@ -226,6 +233,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 40,
         "serverGrowth": 40,
+        "freeRam": 16,
         "path": [
             "harakiri-sushi"
         ]
@@ -255,6 +263,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 50,
         "serverGrowth": 25,
+        "freeRam": 32,
         "path": [
             "sigma-cosmetics",
             "max-hardware",
@@ -286,6 +295,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 55,
         "serverGrowth": 1,
+        "freeRam": 8,
         "path": [
             "hong-fang-tea",
             "CSEC"
@@ -316,6 +326,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 75,
         "serverGrowth": 40,
+        "freeRam": 32,
         "path": [
             "foodnstuff",
             "zer0"
@@ -346,6 +357,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 80,
         "serverGrowth": 30,
+        "freeRam": 32,
         "path": [
             "sigma-cosmetics",
             "max-hardware"
@@ -376,6 +388,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 100,
         "serverGrowth": 20,
+        "freeRam": 32,
         "path": [
             "iron-gym"
         ]
@@ -405,6 +418,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 100,
         "serverGrowth": 35,
+        "freeRam": 32,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -436,6 +450,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 150,
         "serverGrowth": 30,
+        "freeRam": 64,
         "path": [
             "sigma-cosmetics",
             "max-hardware",
@@ -467,6 +482,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 211,
         "serverGrowth": 1,
+        "freeRam": 128,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -499,6 +515,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 214,
         "serverGrowth": 37,
+        "freeRam": 32,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -530,6 +547,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 262,
         "serverGrowth": 38,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -562,6 +580,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 270,
         "serverGrowth": 28,
+        "freeRam": 0,
         "path": [
             "sigma-cosmetics",
             "max-hardware",
@@ -594,6 +613,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 314,
         "serverGrowth": 46,
+        "freeRam": 64,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -626,6 +646,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 327,
         "serverGrowth": 47,
+        "freeRam": 0,
         "path": [
             "sigma-cosmetics",
             "max-hardware",
@@ -658,6 +679,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 351,
         "serverGrowth": 1,
+        "freeRam": 16,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -691,6 +713,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 383,
         "serverGrowth": 50,
+        "freeRam": 32,
         "path": [
             "sigma-cosmetics",
             "max-hardware",
@@ -723,6 +746,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 412,
         "serverGrowth": 42,
+        "freeRam": 64,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -756,6 +780,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 412,
         "serverGrowth": 28,
+        "freeRam": 32,
         "path": [
             "sigma-cosmetics",
             "max-hardware",
@@ -789,6 +814,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 413,
         "serverGrowth": 40,
+        "freeRam": 32,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -823,6 +849,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 437,
         "serverGrowth": 56,
+        "freeRam": 32,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -856,6 +883,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 500,
         "serverGrowth": 36,
+        "freeRam": 32,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -890,6 +918,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 509,
         "serverGrowth": 50,
+        "freeRam": 64,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -924,6 +953,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 511,
         "serverGrowth": 40,
+        "freeRam": 16,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -958,6 +988,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 540,
         "serverGrowth": 1,
+        "freeRam": 256,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -997,6 +1028,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 547,
         "serverGrowth": 1,
+        "freeRam": 16,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1038,6 +1070,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 645,
         "serverGrowth": 69,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1071,6 +1104,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 716,
         "serverGrowth": 57,
+        "freeRam": 64,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1105,6 +1139,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 728,
         "serverGrowth": 85,
+        "freeRam": 32,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1138,6 +1173,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 748,
         "serverGrowth": 50,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1173,6 +1209,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 764,
         "serverGrowth": 78,
+        "freeRam": 128,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1210,6 +1247,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 779,
         "serverGrowth": 73,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1248,6 +1286,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 800,
         "serverGrowth": 86,
+        "freeRam": 16,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1283,6 +1322,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 802,
         "serverGrowth": 77,
+        "freeRam": 16,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1322,6 +1362,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 809,
         "serverGrowth": 74,
+        "freeRam": 16,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1361,6 +1402,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 811,
         "serverGrowth": 79,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1398,6 +1440,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 820,
         "serverGrowth": 80,
+        "freeRam": 128,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1435,6 +1478,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 823,
         "serverGrowth": 76,
+        "freeRam": 16,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1471,6 +1515,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 833,
         "serverGrowth": 71,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1510,6 +1555,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 834,
         "serverGrowth": 68,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1548,6 +1594,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 836,
         "serverGrowth": 73,
+        "freeRam": 128,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1588,6 +1635,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 852,
         "serverGrowth": 57,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1624,6 +1672,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 862,
         "serverGrowth": 77,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1659,6 +1708,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 877,
         "serverGrowth": 70,
+        "freeRam": 128,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1699,6 +1749,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 891,
         "serverGrowth": 59,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1734,6 +1785,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 898,
         "serverGrowth": 90,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1771,6 +1823,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 899,
         "serverGrowth": 60,
+        "freeRam": 16,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1807,6 +1860,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 902,
         "serverGrowth": 66,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1844,6 +1898,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 917,
         "serverGrowth": 79,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1882,6 +1937,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 917,
         "serverGrowth": 42,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1920,6 +1976,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 925,
         "serverGrowth": 1,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -1963,6 +2020,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 959,
         "serverGrowth": 95,
+        "freeRam": 512,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2004,6 +2062,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 980,
         "serverGrowth": 76,
+        "freeRam": 512,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2046,6 +2105,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1026,
         "serverGrowth": 90,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2087,6 +2147,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1030,
         "serverGrowth": 60,
+        "freeRam": 32,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2129,6 +2190,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1037,
         "serverGrowth": 81,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2169,6 +2231,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1114,
         "serverGrowth": 61,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2211,6 +2274,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1136,
         "serverGrowth": 91,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2252,6 +2316,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1152,
         "serverGrowth": 91,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2294,6 +2359,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1179,
         "serverGrowth": 65,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2336,6 +2402,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1202,
         "serverGrowth": 93,
+        "freeRam": 2048,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2376,6 +2443,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1241,
         "serverGrowth": 1,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2419,6 +2487,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1327,
         "serverGrowth": 99,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2462,6 +2531,7 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1365,
         "serverGrowth": 99,
+        "freeRam": 0,
         "path": [
             "foodnstuff",
             "nectar-net",

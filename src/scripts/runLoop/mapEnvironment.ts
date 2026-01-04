@@ -18,9 +18,13 @@ export async function main(ns: NS): Promise<void> {
         const path = JSON.parse(JSON.stringify(connection.value?.[1])) as string[]
 
         const serverWithPath = ns.getServer(hostname) as ServerWithAdditionalInfo
+        
+        serverWithPath.freeRam = serverWithPath.maxRam - serverWithPath.ramUsed
         serverWithPath.path = path
 
         result.push(serverWithPath)
+
+
 
         gottenServers.push(hostname)
         serversToBeGottenWithPath.delete(hostname)

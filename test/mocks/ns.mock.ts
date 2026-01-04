@@ -65,6 +65,7 @@ export class nsMock {
     return this.scanReturns.get(hostname)!;
   }
 
+  
 
   public getServerReturns = new Map<(string | undefined), { hostname: string, hackDifficulty?: number }>()
   public getServerHosts: (string | undefined)[] = []

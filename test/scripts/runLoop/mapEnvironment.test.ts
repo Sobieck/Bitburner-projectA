@@ -9,31 +9,43 @@ describe('MapEnvironment', () => {
     const home = {
         hostname: "home",
         requiredHackingSkill: 1,
+        ramUsed: 1,
+        maxRam: 10
     }
 
     const server1 = {
         hostname: "server1", // connects to server 3
         requiredHackingSkill: 100,
+        ramUsed: 9,
+        maxRam: 10
     }
 
     const server2 = {
         hostname: "server2",  // connects to 1 3 4
         requiredHackingSkill: 10,
+        ramUsed: 0,
+        maxRam: 0,
     }
 
     const server3 = { // connects to server 1 and 2
         hostname: "server3",
         requiredHackingSkill: 2,
+        ramUsed: 0,
+        maxRam: 0,
     }
 
     const server4 = { // connects to 2 
         hostname: "server4",
         requiredHackingSkill: 900,
+        ramUsed: 0,
+        maxRam: 0,
     }
 
     const server5 = { // connects to 2 
         hostname: "server5",
         requiredHackingSkill: 901,
+        ramUsed: 0,
+        maxRam: 0,
     }
 
 
@@ -69,32 +81,50 @@ describe('MapEnvironment', () => {
             {
                 hostname: home.hostname,
                 requiredHackingSkill: 1,
-                path: []
+                ramUsed: 1,
+                maxRam: 10,
+                freeRam: 9,
+                path: [],
             },
             {
                 hostname: server3.hostname,
                 requiredHackingSkill: 2,
-                path: [server1.hostname, server3.hostname]
+                ramUsed: 0,
+                maxRam: 0,
+                freeRam: 0,
+                path: [server1.hostname, server3.hostname],
             },
             {
                 hostname: server2.hostname,
                 requiredHackingSkill: 10,
+                ramUsed: 0,
+                maxRam: 0,
+                freeRam: 0,
                 path: [server2.hostname],
             },
             {
                 hostname: server1.hostname,
                 requiredHackingSkill: 100,
+                ramUsed: 9,
+                maxRam: 10,
+                freeRam: 1,
                 path: [server1.hostname],
             },
             {
                 hostname: server4.hostname,
                 requiredHackingSkill: 900,
+                ramUsed: 0,
+                maxRam: 0,
+                freeRam: 0,
                 path: [server2.hostname, server4.hostname],
             },
             {
                 hostname: server5.hostname,
                 requiredHackingSkill: 901,
-                path: [server2.hostname, server4.hostname, server5.hostname]
+                ramUsed: 0,
+                maxRam: 0,
+                freeRam: 0,
+                path: [server2.hostname, server4.hostname, server5.hostname],
             },
 
         ]
