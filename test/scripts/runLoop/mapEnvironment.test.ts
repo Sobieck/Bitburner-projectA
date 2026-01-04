@@ -1,7 +1,6 @@
 import { main } from "../../../src/scripts/runLoop/mapEnvironment"
 import { NS } from "@ns";
 import { nsMock } from "../../mocks/ns.mock";
-import { hostname } from "os";
 
 
 describe('MapEnvironment', () => {
@@ -66,7 +65,7 @@ describe('MapEnvironment', () => {
 
 
     it("should write a well formatted document.", async () => {
-        const result = [
+        const expectedResult = [
             {
                 hostname: home.hostname,
                 requiredHackingSkill: 1,
@@ -102,6 +101,6 @@ describe('MapEnvironment', () => {
 
         expect(mockedNs.writeTuples[0][0]).toBe("/data/runLoop/environment.json")
         expect(mockedNs.writeTuples[0][2]).toBe("w")
-        expect(mockedNs.writeTuples[0][1]).toBe(JSON.stringify(result))
+        expect(mockedNs.writeTuples[0][1]).toBe(JSON.stringify(expectedResult))
     })
 })

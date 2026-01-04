@@ -76,4 +76,22 @@ export class nsMock {
     return this.getServerReturns.get(host)
   }
 
+
+
+  public lsReturns = new Map<string, Map<string, string[]>>()
+  public ls(host: string, substring: string): string[]{
+    this.callOrder.push("ls")
+    
+    return this.lsReturns.get(host)?.get(substring)!
+  }
+
+
+
+  public getScriptRamReturns = new Map<string, number>()
+  public getScriptRam(script: string) : number {
+    this.callOrder.push("getScriptCost")
+
+    return this.getScriptRamReturns.get(script)!
+  }
+
 }

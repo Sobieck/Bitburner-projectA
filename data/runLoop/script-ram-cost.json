@@ -1,0 +1,18 @@
+[
+    {
+        "scriptPath": "scripts/runLoop/mapEnvironment.js",
+        "ramCost": 3.8
+    },
+    {
+        "scriptPath": "scripts/runLoop/orchestration.js",
+        "ramCost": 2.6
+    },
+    {
+        "scriptPath": "scripts/runLoop/scriptCost.js",
+        "ramCost": 1.9
+    },
+    {
+        "scriptPath": "scripts/runLoop/scriptsToRun.js",
+        "ramCost": 1.6
+    }
+]

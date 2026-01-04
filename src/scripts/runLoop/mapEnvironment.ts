@@ -1,7 +1,7 @@
 /** @param {NS} ns **/
 
 import { NS } from "@ns";
-import { ServerWithAdditionalInfo } from "/scripts/models/serverWithAdditionalInfo";
+import { ServerWithAdditionalInfo } from "../models/runLoop/serverWithAdditionalInfo";
 
 export async function main(ns: NS): Promise<void> {
 
