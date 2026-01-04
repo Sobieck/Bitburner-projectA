@@ -1,6 +1,7 @@
 import { main } from "../../../src/scripts/runLoop/orchestration"
 import { NS } from "@ns";
-import { nsMock } from "../../mocks/ns.mock";
+import { nsMock } from "../../utilities/nsMock.testUtility";
+import { RandomValues } from "../../utilities/randomValues.testUtility";
 
 
 describe('Orchestration', () => {
@@ -10,7 +11,8 @@ describe('Orchestration', () => {
   beforeEach(async () => {
     const nsSetup = new nsMock()
 
-    numberOfScriptsToRun = Math.floor(1 + Math.random() * 19)
+    numberOfScriptsToRun = new RandomValues().randomInt(20)
+
     const runScripts = []
 
     for (let i = 0; i < numberOfScriptsToRun; i++) {

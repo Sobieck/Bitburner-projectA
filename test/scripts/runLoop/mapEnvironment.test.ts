@@ -1,6 +1,6 @@
 import { main } from "../../../src/scripts/runLoop/mapEnvironment"
 import { NS } from "@ns";
-import { nsMock } from "../../mocks/ns.mock";
+import { nsMock } from "../../utilities/nsMock.testUtility";
 
 
 describe('MapEnvironment', () => {

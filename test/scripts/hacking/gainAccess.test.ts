@@ -1,6 +1,6 @@
 import { main } from "../../../src/scripts/hacking/gainAccess"
 import { NS } from "@ns"
-import { nsMock } from "../../mocks/ns.mock"
+import { nsMock } from "../../utilities/nsMock.testUtility"
 
 
 describe('gainAccess', () => {
