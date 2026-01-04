@@ -10,7 +10,10 @@ export async function main(ns: NS): Promise<void> {
         '/scripts/runLoop/mapEnvironment.js',
         '/scripts/runLoop/scriptCost.js',
         '/scripts/runLoop/getPlayer.js',
+        
 
+        //hacking scripts 
+        '/scripts/hacking/gainAccess.js',
     ]
 
     ns.write("/data/runLoop/scripts-to-run.json", JSON.stringify(scriptsToRun), "w")

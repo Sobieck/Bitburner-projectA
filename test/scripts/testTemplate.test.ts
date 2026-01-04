@@ -10,7 +10,7 @@ describe('', () => {
         const nsSetup = new nsMock()
         const ns = nsSetup as unknown
 
-        await main(ns as NS);
+        // await main(ns as NS);
 
         mockedNs = ns as nsMock;
     })
