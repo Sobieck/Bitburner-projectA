@@ -1,9 +1,9 @@
-import { main } from "../../../src/scripts/hacking/gainAccess"
+import { main } from "../../src/scripts/hacking/gainAccess"
 import { NS } from "@ns"
-import { nsMock } from "../../mocks/ns.mock"
+import { nsMock } from "../mocks/ns.mock"
 
 
-describe('gainAccess', () => {
+describe('', () => {
     let mockedNs = new nsMock()
 
     beforeEach(async () => {
