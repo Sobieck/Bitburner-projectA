@@ -4,7 +4,7 @@ export class RandomValues {
     }
 
     // https://stackoverflow.com/a/1349426
-    public randomString(length: number): string {
+    public randomString(): string {
         let result = '';
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
         const charactersLength = characters.length;

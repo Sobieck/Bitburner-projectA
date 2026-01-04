@@ -1,11 +1,11 @@
-import { main } from "../../../src/scripts/hacking/hack"
+import { main } from "../../../src/scripts/hacking/weaken"
 import { NS } from "@ns"
 import { nsMock } from "../../utilities/nsMock.testUtility"
 import { RandomValues } from "../../utilities/randomValues.testUtility"
 
 
-describe('hack', () => {
-    it('run the hack command with the correct args passed in.', async () => {
+describe('weaken', () => {
+    it('run the weaken command with the correct args passed in.', async () => {
         const nsSetup = new nsMock()
 
         const randomGenerator = new RandomValues()
@@ -30,9 +30,9 @@ describe('hack', () => {
         const mockedNs = ns as nsMock;
 
 
-        expect(mockedNs.hackArgsPassed.length).toBe(1)
-        expect(mockedNs.hackArgsPassed[0][0]).toBe(target)
-        expect(mockedNs.hackArgsPassed[0][1].additionalMsec).toBe(additionalMsec)
-        expect(mockedNs.hackArgsPassed[0][1].stock).toBe(stock)
+        expect(mockedNs.weakenArgsPassed.length).toBe(1)
+        expect(mockedNs.weakenArgsPassed[0][0]).toBe(target)
+        expect(mockedNs.weakenArgsPassed[0][1].additionalMsec).toBe(additionalMsec)
+        expect(mockedNs.weakenArgsPassed[0][1].stock).toBe(stock)
     })
 })

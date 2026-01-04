@@ -1,11 +1,11 @@
-import { main } from "../../../src/scripts/hacking/hack"
+import { main } from "../../../src/scripts/hacking/grow"
 import { NS } from "@ns"
 import { nsMock } from "../../utilities/nsMock.testUtility"
 import { RandomValues } from "../../utilities/randomValues.testUtility"
 
 
-describe('hack', () => {
-    it('run the hack command with the correct args passed in.', async () => {
+describe('grow', () => {
+    it('run the grow command with the correct args passed in.', async () => {
         const nsSetup = new nsMock()
 
         const randomGenerator = new RandomValues()
@@ -30,9 +30,9 @@ describe('hack', () => {
         const mockedNs = ns as nsMock;
 
 
-        expect(mockedNs.hackArgsPassed.length).toBe(1)
-        expect(mockedNs.hackArgsPassed[0][0]).toBe(target)
-        expect(mockedNs.hackArgsPassed[0][1].additionalMsec).toBe(additionalMsec)
-        expect(mockedNs.hackArgsPassed[0][1].stock).toBe(stock)
+        expect(mockedNs.growArgsPassed.length).toBe(1)
+        expect(mockedNs.growArgsPassed[0][0]).toBe(target)
+        expect(mockedNs.growArgsPassed[0][1].additionalMsec).toBe(additionalMsec)
+        expect(mockedNs.growArgsPassed[0][1].stock).toBe(stock)
     })
 })

@@ -1,6 +1,7 @@
 export class nsMock {
 
   public callOrder: string[] = [];
+  public args: (string | number | boolean)[] = []
 
 
 
@@ -177,6 +178,33 @@ export class nsMock {
     this.callOrder.push("sqlinject")
 
     this.sqlinjectHostnames.push(hostname)
+  }
+
+
+
+  public hackArgsPassed: [string, { stock: boolean, additionalMsec: number }][] = []
+  public hack(hostname: string, opts: { stock: boolean, additionalMsec: number }) {
+    this.callOrder.push("hack")
+
+    this.hackArgsPassed.push([hostname, opts])
+  }
+
+
+
+  public weakenArgsPassed: [string, { stock: boolean, additionalMsec: number }][] = []
+  public weaken(hostname: string, opts: { stock: boolean, additionalMsec: number }) {
+    this.callOrder.push("weaken")
+
+    this.weakenArgsPassed.push([hostname, opts])
+  }
+
+
+
+  public growArgsPassed: [string, { stock: boolean, additionalMsec: number }][] = []
+  public grow(hostname: string, opts: { stock: boolean, additionalMsec: number }) {
+    this.callOrder.push("grow")
+
+    this.growArgsPassed.push([hostname, opts])
   }
 
 }
