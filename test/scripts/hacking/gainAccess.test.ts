@@ -1,6 +1,7 @@
 import { main } from "../../../src/scripts/hacking/gainAccess"
 import { NS } from "@ns"
 import { nsMock } from "../../utilities/nsMock.testUtility"
+import { FilePaths } from "../../../src/scripts/models/filePaths"
 
 
 describe('gainAccess', () => {
@@ -65,9 +66,9 @@ describe('gainAccess', () => {
     it('should nuke the one with enough ports open and skill level is right and we do not have admin rights.', async () => {
         const nsSetup = new nsMock()
 
-        nsSetup.readReturns.set("/data/runLoop/player.json", [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
 
-        nsSetup.readReturns.set("/data/runLoop/environment.json", [JSON.stringify([
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
             shouldSkipBecauseWeHaveAdminRights,
@@ -90,8 +91,8 @@ describe('gainAccess', () => {
 
         nsSetup.fileExistsReturns.set("BruteSSH.exe", true)
 
-        nsSetup.readReturns.set("/data/runLoop/player.json", [JSON.stringify(player)])
-        nsSetup.readReturns.set("/data/runLoop/environment.json", [JSON.stringify([
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
             shouldSkipBecauseWeHaveAdminRights,
@@ -116,8 +117,8 @@ describe('gainAccess', () => {
 
         nsSetup.fileExistsReturns.set("BruteSSH.exe", true)
 
-        nsSetup.readReturns.set("/data/runLoop/player.json", [JSON.stringify(player)])
-        nsSetup.readReturns.set("/data/runLoop/environment.json", [JSON.stringify([
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
             shouldSkipBecauseWeHaveAdminRights,
@@ -141,8 +142,8 @@ describe('gainAccess', () => {
 
         nsSetup.fileExistsReturns.set("FTPCrack.exe", true)
 
-        nsSetup.readReturns.set("/data/runLoop/player.json", [JSON.stringify(player)])
-        nsSetup.readReturns.set("/data/runLoop/environment.json", [JSON.stringify([
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
             shouldSkipBecauseWeHaveAdminRights,
@@ -167,8 +168,8 @@ describe('gainAccess', () => {
 
         nsSetup.fileExistsReturns.set("FTPCrack.exe", true)
 
-        nsSetup.readReturns.set("/data/runLoop/player.json", [JSON.stringify(player)])
-        nsSetup.readReturns.set("/data/runLoop/environment.json", [JSON.stringify([
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
             shouldSkipBecauseWeHaveAdminRights,
@@ -191,8 +192,8 @@ describe('gainAccess', () => {
 
         nsSetup.fileExistsReturns.set("RelaySMTP.exe", true)
 
-        nsSetup.readReturns.set("/data/runLoop/player.json", [JSON.stringify(player)])
-        nsSetup.readReturns.set("/data/runLoop/environment.json", [JSON.stringify([
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
             shouldSkipBecauseWeHaveAdminRights,
@@ -217,8 +218,8 @@ describe('gainAccess', () => {
 
         nsSetup.fileExistsReturns.set("RelaySMTP.exe", true)
 
-        nsSetup.readReturns.set("/data/runLoop/player.json", [JSON.stringify(player)])
-        nsSetup.readReturns.set("/data/runLoop/environment.json", [JSON.stringify([
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
             shouldSkipBecauseWeHaveAdminRights,
@@ -240,8 +241,8 @@ describe('gainAccess', () => {
 
         nsSetup.fileExistsReturns.set("HTTPWorm.exe", true)
 
-        nsSetup.readReturns.set("/data/runLoop/player.json", [JSON.stringify(player)])
-        nsSetup.readReturns.set("/data/runLoop/environment.json", [JSON.stringify([
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
             shouldSkipBecauseWeHaveAdminRights,
@@ -266,8 +267,8 @@ describe('gainAccess', () => {
 
         nsSetup.fileExistsReturns.set("HTTPWorm.exe", true)
 
-        nsSetup.readReturns.set("/data/runLoop/player.json", [JSON.stringify(player)])
-        nsSetup.readReturns.set("/data/runLoop/environment.json", [JSON.stringify([
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
             shouldSkipBecauseWeHaveAdminRights,
@@ -289,8 +290,8 @@ describe('gainAccess', () => {
 
         nsSetup.fileExistsReturns.set("SQLInject.exe", true)
 
-        nsSetup.readReturns.set("/data/runLoop/player.json", [JSON.stringify(player)])
-        nsSetup.readReturns.set("/data/runLoop/environment.json", [JSON.stringify([
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
             shouldSkipBecauseWeHaveAdminRights,
@@ -315,8 +316,8 @@ describe('gainAccess', () => {
 
         nsSetup.fileExistsReturns.set("SQLInject.exe", true)
 
-        nsSetup.readReturns.set("/data/runLoop/player.json", [JSON.stringify(player)])
-        nsSetup.readReturns.set("/data/runLoop/environment.json", [JSON.stringify([
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
             shouldSkipBecauseWeHaveAdminRights,

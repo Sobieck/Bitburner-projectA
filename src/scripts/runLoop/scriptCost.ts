@@ -2,6 +2,7 @@
 
 import { NS } from "@ns";
 import { ScriptRamCost } from "/scripts/models/runLoop/scriptRamCost";
+import { FilePaths } from "/scripts/models/filePaths";
 
 export async function main(ns: NS) : Promise<void> {
 
@@ -19,6 +20,6 @@ export async function main(ns: NS) : Promise<void> {
     }
 
 
-    ns.write('/data/runLoop/script-ram-cost.json', JSON.stringify(result), 'w')
+    ns.write(FilePaths.data.scriptRamCost, JSON.stringify(result), 'w')
     
 }

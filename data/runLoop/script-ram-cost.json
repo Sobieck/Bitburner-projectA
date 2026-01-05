@@ -1,5 +1,41 @@
 [
     {
+        "scriptPath": "scripts/hacking/algorithms/dispatchCleaner.js",
+        "ramCost": 1.6
+    },
+    {
+        "scriptPath": "scripts/hacking/algorithms/dispatcher.js",
+        "ramCost": 1.6
+    },
+    {
+        "scriptPath": "scripts/hacking/algorithms/firstAlgorithm.js",
+        "ramCost": 1.6
+    },
+    {
+        "scriptPath": "scripts/hacking/gainAccess.js",
+        "ramCost": 2
+    },
+    {
+        "scriptPath": "scripts/hacking/grow.js",
+        "ramCost": 1.75
+    },
+    {
+        "scriptPath": "scripts/hacking/hack.js",
+        "ramCost": 1.7
+    },
+    {
+        "scriptPath": "scripts/hacking/weaken.js",
+        "ramCost": 1.75
+    },
+    {
+        "scriptPath": "scripts/runLoop/addReservedSpace.js",
+        "ramCost": 1.6
+    },
+    {
+        "scriptPath": "scripts/runLoop/getPlayer.js",
+        "ramCost": 2.1
+    },
+    {
         "scriptPath": "scripts/runLoop/mapEnvironment.js",
         "ramCost": 3.8
     },

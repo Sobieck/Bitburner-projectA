@@ -1,14 +1,15 @@
 /** @param {NS} ns **/
 
 import { NS } from "@ns";
+import { FilePaths } from "../models/filePaths";
 
 export async function main(ns: NS): Promise<void> {
-    ns.run('/scripts/runLoop/scriptsToRun.js')
+    ns.run(FilePaths.scripts.scriptsToRun)
     await ns.sleep(1000)
     
     const sleepAmount = 600
 
-    const scriptsToRun = JSON.parse(ns.read("/data/runLoop/scripts-to-run.json")) as string[]
+    const scriptsToRun = JSON.parse(ns.read(FilePaths.data.scriptsToRun)) as string[]
 
     for (const script of scriptsToRun) {
         await ns.sleep(sleepAmount)
@@ -17,6 +18,6 @@ export async function main(ns: NS): Promise<void> {
     }
 
     await ns.sleep(1000)
-    ns.run("/scripts/runLoop/orchestration.js")
+    ns.run(FilePaths.scripts.orchestration)
 
 }

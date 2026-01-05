@@ -2,11 +2,12 @@
 
 import { NS, Player } from "@ns";
 import { ServerWithAdditionalInfo } from "/scripts/models/runLoop/serverWithAdditionalInfo";
+import { FilePaths } from "/scripts/models/filePaths";
 
 export async function main(ns: NS): Promise<void> {
 
-    const environment = JSON.parse(ns.read('/data/runLoop/environment.json')) as ServerWithAdditionalInfo[]
-    const player = JSON.parse(ns.read('/data/runLoop/player.json')) as Player
+    const environment = JSON.parse(ns.read(FilePaths.data.environment)) as ServerWithAdditionalInfo[]
+    const player = JSON.parse(ns.read(FilePaths.data.player)) as Player
 
     const serversWithinOurSkillAndNoAdminRights = environment
         .filter(x =>

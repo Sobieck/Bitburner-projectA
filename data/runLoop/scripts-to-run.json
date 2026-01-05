@@ -1,0 +1,6 @@
+[
+    "/scripts/runLoop/mapEnvironment.js",
+    "/scripts/runLoop/scriptCost.js",
+    "/scripts/runLoop/getPlayer.js",
+    "/scripts/hacking/gainAccess.js"
+]

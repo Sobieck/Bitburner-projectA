@@ -2,6 +2,7 @@
 
 import { NS } from "@ns";
 import { ServerWithAdditionalInfo } from "../models/runLoop/serverWithAdditionalInfo";
+import { FilePaths } from "../models/filePaths";
 
 export async function main(ns: NS): Promise<void> {
 
@@ -47,5 +48,6 @@ export async function main(ns: NS): Promise<void> {
             return aSkill - bSkill
         })
 
-    ns.write("/data/runLoop/environment.json", JSON.stringify(sortedByDifficultyResult), "w")
+    
+    ns.write(FilePaths.data.environment, JSON.stringify(sortedByDifficultyResult), "w")
 }

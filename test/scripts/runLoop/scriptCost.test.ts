@@ -2,6 +2,7 @@ import { main } from "../../../src/scripts/runLoop/scriptCost"
 import { NS } from "@ns"
 import { nsMock } from "../../utilities/nsMock.testUtility"
 import { ScriptRamCost } from "../../../src/scripts/models/runLoop/scriptRamCost"
+import { FilePaths } from "../../../src/scripts/models/filePaths"
 
 
 describe('scriptCost', () => {
@@ -47,7 +48,7 @@ describe('scriptCost', () => {
             new ScriptRamCost("scripts/runLoop/scriptsToRun.js", .2),
         ]
 
-        expect(mockedNs.writeTuples[0][0]).toBe('/data/runLoop/script-ram-cost.json')
+        expect(mockedNs.writeTuples[0][0]).toBe(FilePaths.data.scriptRamCost)
         expect(mockedNs.writeTuples[0][2]).toBe("w")
         expect(mockedNs.writeTuples[0][1]).toBe(JSON.stringify(expectedResult))
     })

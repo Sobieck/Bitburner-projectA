@@ -2,6 +2,7 @@ import { main } from "../../../src/scripts/runLoop/orchestration"
 import { NS } from "@ns";
 import { nsMock } from "../../utilities/nsMock.testUtility";
 import { RandomValues } from "../../utilities/randomValues.testUtility";
+import { FilePaths } from "../../../src/scripts/models/filePaths";
 
 
 describe('Orchestration', () => {
@@ -10,7 +11,7 @@ describe('Orchestration', () => {
 
   beforeEach(async () => {
     const nsSetup = new nsMock()
-
+    
     numberOfScriptsToRun = new RandomValues().randomInt(20)
 
     const runScripts = []
@@ -19,7 +20,7 @@ describe('Orchestration', () => {
       runScripts.push(i.toString())      
     }
 
-    nsSetup.readReturns.set("/data/runLoop/scripts-to-run.json", [JSON.stringify(runScripts)])
+    nsSetup.readReturns.set(FilePaths.data.scriptsToRun, [JSON.stringify(runScripts)])
     
     const ns = nsSetup as unknown
 
@@ -31,7 +32,7 @@ describe('Orchestration', () => {
 
   it("should run scriptsToRun first thing.", async () => {
     expect(mockedNs.callOrder[0]).toBe("run")
-    expect(mockedNs.runTuples[0][0]).toBe("/scripts/runLoop/scriptsToRun.js")
+    expect(mockedNs.runTuples[0][0]).toBe(FilePaths.scripts.scriptsToRun)
     expect(mockedNs.runTuples[0][1]).toBeUndefined()
     expect(mockedNs.runTuples[0][2]).toBeUndefined()
   })
@@ -46,7 +47,7 @@ describe('Orchestration', () => {
     const totalRuns = mockedNs.runTuples.length
 
     expect(mockedNs.callOrder[totalCalls - 1]).toBe("run")
-    expect(mockedNs.runTuples[totalRuns - 1][0]).toBe("/scripts/runLoop/orchestration.js")
+    expect(mockedNs.runTuples[totalRuns - 1][0]).toBe(FilePaths.scripts.orchestration)
     expect(mockedNs.runTuples[0][1]).toBeUndefined()
     expect(mockedNs.runTuples[0][2]).toBeUndefined()
   })

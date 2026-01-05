@@ -1,7 +1,7 @@
 import { main } from "../../../src/scripts/runLoop/mapEnvironment"
 import { NS } from "@ns";
 import { nsMock } from "../../utilities/nsMock.testUtility";
-
+import { FilePaths } from "../../../src/scripts/models/filePaths";
 
 describe('MapEnvironment', () => {
     let mockedNs = new nsMock()
@@ -129,7 +129,7 @@ describe('MapEnvironment', () => {
 
         ]
 
-        expect(mockedNs.writeTuples[0][0]).toBe("/data/runLoop/environment.json")
+        expect(mockedNs.writeTuples[0][0]).toBe(FilePaths.data.environment)
         expect(mockedNs.writeTuples[0][2]).toBe("w")
         expect(mockedNs.writeTuples[0][1]).toBe(JSON.stringify(expectedResult))
     })

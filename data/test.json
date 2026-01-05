@@ -25,8 +25,7 @@
         "requiredHackingSkill": 1,
         "serverGrowth": 1,
         "freeRam": 1.5999999999999996,
-        "path": [],
-        "reservedRam": 7
+        "path": []
     },
     {
         "hostname": "n00dles",
@@ -56,8 +55,7 @@
         "freeRam": 4,
         "path": [
             "n00dles"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "foodnstuff",
@@ -87,8 +85,7 @@
         "freeRam": 16,
         "path": [
             "foodnstuff"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "sigma-cosmetics",
@@ -118,8 +115,7 @@
         "freeRam": 16,
         "path": [
             "sigma-cosmetics"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "joesguns",
@@ -149,8 +145,7 @@
         "freeRam": 16,
         "path": [
             "joesguns"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "nectar-net",
@@ -181,8 +176,7 @@
         "path": [
             "foodnstuff",
             "nectar-net"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "hong-fang-tea",
@@ -212,8 +206,7 @@
         "freeRam": 16,
         "path": [
             "hong-fang-tea"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "harakiri-sushi",
@@ -243,8 +236,7 @@
         "freeRam": 16,
         "path": [
             "harakiri-sushi"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "neo-net",
@@ -276,8 +268,7 @@
             "sigma-cosmetics",
             "max-hardware",
             "neo-net"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "CSEC",
@@ -308,8 +299,7 @@
         "path": [
             "hong-fang-tea",
             "CSEC"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "zer0",
@@ -340,8 +330,7 @@
         "path": [
             "foodnstuff",
             "zer0"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "max-hardware",
@@ -372,8 +361,7 @@
         "path": [
             "sigma-cosmetics",
             "max-hardware"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "iron-gym",
@@ -403,8 +391,7 @@
         "freeRam": 32,
         "path": [
             "iron-gym"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "phantasy",
@@ -436,8 +423,7 @@
             "foodnstuff",
             "nectar-net",
             "phantasy"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "silver-helix",
@@ -469,8 +455,7 @@
             "sigma-cosmetics",
             "max-hardware",
             "silver-helix"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "avmnite-02h",
@@ -503,8 +488,7 @@
             "nectar-net",
             "phantasy",
             "avmnite-02h"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "omega-net",
@@ -536,8 +520,7 @@
             "foodnstuff",
             "nectar-net",
             "omega-net"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "johnson-ortho",
@@ -570,8 +553,7 @@
             "nectar-net",
             "omega-net",
             "johnson-ortho"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "crush-fitness",
@@ -604,8 +586,7 @@
             "max-hardware",
             "silver-helix",
             "crush-fitness"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "the-hub",
@@ -638,8 +619,7 @@
             "nectar-net",
             "phantasy",
             "the-hub"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "computek",
@@ -672,8 +652,7 @@
             "max-hardware",
             "neo-net",
             "computek"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "I.I.I.I",
@@ -707,8 +686,7 @@
             "omega-net",
             "johnson-ortho",
             "I.I.I.I"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "netlink",
@@ -741,8 +719,7 @@
             "max-hardware",
             "silver-helix",
             "netlink"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "rothman-uni",
@@ -776,8 +753,7 @@
             "phantasy",
             "avmnite-02h",
             "rothman-uni"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "catalyst",
@@ -811,8 +787,7 @@
             "silver-helix",
             "crush-fitness",
             "catalyst"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "aevum-police",
@@ -847,8 +822,7 @@
             "the-hub",
             "syscore",
             "aevum-police"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "summit-uni",
@@ -882,8 +856,7 @@
             "omega-net",
             "johnson-ortho",
             "summit-uni"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "millenium-fitness",
@@ -918,8 +891,7 @@
             "the-hub",
             "syscore",
             "millenium-fitness"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "alpha-ent",
@@ -954,8 +926,7 @@
             "johnson-ortho",
             "I.I.I.I",
             "alpha-ent"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "rho-construction",
@@ -990,8 +961,7 @@
             "the-hub",
             "syscore",
             "rho-construction"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "run4theh111z",
@@ -1031,8 +1001,7 @@
             "zeus-med",
             "zb-def",
             "run4theh111z"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": ".",
@@ -1074,8 +1043,7 @@
             "run4theh111z",
             "vitalife",
             "."
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "syscore",
@@ -1109,8 +1077,7 @@
             "phantasy",
             "the-hub",
             "syscore"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "lexo-corp",
@@ -1145,8 +1112,7 @@
             "the-hub",
             "zb-institute",
             "lexo-corp"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "zb-institute",
@@ -1180,8 +1146,7 @@
             "phantasy",
             "the-hub",
             "zb-institute"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "snap-fitness",
@@ -1217,8 +1182,7 @@
             "syscore",
             "aevum-police",
             "snap-fitness"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "solaris",
@@ -1256,8 +1220,7 @@
             "snap-fitness",
             "deltaone",
             "solaris"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "zb-def",
@@ -1296,8 +1259,7 @@
             "unitalife",
             "zeus-med",
             "zb-def"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "global-pharm",
@@ -1333,8 +1295,7 @@
             "syscore",
             "rho-construction",
             "global-pharm"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "microdyne",
@@ -1374,8 +1335,7 @@
             "zeus-med",
             "zb-def",
             "microdyne"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "titan-labs",
@@ -1415,8 +1375,7 @@
             "defcomm",
             "nova-med",
             "titan-labs"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "zeus-med",
@@ -1454,8 +1413,7 @@
             "aerocorp",
             "unitalife",
             "zeus-med"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "univ-energy",
@@ -1493,8 +1451,7 @@
             "snap-fitness",
             "deltaone",
             "univ-energy"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "unitalife",
@@ -1531,8 +1488,7 @@
             "rho-construction",
             "aerocorp",
             "unitalife"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "applied-energetics",
@@ -1572,8 +1528,7 @@
             "icarus",
             "taiyang-digital",
             "applied-energetics"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "nova-med",
@@ -1612,8 +1567,7 @@
             "unitalife",
             "defcomm",
             "nova-med"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "helios",
@@ -1654,8 +1608,7 @@
             "zb-def",
             "run4theh111z",
             "helios"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "deltaone",
@@ -1692,8 +1645,7 @@
             "aevum-police",
             "snap-fitness",
             "deltaone"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "galactic-cyber",
@@ -1729,8 +1681,7 @@
             "I.I.I.I",
             "alpha-ent",
             "galactic-cyber"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "vitalife",
@@ -1771,8 +1722,7 @@
             "zb-def",
             "run4theh111z",
             "vitalife"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "aerocorp",
@@ -1808,8 +1758,7 @@
             "syscore",
             "rho-construction",
             "aerocorp"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "icarus",
@@ -1847,8 +1796,7 @@
             "snap-fitness",
             "deltaone",
             "icarus"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "omnia",
@@ -1885,8 +1833,7 @@
             "rho-construction",
             "aerocorp",
             "omnia"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "defcomm",
@@ -1924,8 +1871,7 @@
             "aerocorp",
             "unitalife",
             "defcomm"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "taiyang-digital",
@@ -1964,8 +1910,7 @@
             "deltaone",
             "icarus",
             "taiyang-digital"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "infocomm",
@@ -2004,8 +1949,7 @@
             "deltaone",
             "solaris",
             "infocomm"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "The-Cave",
@@ -2049,8 +1993,7 @@
             "kuai-gong",
             "clarkinc",
             "The-Cave"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "omnitek",
@@ -2092,8 +2035,7 @@
             "run4theh111z",
             "helios",
             "omnitek"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "blade",
@@ -2136,8 +2078,7 @@
             "helios",
             "omnitek",
             "blade"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "kuai-gong",
@@ -2179,8 +2120,7 @@
             "run4theh111z",
             "fulcrumtech",
             "kuai-gong"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "powerhouse-fitness",
@@ -2223,8 +2163,7 @@
             "fulcrumtech",
             "kuai-gong",
             "powerhouse-fitness"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "stormtech",
@@ -2265,8 +2204,7 @@
             "taiyang-digital",
             "applied-energetics",
             "stormtech"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "b-and-a",
@@ -2309,8 +2247,7 @@
             "vitalife",
             ".",
             "b-and-a"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "4sigma",
@@ -2352,8 +2289,7 @@
             "run4theh111z",
             "fulcrumtech",
             "4sigma"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "nwo",
@@ -2396,8 +2332,7 @@
             "vitalife",
             ".",
             "nwo"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "clarkinc",
@@ -2440,8 +2375,7 @@
             "fulcrumtech",
             "kuai-gong",
             "clarkinc"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "fulcrumtech",
@@ -2482,8 +2416,7 @@
             "zb-def",
             "run4theh111z",
             "fulcrumtech"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "fulcrumassets",
@@ -2527,8 +2460,7 @@
             ".",
             "b-and-a",
             "fulcrumassets"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "megacorp",
@@ -2572,8 +2504,7 @@
             "kuai-gong",
             "powerhouse-fitness",
             "megacorp"
-        ],
-        "reservedRam": 0
+        ]
     },
     {
         "hostname": "ecorp",
@@ -2617,7 +2548,6 @@
             "omnitek",
             "blade",
             "ecorp"
-        ],
-        "reservedRam": 0
+        ]
     }
 ]
