@@ -26,7 +26,9 @@
         "serverGrowth": 1,
         "freeRam": 1.5999999999999996,
         "path": [],
-        "reservedRam": 7
+        "reservedRam": 7,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "n00dles",
@@ -57,7 +59,9 @@
         "path": [
             "n00dles"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 2,
+        "possibleHackThreads": 2
     },
     {
         "hostname": "foodnstuff",
@@ -88,7 +92,9 @@
         "path": [
             "foodnstuff"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "sigma-cosmetics",
@@ -119,7 +125,9 @@
         "path": [
             "sigma-cosmetics"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "joesguns",
@@ -150,7 +158,9 @@
         "path": [
             "joesguns"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "nectar-net",
@@ -182,7 +192,9 @@
             "foodnstuff",
             "nectar-net"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "hong-fang-tea",
@@ -213,7 +225,9 @@
         "path": [
             "hong-fang-tea"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "harakiri-sushi",
@@ -244,7 +258,9 @@
         "path": [
             "harakiri-sushi"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "neo-net",
@@ -277,7 +293,9 @@
             "max-hardware",
             "neo-net"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "CSEC",
@@ -309,7 +327,9 @@
             "hong-fang-tea",
             "CSEC"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 4,
+        "possibleHackThreads": 4
     },
     {
         "hostname": "zer0",
@@ -341,7 +361,9 @@
             "foodnstuff",
             "zer0"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "max-hardware",
@@ -373,7 +395,9 @@
             "sigma-cosmetics",
             "max-hardware"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "iron-gym",
@@ -404,7 +428,9 @@
         "path": [
             "iron-gym"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "phantasy",
@@ -437,7 +463,9 @@
             "nectar-net",
             "phantasy"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "silver-helix",
@@ -470,7 +498,9 @@
             "max-hardware",
             "silver-helix"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 36,
+        "possibleHackThreads": 37
     },
     {
         "hostname": "avmnite-02h",
@@ -504,7 +534,9 @@
             "phantasy",
             "avmnite-02h"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 73,
+        "possibleHackThreads": 75
     },
     {
         "hostname": "omega-net",
@@ -537,7 +569,9 @@
             "nectar-net",
             "omega-net"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "johnson-ortho",
@@ -571,7 +605,9 @@
             "omega-net",
             "johnson-ortho"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "crush-fitness",
@@ -605,7 +641,9 @@
             "silver-helix",
             "crush-fitness"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "the-hub",
@@ -639,7 +677,9 @@
             "phantasy",
             "the-hub"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 36,
+        "possibleHackThreads": 37
     },
     {
         "hostname": "computek",
@@ -673,7 +713,9 @@
             "neo-net",
             "computek"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "I.I.I.I",
@@ -708,7 +750,9 @@
             "johnson-ortho",
             "I.I.I.I"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "netlink",
@@ -742,7 +786,9 @@
             "silver-helix",
             "netlink"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "rothman-uni",
@@ -777,7 +823,9 @@
             "avmnite-02h",
             "rothman-uni"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 36,
+        "possibleHackThreads": 37
     },
     {
         "hostname": "catalyst",
@@ -812,7 +860,9 @@
             "crush-fitness",
             "catalyst"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "aevum-police",
@@ -848,7 +898,9 @@
             "syscore",
             "aevum-police"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "summit-uni",
@@ -883,7 +935,9 @@
             "johnson-ortho",
             "summit-uni"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "millenium-fitness",
@@ -919,7 +973,9 @@
             "syscore",
             "millenium-fitness"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "alpha-ent",
@@ -955,7 +1011,9 @@
             "I.I.I.I",
             "alpha-ent"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 36,
+        "possibleHackThreads": 37
     },
     {
         "hostname": "rho-construction",
@@ -991,7 +1049,9 @@
             "syscore",
             "rho-construction"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "run4theh111z",
@@ -1032,7 +1092,9 @@
             "zb-def",
             "run4theh111z"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 146,
+        "possibleHackThreads": 150
     },
     {
         "hostname": ".",
@@ -1075,7 +1137,9 @@
             "vitalife",
             "."
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "syscore",
@@ -1110,7 +1174,9 @@
             "the-hub",
             "syscore"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "lexo-corp",
@@ -1146,7 +1212,9 @@
             "zb-institute",
             "lexo-corp"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 36,
+        "possibleHackThreads": 37
     },
     {
         "hostname": "zb-institute",
@@ -1181,7 +1249,9 @@
             "the-hub",
             "zb-institute"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "snap-fitness",
@@ -1218,7 +1288,9 @@
             "aevum-police",
             "snap-fitness"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "solaris",
@@ -1257,7 +1329,9 @@
             "deltaone",
             "solaris"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 73,
+        "possibleHackThreads": 75
     },
     {
         "hostname": "zb-def",
@@ -1297,7 +1371,9 @@
             "zeus-med",
             "zb-def"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "global-pharm",
@@ -1334,7 +1410,9 @@
             "rho-construction",
             "global-pharm"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "microdyne",
@@ -1375,7 +1453,9 @@
             "zb-def",
             "microdyne"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "titan-labs",
@@ -1416,7 +1496,9 @@
             "nova-med",
             "titan-labs"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "zeus-med",
@@ -1455,7 +1537,9 @@
             "unitalife",
             "zeus-med"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "univ-energy",
@@ -1494,7 +1578,9 @@
             "deltaone",
             "univ-energy"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 73,
+        "possibleHackThreads": 75
     },
     {
         "hostname": "unitalife",
@@ -1532,7 +1618,9 @@
             "aerocorp",
             "unitalife"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "applied-energetics",
@@ -1573,7 +1661,9 @@
             "taiyang-digital",
             "applied-energetics"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "nova-med",
@@ -1613,7 +1703,9 @@
             "defcomm",
             "nova-med"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "helios",
@@ -1655,7 +1747,9 @@
             "run4theh111z",
             "helios"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 73,
+        "possibleHackThreads": 75
     },
     {
         "hostname": "deltaone",
@@ -1693,7 +1787,9 @@
             "snap-fitness",
             "deltaone"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "galactic-cyber",
@@ -1730,7 +1826,9 @@
             "alpha-ent",
             "galactic-cyber"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "vitalife",
@@ -1772,7 +1870,9 @@
             "run4theh111z",
             "vitalife"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 73,
+        "possibleHackThreads": 75
     },
     {
         "hostname": "aerocorp",
@@ -1809,7 +1909,9 @@
             "rho-construction",
             "aerocorp"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "icarus",
@@ -1848,7 +1950,9 @@
             "deltaone",
             "icarus"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "omnia",
@@ -1886,7 +1990,9 @@
             "aerocorp",
             "omnia"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9
     },
     {
         "hostname": "defcomm",
@@ -1925,7 +2031,9 @@
             "unitalife",
             "defcomm"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "taiyang-digital",
@@ -1965,7 +2073,9 @@
             "icarus",
             "taiyang-digital"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "infocomm",
@@ -2005,7 +2115,9 @@
             "solaris",
             "infocomm"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "The-Cave",
@@ -2050,7 +2162,9 @@
             "clarkinc",
             "The-Cave"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "omnitek",
@@ -2093,7 +2207,9 @@
             "helios",
             "omnitek"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 292,
+        "possibleHackThreads": 301
     },
     {
         "hostname": "blade",
@@ -2137,7 +2253,9 @@
             "omnitek",
             "blade"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 292,
+        "possibleHackThreads": 301
     },
     {
         "hostname": "kuai-gong",
@@ -2180,7 +2298,9 @@
             "fulcrumtech",
             "kuai-gong"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "powerhouse-fitness",
@@ -2224,7 +2344,9 @@
             "kuai-gong",
             "powerhouse-fitness"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18
     },
     {
         "hostname": "stormtech",
@@ -2266,7 +2388,9 @@
             "applied-energetics",
             "stormtech"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "b-and-a",
@@ -2310,7 +2434,9 @@
             ".",
             "b-and-a"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "4sigma",
@@ -2353,7 +2479,9 @@
             "fulcrumtech",
             "4sigma"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "nwo",
@@ -2397,7 +2525,9 @@
             ".",
             "nwo"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "clarkinc",
@@ -2441,7 +2571,9 @@
             "kuai-gong",
             "clarkinc"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "fulcrumtech",
@@ -2483,7 +2615,9 @@
             "run4theh111z",
             "fulcrumtech"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 1170,
+        "possibleHackThreads": 1204
     },
     {
         "hostname": "fulcrumassets",
@@ -2528,7 +2662,9 @@
             "b-and-a",
             "fulcrumassets"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "megacorp",
@@ -2573,7 +2709,9 @@
             "powerhouse-fitness",
             "megacorp"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     },
     {
         "hostname": "ecorp",
@@ -2618,6 +2756,8 @@
             "blade",
             "ecorp"
         ],
-        "reservedRam": 0
+        "reservedRam": 0,
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0
     }
 ]

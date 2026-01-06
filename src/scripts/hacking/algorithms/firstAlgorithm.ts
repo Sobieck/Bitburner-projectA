@@ -5,7 +5,8 @@ export async function main(ns: NS): Promise<void> {
 
     await ns.sleep()
     
-    // if there is open compute
+    // if there is open compute - maybe 3 gb free total to start a new batch
+    // see if our last batch was executed.
 
     // target 
         // prioritize already targeted computers

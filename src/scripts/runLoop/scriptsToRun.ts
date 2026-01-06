@@ -9,9 +9,9 @@ export async function main(ns: NS): Promise<void> {
 
         //setting up environment for scripts to run
         'scripts/runLoop/mapEnvironment.js',
+        'scripts/runLoop/enrichEnvironment.js',
         'scripts/runLoop/scriptCost.js',
         'scripts/runLoop/getPlayer.js',
-        'scripts/runLoop/addReservedSpace.js',
         
 
         //hacking scripts 

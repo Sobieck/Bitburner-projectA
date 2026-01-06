@@ -1,3 +1,5 @@
+import { FilePaths } from "../../src/scripts/models/filePaths"
+
 export class nsMock {
 
   public callOrder: string[] = [];
@@ -207,4 +209,22 @@ export class nsMock {
     this.growArgsPassed.push([hostname, opts])
   }
 
+
+
+  public execArgsPassed: [string, string, number, (string | number | boolean)[]][] = []
+  public execResponses = new Map<string, number[]>()
+  private execResponseIndex = new Map<string, number>()
+  public exec(script: string, host: string, threadOrOptions: number, ...args: (string | number | boolean)[]): number {
+    this.callOrder.push("exec")
+
+    this.execArgsPassed.push([script, host, threadOrOptions, args])
+
+    let responseIndex = this.execResponseIndex.get(script)
+
+    if(responseIndex === undefined){
+      responseIndex = 0
+    }
+
+    return this.execResponses.get(script)![responseIndex]
+  }
 }

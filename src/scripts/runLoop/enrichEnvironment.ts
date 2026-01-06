@@ -24,7 +24,18 @@ export async function main(ns: NS): Promise<void> {
             server.reservedRam = reservedRam
         } else {
             server.reservedRam = 0
-        }   
+        }
+
+        server.possibleWeakenOrGrowThreads = Math.floor((server.freeRam - server.reservedRam) / 1.75)
+        server.possibleHackThreads = Math.floor((server.freeRam - server.reservedRam) / 1.7) 
+
+        if (server.possibleHackThreads < 0) {
+            server.possibleHackThreads = 0
+        }
+
+        if (server.possibleWeakenOrGrowThreads < 0) {
+            server.possibleWeakenOrGrowThreads = 0
+        }
     }
 
 

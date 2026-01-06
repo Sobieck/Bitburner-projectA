@@ -1,21 +1,25 @@
-import { main } from "../../../src/scripts/runLoop/addReservedSpace"
+import { main } from "../../../src/scripts/runLoop/enrichEnvironment"
 import { NS } from "@ns";
 import { nsMock } from "../../utilities/nsMock.testUtility";
 import { ScriptRamCost } from "../../../src/scripts/models/runLoop/scriptRamCost"
 import { FilePaths } from "../../../src/scripts/models/filePaths"
+import { freemem } from "os";
 
-describe('addReservedSpace', () => {
+describe('enrichEnvironment', () => {
 
     const home = {
-        hostname: "home"
+        hostname: "home",
+        freeRam: 100
     }
 
     const server1 = {
-        hostname: "server1"
+        hostname: "server1",
+        freeRam: 1000
     }
 
     const server2 = {
-        hostname: "server2"
+        hostname: "server2",
+        freeRam: 1.69
     }
 
     const script1 = "scripts1" // lower not run loop
@@ -25,7 +29,7 @@ describe('addReservedSpace', () => {
 
     let nsSetup: nsMock;
     let scriptRamCosts: ScriptRamCost[] = []
-    let environment: {hostname: string}[] = []
+    let environment: { hostname: string }[] = []
     let runLoop: string[] = []
 
     beforeEach(async () => {
@@ -71,15 +75,24 @@ describe('addReservedSpace', () => {
             [
                 {
                     hostname: server1.hostname,
-                    reservedRam: 0
+                    freeRam: 1000,
+                    reservedRam: 0,
+                    possibleWeakenOrGrowThreads: 571,
+                    possibleHackThreads: 588,
                 },
                 {
                     hostname: home.hostname,
-                    reservedRam: 19
+                    freeRam: 100,
+                    reservedRam: 19,
+                    possibleWeakenOrGrowThreads: 46,
+                    possibleHackThreads: 47,
                 },
                 {
                     hostname: server2.hostname,
-                    reservedRam: 0
+                    freeRam: 1.69,
+                    reservedRam: 0,
+                    possibleWeakenOrGrowThreads: 0,
+                    possibleHackThreads: 0,
                 },
             ]
         ))
@@ -102,15 +115,24 @@ describe('addReservedSpace', () => {
             [
                 {
                     hostname: server1.hostname,
-                    reservedRam: 0
+                    freeRam: 1000,
+                    reservedRam: 0,
+                    possibleWeakenOrGrowThreads: 571,
+                    possibleHackThreads: 588,
                 },
                 {
                     hostname: home.hostname,
-                    reservedRam: 24
+                    freeRam: 100,
+                    reservedRam: 24,
+                    possibleWeakenOrGrowThreads: 43,
+                    possibleHackThreads: 44,
                 },
                 {
                     hostname: server2.hostname,
-                    reservedRam: 0
+                    freeRam: 1.69,
+                    reservedRam: 0,
+                    possibleWeakenOrGrowThreads: 0,
+                    possibleHackThreads: 0,
                 },
             ]
         ))
