@@ -1,5 +1,5 @@
 export class DispatchQueue {
-    constructor(public queue: DispatchBatch[] = []) { }
+    constructor(public batches: DispatchBatch[] = []) { }
 }
 
 export class DispatchBatch {
@@ -18,7 +18,7 @@ export class DispatchCommand {
         public commandType: DispatchType,
         public msAdded: number = 0,
         public effectStockMarket: boolean = false,
-        public pids?: number[],
+        public pids: number[] = [],
         public threadsExecuting?: number
     ) { }
 }

@@ -227,4 +227,13 @@ export class nsMock {
 
     return this.execResponses.get(script)![responseIndex]
   }
+
+  
+
+  public isRunningResponses = new Map<number, boolean>()
+  public isRunning(pid: number) : boolean {
+    this.callOrder.push("isRunning")
+
+    return this.isRunningResponses.get(pid)!
+  }
 }

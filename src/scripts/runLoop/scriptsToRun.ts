@@ -13,9 +13,17 @@ export async function main(ns: NS): Promise<void> {
         'scripts/runLoop/scriptCost.js',
         'scripts/runLoop/getPlayer.js',
         
-
         //hacking scripts 
+        'scripts/hacking/dispatch/dispatchCleaner.js',
         'scripts/hacking/gainAccess.js',
+
+        // hacking algos
+
+
+        // dispatch
+
+        
+        // singularity stuff and purchasing decisions
     ]
 
     ns.write(FilePaths.data.scriptsToRun, JSON.stringify(scriptsToRun), "w")
