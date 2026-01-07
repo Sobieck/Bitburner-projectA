@@ -8,6 +8,5 @@ export async function main(ns: NS): Promise<void> {
     const additionalMsec = ns.args[1] as number
     const stock = ns.args[2] as boolean
 
-
     await ns.weaken(target, { additionalMsec: additionalMsec, stock: stock })
 }

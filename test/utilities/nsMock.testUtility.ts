@@ -125,10 +125,10 @@ export class nsMock {
 
 
   public fileExistsReturns = new Map<string, boolean>()
-  public fileExists(fileName: string): boolean {
+  public fileExists(fileName: string, hostname: string = ""): boolean {
     this.callOrder.push("fileExists")
 
-    let result = this.fileExistsReturns.get(fileName)
+    let result = this.fileExistsReturns.get(fileName + hostname)
 
     if (result === undefined) {
       result = false
@@ -221,7 +221,7 @@ export class nsMock {
 
     let responseIndex = this.execResponseIndex.get(script)
 
-    if(responseIndex === undefined){
+    if (responseIndex === undefined) {
       responseIndex = 0
     }
 
@@ -230,12 +230,30 @@ export class nsMock {
     return this.execResponses.get(script)![responseIndex]
   }
 
-  
+
 
   public isRunningResponses = new Map<number, boolean>()
-  public isRunning(pid: number) : boolean {
+  public isRunning(pid: number): boolean {
     this.callOrder.push("isRunning")
 
     return this.isRunningResponses.get(pid)!
+  }
+
+
+
+  public mvArgsPassed: [string, string, string][] = []
+  public mv(host: string, source: string, destination: string) {
+    this.callOrder.push("mv")
+
+    this.mvArgsPassed.push([host, source, destination])
+  }
+
+
+
+  public scpArgsPassed: [string, string, string][] = []
+  public scp(files: string[], destination: string, source: string) {
+    this.callOrder.push("scp")
+
+    this.scpArgsPassed.push([JSON.stringify(files), destination, source])
   }
 }

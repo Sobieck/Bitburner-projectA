@@ -37,8 +37,21 @@ describe('gainAccess', () => {
         requiredHackingSkill: 9,
     }
 
-    const shouldSkipBecauseWeHaveAdminRights = {
+    const shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist = {
         hostname: "shouldSkipBecauseWeHaveAdminRights",
+        sshPortOpen: false,
+        ftpPortOpen: false,
+        smtpPortOpen: false,
+        httpPortOpen: false,
+        sqlPortOpen: false,
+        hasAdminRights: true,
+        numOpenPortsRequired: 4,
+        openPortCount: 4,
+        requiredHackingSkill: 9,
+    }
+
+    const shouldUploadScriptsBecauseAdminButDoesntHaveScriptsOnServer = {
+        hostname: "shouldUploadScriptsBecauseAdminButDoesntHaveScriptsOnServer",
         sshPortOpen: false,
         ftpPortOpen: false,
         smtpPortOpen: false,
@@ -71,8 +84,9 @@ describe('gainAccess', () => {
         nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
-            shouldSkipBecauseWeHaveAdminRights,
-            shouldOpenAllThePortsIfHaveOpeners
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
+            shouldUploadScriptsBecauseAdminButDoesntHaveScriptsOnServer,
+            shouldOpenAllThePortsIfHaveOpeners,
         ])])
 
         const ns = nsSetup as unknown
@@ -95,7 +109,7 @@ describe('gainAccess', () => {
         nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
-            shouldSkipBecauseWeHaveAdminRights,
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
             shouldOpenAllThePortsIfHaveOpeners
         ])])
 
@@ -121,7 +135,7 @@ describe('gainAccess', () => {
         nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
-            shouldSkipBecauseWeHaveAdminRights,
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
             shouldOpenAllThePortsIfHaveOpeners
         ])])
 
@@ -146,7 +160,7 @@ describe('gainAccess', () => {
         nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
-            shouldSkipBecauseWeHaveAdminRights,
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
             shouldOpenAllThePortsIfHaveOpeners
         ])])
 
@@ -172,7 +186,7 @@ describe('gainAccess', () => {
         nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
-            shouldSkipBecauseWeHaveAdminRights,
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
             shouldOpenAllThePortsIfHaveOpeners
         ])])
 
@@ -196,7 +210,7 @@ describe('gainAccess', () => {
         nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
-            shouldSkipBecauseWeHaveAdminRights,
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
             shouldOpenAllThePortsIfHaveOpeners
         ])])
 
@@ -222,7 +236,7 @@ describe('gainAccess', () => {
         nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
-            shouldSkipBecauseWeHaveAdminRights,
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
             shouldOpenAllThePortsIfHaveOpeners
         ])])
 
@@ -245,7 +259,7 @@ describe('gainAccess', () => {
         nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
-            shouldSkipBecauseWeHaveAdminRights,
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
             shouldOpenAllThePortsIfHaveOpeners
         ])])
 
@@ -271,7 +285,7 @@ describe('gainAccess', () => {
         nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
-            shouldSkipBecauseWeHaveAdminRights,
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
             shouldOpenAllThePortsIfHaveOpeners
         ])])
 
@@ -294,7 +308,7 @@ describe('gainAccess', () => {
         nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
-            shouldSkipBecauseWeHaveAdminRights,
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
             shouldOpenAllThePortsIfHaveOpeners
         ])])
 
@@ -320,7 +334,7 @@ describe('gainAccess', () => {
         nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
             server1ToNotHackNotSkilledEnough,
             shouldNuke,
-            shouldSkipBecauseWeHaveAdminRights,
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
             shouldOpenAllThePortsIfHaveOpeners
         ])])
 
@@ -330,6 +344,38 @@ describe('gainAccess', () => {
         const mockedNs = ns as nsMock;
 
         expect(mockedNs.sqlinjectHostnames.length).toBe(0)
+    })
+
+    it('should copy the hacking scripts to the server without the scripts.', async () => {
+        const nsSetup = new nsMock()
+
+        nsSetup.readReturns.set(FilePaths.data.player, [JSON.stringify(player)])
+        nsSetup.readReturns.set(FilePaths.data.environment, [JSON.stringify([
+            server1ToNotHackNotSkilledEnough,
+            shouldNuke,
+            shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist,
+            shouldOpenAllThePortsIfHaveOpeners,
+            shouldUploadScriptsBecauseAdminButDoesntHaveScriptsOnServer,
+        ])])
+
+        nsSetup.fileExistsReturns.set(FilePaths.scripts.grow + shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist.hostname, true)
+        nsSetup.fileExistsReturns.set(FilePaths.scripts.weaken + shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist.hostname, true)
+        nsSetup.fileExistsReturns.set(FilePaths.scripts.hack + shouldSkipBecauseWeHaveAdminRightsAndHackingScriptsExist.hostname, true)
+
+        nsSetup.fileExistsReturns.set(FilePaths.scripts.grow + shouldUploadScriptsBecauseAdminButDoesntHaveScriptsOnServer.hostname, false)
+        nsSetup.fileExistsReturns.set(FilePaths.scripts.weaken + shouldUploadScriptsBecauseAdminButDoesntHaveScriptsOnServer.hostname, false)
+        nsSetup.fileExistsReturns.set(FilePaths.scripts.hack + shouldUploadScriptsBecauseAdminButDoesntHaveScriptsOnServer.hostname, false)
+
+        const ns = nsSetup as unknown
+        await main(ns as NS);
+
+        const mockedNs = ns as nsMock;
+
+        expect(mockedNs.scpArgsPassed[0][0]).toBe(JSON.stringify([FilePaths.scripts.grow, FilePaths.scripts.hack, FilePaths.scripts.weaken]))
+        expect(mockedNs.scpArgsPassed[0][1]).toBe(shouldUploadScriptsBecauseAdminButDoesntHaveScriptsOnServer.hostname)
+        expect(mockedNs.scpArgsPassed[0][2]).toBe("home")
+
+        expect(mockedNs.scpArgsPassed.length).toBe(1)
     })
 
 

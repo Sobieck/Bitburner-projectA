@@ -1,0 +1,33 @@
+{
+    "batches": [
+        {
+            "origin": "batch",
+            "target": "iron-gym",
+            "dispatchCommands": [
+                {
+                    "threadsWanted": 186,
+                    "commandType": "scripts/hacking/weaken.js",
+                    "msAdded": 0,
+                    "effectStockMarket": false,
+                    "pids": [
+                        26063,
+                        26064,
+                        26065,
+                        26066,
+                        26067,
+                        26068,
+                        26069,
+                        26070,
+                        26071,
+                        26072,
+                        26073,
+                        26074,
+                        26075
+                    ],
+                    "threadsExecuting": 177
+                }
+            ],
+            "dispatched": true
+        }
+    ]
+}

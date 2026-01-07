@@ -28,7 +28,8 @@
         "path": [],
         "reservedRam": 7,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.010738143448192128
     },
     {
         "hostname": "n00dles",
@@ -61,7 +62,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 2,
-        "possibleHackThreads": 2
+        "possibleHackThreads": 2,
+        "randomValueForShuffle": 0.06880178743183452
     },
     {
         "hostname": "foodnstuff",
@@ -94,7 +96,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.45030769621831257
     },
     {
         "hostname": "sigma-cosmetics",
@@ -107,7 +110,7 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": false,
-        "ramUsed": 0,
+        "ramUsed": 15.75,
         "maxRam": 16,
         "organizationName": "Sigma Cosmetics",
         "purchasedByPlayer": false,
@@ -121,13 +124,14 @@
         "openPortCount": 0,
         "requiredHackingSkill": 5,
         "serverGrowth": 10,
-        "freeRam": 16,
+        "freeRam": 0.25,
         "path": [
             "sigma-cosmetics"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleWeakenOrGrowThreads": 0,
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.3576777461614469
     },
     {
         "hostname": "joesguns",
@@ -160,7 +164,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.5105131465960582
     },
     {
         "hostname": "nectar-net",
@@ -194,7 +199,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.8440158372708961
     },
     {
         "hostname": "hong-fang-tea",
@@ -227,7 +233,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.3348286222151853
     },
     {
         "hostname": "harakiri-sushi",
@@ -260,7 +267,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.38262104072246217
     },
     {
         "hostname": "neo-net",
@@ -295,7 +303,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.9901014311243757
     },
     {
         "hostname": "CSEC",
@@ -329,7 +338,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 4,
-        "possibleHackThreads": 4
+        "possibleHackThreads": 4,
+        "randomValueForShuffle": 0.3634477563002583
     },
     {
         "hostname": "zer0",
@@ -363,7 +373,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.8167807391827953
     },
     {
         "hostname": "max-hardware",
@@ -397,7 +408,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.6690905277421355
     },
     {
         "hostname": "iron-gym",
@@ -430,7 +442,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.7949020495571004
     },
     {
         "hostname": "phantasy",
@@ -465,7 +478,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.5524283560752596
     },
     {
         "hostname": "silver-helix",
@@ -500,7 +514,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 36,
-        "possibleHackThreads": 37
+        "possibleHackThreads": 37,
+        "randomValueForShuffle": 0.7307404265824033
     },
     {
         "hostname": "avmnite-02h",
@@ -536,7 +551,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 73,
-        "possibleHackThreads": 75
+        "possibleHackThreads": 75,
+        "randomValueForShuffle": 0.27549415127748356
     },
     {
         "hostname": "omega-net",
@@ -571,7 +587,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.4459467603572509
     },
     {
         "hostname": "johnson-ortho",
@@ -607,7 +624,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.7987991537981589
     },
     {
         "hostname": "crush-fitness",
@@ -643,7 +661,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.322110762881594
     },
     {
         "hostname": "the-hub",
@@ -679,7 +698,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 36,
-        "possibleHackThreads": 37
+        "possibleHackThreads": 37,
+        "randomValueForShuffle": 0.7398785517491537
     },
     {
         "hostname": "computek",
@@ -715,7 +735,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.3431809808966284
     },
     {
         "hostname": "I.I.I.I",
@@ -752,7 +773,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.9108802096982094
     },
     {
         "hostname": "netlink",
@@ -788,7 +810,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.8554546106798495
     },
     {
         "hostname": "rothman-uni",
@@ -825,7 +848,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 36,
-        "possibleHackThreads": 37
+        "possibleHackThreads": 37,
+        "randomValueForShuffle": 0.8877187746437634
     },
     {
         "hostname": "catalyst",
@@ -862,7 +886,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.5898465731855311
     },
     {
         "hostname": "aevum-police",
@@ -900,7 +925,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.9005927531045745
     },
     {
         "hostname": "summit-uni",
@@ -937,7 +963,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.7415565011825513
     },
     {
         "hostname": "millenium-fitness",
@@ -975,7 +1002,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.04997650886245397
     },
     {
         "hostname": "alpha-ent",
@@ -1013,7 +1041,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 36,
-        "possibleHackThreads": 37
+        "possibleHackThreads": 37,
+        "randomValueForShuffle": 0.3058930632300747
     },
     {
         "hostname": "rho-construction",
@@ -1051,7 +1080,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.7012983490934337
     },
     {
         "hostname": "run4theh111z",
@@ -1094,7 +1124,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 146,
-        "possibleHackThreads": 150
+        "possibleHackThreads": 150,
+        "randomValueForShuffle": 0.6327952575991873
     },
     {
         "hostname": ".",
@@ -1139,7 +1170,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.19913221921304136
     },
     {
         "hostname": "syscore",
@@ -1176,7 +1208,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.6702913309508531
     },
     {
         "hostname": "lexo-corp",
@@ -1214,7 +1247,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 36,
-        "possibleHackThreads": 37
+        "possibleHackThreads": 37,
+        "randomValueForShuffle": 0.3392790331141895
     },
     {
         "hostname": "zb-institute",
@@ -1251,7 +1285,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.7674919633299109
     },
     {
         "hostname": "snap-fitness",
@@ -1290,7 +1325,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.9403797844940149
     },
     {
         "hostname": "solaris",
@@ -1331,7 +1367,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 73,
-        "possibleHackThreads": 75
+        "possibleHackThreads": 75,
+        "randomValueForShuffle": 0.4968135710402526
     },
     {
         "hostname": "zb-def",
@@ -1373,7 +1410,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.14952989380304027
     },
     {
         "hostname": "global-pharm",
@@ -1412,7 +1450,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.9413096502271128
     },
     {
         "hostname": "microdyne",
@@ -1455,7 +1494,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.8743858381232559
     },
     {
         "hostname": "titan-labs",
@@ -1498,7 +1538,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.8286643005215741
     },
     {
         "hostname": "zeus-med",
@@ -1539,7 +1580,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.13842858770769673
     },
     {
         "hostname": "univ-energy",
@@ -1580,7 +1622,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 73,
-        "possibleHackThreads": 75
+        "possibleHackThreads": 75,
+        "randomValueForShuffle": 0.42361195158985643
     },
     {
         "hostname": "unitalife",
@@ -1620,7 +1663,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.32281984279267384
     },
     {
         "hostname": "applied-energetics",
@@ -1663,7 +1707,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.6966566501897618
     },
     {
         "hostname": "nova-med",
@@ -1705,7 +1750,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.8919454834735878
     },
     {
         "hostname": "helios",
@@ -1749,7 +1795,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 73,
-        "possibleHackThreads": 75
+        "possibleHackThreads": 75,
+        "randomValueForShuffle": 0.15816670584020764
     },
     {
         "hostname": "deltaone",
@@ -1789,7 +1836,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.8823192333599983
     },
     {
         "hostname": "galactic-cyber",
@@ -1828,7 +1876,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.8163492797722289
     },
     {
         "hostname": "vitalife",
@@ -1872,7 +1921,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 73,
-        "possibleHackThreads": 75
+        "possibleHackThreads": 75,
+        "randomValueForShuffle": 0.8772778295510151
     },
     {
         "hostname": "aerocorp",
@@ -1911,7 +1961,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.6340629543281631
     },
     {
         "hostname": "icarus",
@@ -1952,7 +2003,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.7709621822456452
     },
     {
         "hostname": "omnia",
@@ -1992,7 +2044,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 9,
-        "possibleHackThreads": 9
+        "possibleHackThreads": 9,
+        "randomValueForShuffle": 0.4021283397412787
     },
     {
         "hostname": "defcomm",
@@ -2033,7 +2086,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.14582532968912987
     },
     {
         "hostname": "taiyang-digital",
@@ -2075,7 +2129,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.2891157910461484
     },
     {
         "hostname": "infocomm",
@@ -2117,7 +2172,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.64956722087947
     },
     {
         "hostname": "The-Cave",
@@ -2164,7 +2220,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.7745303111416877
     },
     {
         "hostname": "omnitek",
@@ -2209,7 +2266,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 292,
-        "possibleHackThreads": 301
+        "possibleHackThreads": 301,
+        "randomValueForShuffle": 0.15489915370357799
     },
     {
         "hostname": "blade",
@@ -2255,7 +2313,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 292,
-        "possibleHackThreads": 301
+        "possibleHackThreads": 301,
+        "randomValueForShuffle": 0.4611464254215252
     },
     {
         "hostname": "kuai-gong",
@@ -2300,7 +2359,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.7555649954707937
     },
     {
         "hostname": "powerhouse-fitness",
@@ -2346,7 +2406,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 18,
-        "possibleHackThreads": 18
+        "possibleHackThreads": 18,
+        "randomValueForShuffle": 0.3282676802046345
     },
     {
         "hostname": "stormtech",
@@ -2390,7 +2451,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.21956344568918307
     },
     {
         "hostname": "b-and-a",
@@ -2436,7 +2498,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.9808047521694734
     },
     {
         "hostname": "4sigma",
@@ -2481,7 +2544,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.33057124517559755
     },
     {
         "hostname": "nwo",
@@ -2527,7 +2591,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.12060006773690657
     },
     {
         "hostname": "clarkinc",
@@ -2573,7 +2638,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.23168020750874208
     },
     {
         "hostname": "fulcrumtech",
@@ -2617,7 +2683,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 1170,
-        "possibleHackThreads": 1204
+        "possibleHackThreads": 1204,
+        "randomValueForShuffle": 0.2640762956235023
     },
     {
         "hostname": "fulcrumassets",
@@ -2664,7 +2731,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.09885416130671976
     },
     {
         "hostname": "megacorp",
@@ -2711,7 +2779,8 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.3255481764264083
     },
     {
         "hostname": "ecorp",
@@ -2758,6 +2827,7 @@
         ],
         "reservedRam": 0,
         "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0
+        "possibleHackThreads": 0,
+        "randomValueForShuffle": 0.194464502772294
     }
 ]

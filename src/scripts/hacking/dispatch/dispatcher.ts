@@ -17,6 +17,7 @@ export async function main(ns: NS): Promise<void> {
         return
     }
 
+
     // ORDER - can take advantage of multiple cores on home eventually to save resources
     // grow
     // weaken
@@ -28,6 +29,8 @@ export async function main(ns: NS): Promise<void> {
 
         return bPriority - aPriority
     })
+
+
 
     for (const command of sortedCommands) {
         const serversAvailible = environment.filter(x => x.hasAdminRights && x.possibleHackThreads > 0).sort((a, b) => b.possibleHackThreads - a.possibleHackThreads)
@@ -51,7 +54,9 @@ export async function main(ns: NS): Promise<void> {
                     }
                 }
 
-                command.pids.push(ns.exec(command.commandType, server.hostname, threadsToExecute, unexecutedRequest.target, command.msAdded, command.effectStockMarket))
+                const pid = ns.exec(command.commandType, server.hostname, threadsToExecute, unexecutedRequest.target, command.msAdded, command.effectStockMarket)
+
+                command.pids.push(pid)
 
                 threadsExecuting += threadsToExecute
 

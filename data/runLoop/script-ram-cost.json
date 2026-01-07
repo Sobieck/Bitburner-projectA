@@ -12,8 +12,16 @@
         "ramCost": 1.6
     },
     {
+        "scriptPath": "scripts/hacking/dispatch/dispatchCleaner.js",
+        "ramCost": 1.8
+    },
+    {
+        "scriptPath": "scripts/hacking/dispatch/dispatcher.js",
+        "ramCost": 2.9
+    },
+    {
         "scriptPath": "scripts/hacking/gainAccess.js",
-        "ramCost": 2
+        "ramCost": 2.4
     },
     {
         "scriptPath": "scripts/hacking/grow.js",
@@ -28,7 +36,15 @@
         "ramCost": 1.75
     },
     {
+        "scriptPath": "scripts/junk.js",
+        "ramCost": 1.6
+    },
+    {
         "scriptPath": "scripts/runLoop/addReservedSpace.js",
+        "ramCost": 1.6
+    },
+    {
+        "scriptPath": "scripts/runLoop/enrichEnvironment.js",
         "ramCost": 1.6
     },
     {

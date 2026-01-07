@@ -44,6 +44,20 @@ export async function main(ns: NS): Promise<void> {
         if (ns.fileExists("SQLInject.exe") && server.sqlPortOpen === false) {
             ns.sqlinject(server.hostname)
         }
+    }
 
+    const serversWithAdmin = environment.filter(x => x.hasAdminRights)
+
+    for (const server of serversWithAdmin) {
+        if (ns.fileExists(FilePaths.scripts.grow, server.hostname) === false) {
+
+            ns.scp([
+                FilePaths.scripts.grow,
+                FilePaths.scripts.hack,
+                FilePaths.scripts.weaken
+            ],
+                server.hostname,
+                "home")
+        }
     }
 }
