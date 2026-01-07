@@ -4,34 +4,22 @@ import { NS } from "@ns";
 export async function main(ns: NS): Promise<void> {
 
     await ns.sleep()
-    
-    // if there is open compute - maybe 3 gb free total to start a new batch
-    // see if our last batch was executed.
 
-    // target 
-        // prioritize already targeted computers
+// use all the threads in the cluster to do all these. Second algo will make calculations
 
-        // determines to weaken - grow - steal
+    // see if we are hacking a target in the firstAlgoFile
+        // if we are check out the dispatch queue to see if it is empty of that
+        // if it is determine what kind of job to dispatch
 
-        // creates a first job queue
-            // target
-            // jobs - based on ms date
+    // pick target at random
+        // determine what kind of job to dispatch
 
-        // creates dispatch job 
-            // dispatch type - "first"
-            // target
-            // date
-            // type (w/g/s) - threadsWanted - target - msAdded
-            // dispatch attaches a pid
-            // dispatch deletes when all pids are done
-        
-        // dispatch clearer - deletes things off the dispatch queue with inactive PIDs
+    // write to our first algo dispatch
 
-    
+    // get to min resistence
+    // get to max money
+    // then hack
 
-    // pipeline
-    // weaken to minDifficulty
-    // grow to maxMoney
-    // steal as much as possible
+    // after successful hack we pick new target? 
 
 }

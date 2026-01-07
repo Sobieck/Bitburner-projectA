@@ -18,7 +18,7 @@ export async function main(ns: NS): Promise<void> {
         'scripts/hacking/gainAccess.js',
 
         // hacking algos
-
+        'scripts/hacking/algorithms/junk.js',
 
         // dispatch
         'scripts/hacking/dispatch/dispatcher.js',

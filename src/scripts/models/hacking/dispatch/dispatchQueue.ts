@@ -31,4 +31,5 @@ export enum DispatchType {
 export enum DispatchOrigin {
     First = "first",
     Batch = "batch",
+    Junk = "junk",
 }

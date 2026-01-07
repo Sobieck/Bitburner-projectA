@@ -5,26 +5,28 @@
             "target": "iron-gym",
             "dispatchCommands": [
                 {
-                    "threadsWanted": 186,
+                    "threadsWanted": 196,
                     "commandType": "scripts/hacking/weaken.js",
                     "msAdded": 0,
                     "effectStockMarket": false,
                     "pids": [
-                        26063,
-                        26064,
-                        26065,
-                        26066,
-                        26067,
-                        26068,
-                        26069,
-                        26070,
-                        26071,
-                        26072,
-                        26073,
-                        26074,
-                        26075
+                        56445,
+                        56446,
+                        56447,
+                        56448,
+                        56449,
+                        56450,
+                        56451,
+                        56452,
+                        56453,
+                        56454,
+                        56455,
+                        56456,
+                        56457,
+                        56458,
+                        56459
                     ],
-                    "threadsExecuting": 177
+                    "threadsExecuting": 196
                 }
             ],
             "dispatched": true
