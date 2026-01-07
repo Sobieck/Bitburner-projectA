@@ -3,7 +3,7 @@ import { NS } from "@ns";
 import { nsMock } from "../../utilities/nsMock.testUtility";
 import { ScriptRamCost } from "../../../src/scripts/models/runLoop/scriptRamCost"
 import { FilePaths } from "../../../src/scripts/models/filePaths"
-import { freemem } from "os";
+import { ServerWithAdditionalInfo } from "../../../src/scripts/models/runLoop/serverWithAdditionalInfo"
 
 describe('enrichEnvironment', () => {
 
@@ -71,31 +71,35 @@ describe('enrichEnvironment', () => {
 
         expect(mockedNs.writeTuples[0][0]).toBe(FilePaths.data.environment)
         expect(mockedNs.writeTuples[0][2]).toBe("w")
-        expect(mockedNs.writeTuples[0][1]).toBe(JSON.stringify(
-            [
-                {
-                    hostname: server1.hostname,
-                    freeRam: 1000,
-                    reservedRam: 0,
-                    possibleWeakenOrGrowThreads: 571,
-                    possibleHackThreads: 588,
-                },
-                {
-                    hostname: home.hostname,
-                    freeRam: 100,
-                    reservedRam: 19,
-                    possibleWeakenOrGrowThreads: 46,
-                    possibleHackThreads: 47,
-                },
-                {
-                    hostname: server2.hostname,
-                    freeRam: 1.69,
-                    reservedRam: 0,
-                    possibleWeakenOrGrowThreads: 0,
-                    possibleHackThreads: 0,
-                },
-            ]
-        ))
+
+        const savedEvironment = JSON.parse(mockedNs.writeTuples[0][1]) as ServerWithAdditionalInfo[]
+
+        const expectedResults = [
+            {
+                hostname: server1.hostname,
+                freeRam: 1000,
+                reservedRam: 0,
+                possibleWeakenOrGrowThreads: 571,
+                possibleHackThreads: 588,
+            },
+            {
+                hostname: home.hostname,
+                freeRam: 100,
+                reservedRam: 19,
+                possibleWeakenOrGrowThreads: 46,
+                possibleHackThreads: 47,
+            },
+            {
+                hostname: server2.hostname,
+                freeRam: 1.69,
+                reservedRam: 0,
+                possibleWeakenOrGrowThreads: 0,
+                possibleHackThreads: 0,
+            },
+        ]
+
+        asserts(expectedResults, savedEvironment);
+
     })
 
     it("should reserve 2x orchestrator when orchestrator is the costliest runLoop script", async () => {
@@ -109,9 +113,7 @@ describe('enrichEnvironment', () => {
 
         const mockedNs = ns as nsMock;
 
-        expect(mockedNs.writeTuples[0][0]).toBe(FilePaths.data.environment)
-        expect(mockedNs.writeTuples[0][2]).toBe("w")
-        expect(mockedNs.writeTuples[0][1]).toBe(JSON.stringify(
+        const expectedResults =
             [
                 {
                     hostname: server1.hostname,
@@ -135,6 +137,27 @@ describe('enrichEnvironment', () => {
                     possibleHackThreads: 0,
                 },
             ]
-        ))
+
+        const savedEvironment = JSON.parse(mockedNs.writeTuples[0][1]) as ServerWithAdditionalInfo[]
+
+        expect(mockedNs.writeTuples[0][0]).toBe(FilePaths.data.environment)
+        expect(mockedNs.writeTuples[0][2]).toBe("w")
+
+        asserts(expectedResults, savedEvironment)
     })
 })
+
+function asserts(expectedResults: { hostname: string; freeRam: number; reservedRam: number; possibleWeakenOrGrowThreads: number; possibleHackThreads: number; }[], savedEvironment: ServerWithAdditionalInfo[]) {
+    for (let i = 0; i < expectedResults.length; i++) {
+        const expectedResult = expectedResults[i];
+        const actualResult = savedEvironment[i];
+
+        expect(actualResult.randomValueForShuffle).toBeGreaterThan(0);
+
+        expect(actualResult.hostname).toBe(expectedResult.hostname);
+        expect(actualResult.freeRam).toBe(expectedResult.freeRam);
+        expect(actualResult.reservedRam).toBe(expectedResult.reservedRam);
+        expect(actualResult.possibleWeakenOrGrowThreads).toBe(expectedResult.possibleWeakenOrGrowThreads);
+        expect(actualResult.possibleHackThreads).toBe(expectedResult.possibleHackThreads);
+    }
+}

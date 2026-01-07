@@ -225,6 +225,8 @@ export class nsMock {
       responseIndex = 0
     }
 
+    this.execResponseIndex.set(script, responseIndex + 1)
+
     return this.execResponses.get(script)![responseIndex]
   }
 

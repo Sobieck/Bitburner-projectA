@@ -7,7 +7,6 @@ export class DispatchBatch {
         public origin: DispatchOrigin,
         public target: string,
         public dispatchCommands: DispatchCommand[],
-        public allOrNothing = false,
         public dispatched = false,
     ) { }
 }
@@ -19,7 +18,7 @@ export class DispatchCommand {
         public msAdded: number = 0,
         public effectStockMarket: boolean = false,
         public pids: number[] = [],
-        public threadsExecuting?: number
+        public threadsExecuting: number = 0
     ) { }
 }
 

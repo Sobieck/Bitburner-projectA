@@ -21,7 +21,7 @@ export async function main(ns: NS): Promise<void> {
 
 
         // dispatch
-
+        'scripts/hacking/dispatch/dispatcher.js',
         
         // singularity stuff and purchasing decisions
     ]
