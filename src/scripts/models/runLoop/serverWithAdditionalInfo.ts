@@ -26,8 +26,8 @@ export interface ServerWithAdditionalInfo extends Server {
 
     threadsToHackMoneyAvailable: number;
 
-    threadsToReduceToMinDifficulty: ThreadsNeeded[];
-    threadsToIncreaseToMaxMoney: ThreadsNeeded[];
+    threadsToReduceToMinDifficulty?: ThreadsNeeded[];
+    threadsToIncreaseToMaxMoney?: ThreadsNeeded[];
 }
 
 export class ThreadsNeeded {

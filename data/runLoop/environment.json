@@ -10,28 +10,28 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": true,
-        "ramUsed": 1016.15,
-        "maxRam": 1024,
+        "ramUsed": 2039.9,
+        "maxRam": 2048,
         "organizationName": "Home PC",
         "purchasedByPlayer": true,
         "backdoorInstalled": false,
         "baseDifficulty": 1,
         "hackDifficulty": 1,
         "minDifficulty": 1,
-        "moneyAvailable": 2699670942.0558996,
+        "moneyAvailable": 1324749147.961483,
         "moneyMax": 0,
         "numOpenPortsRequired": 5,
         "openPortCount": 0,
         "requiredHackingSkill": 1,
         "serverGrowth": 1,
-        "freeRam": 7.850000000000023,
+        "freeRam": 8.099999999999909,
         "path": [],
         "reservedRam": 8,
         "possibleWeakenOrGrowThreads": 0,
         "possibleHackThreads": 0,
-        "maxWeakenOrGrowThreads": 580,
-        "maxHackThreads": 597,
-        "randomValueForShuffle": 0.9056996958702321
+        "maxWeakenOrGrowThreads": 1165,
+        "maxHackThreads": 1200,
+        "randomValueForShuffle": 0.3723744722646576
     },
     {
         "hostname": "n00dles",
@@ -44,7 +44,7 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": false,
-        "ramUsed": 3.5,
+        "ramUsed": 0,
         "maxRam": 4,
         "organizationName": "Noodle Bar",
         "purchasedByPlayer": false,
@@ -58,19 +58,19 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1,
         "serverGrowth": 3000,
-        "freeRam": 0.5,
+        "freeRam": 4,
         "path": [
             "n00dles"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 2,
+        "possibleHackThreads": 2,
         "maxWeakenOrGrowThreads": 2,
         "maxHackThreads": 2,
-        "randomValueForShuffle": 0.9469726317945506,
-        "hackTime": 7636.77811550152,
-        "weakenTime": 30547.11246200608,
-        "growTime": 24437.689969604864,
+        "randomValueForShuffle": 0.12713267601567035,
+        "hackTime": 7389.705882352942,
+        "weakenTime": 29558.82352941177,
+        "growTime": 23647.058823529416,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -192,7 +192,7 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": false,
-        "ramUsed": 15.75,
+        "ramUsed": 0,
         "maxRam": 16,
         "organizationName": "FoodNStuff",
         "purchasedByPlayer": false,
@@ -206,19 +206,19 @@
         "openPortCount": 0,
         "requiredHackingSkill": 1,
         "serverGrowth": 5,
-        "freeRam": 0.25,
+        "freeRam": 16,
         "path": [
             "foodnstuff"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.508595775588196,
-        "hackTime": 7978.723404255319,
-        "weakenTime": 31914.893617021276,
-        "growTime": 25531.914893617024,
+        "randomValueForShuffle": 0.9425548978967009,
+        "hackTime": 7720.588235294118,
+        "weakenTime": 30882.352941176472,
+        "growTime": 24705.88235294118,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -363,7 +363,7 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.3902316185296497
+        "randomValueForShuffle": 0.36892647281840496
     },
     {
         "hostname": "sigma-cosmetics",
@@ -376,7 +376,7 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": false,
-        "ramUsed": 15.75,
+        "ramUsed": 0,
         "maxRam": 16,
         "organizationName": "Sigma Cosmetics",
         "purchasedByPlayer": false,
@@ -390,19 +390,19 @@
         "openPortCount": 0,
         "requiredHackingSkill": 5,
         "serverGrowth": 10,
-        "freeRam": 0.25,
+        "freeRam": 16,
         "path": [
             "sigma-cosmetics"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.05569850634376028,
-        "hackTime": 9498.480243161093,
-        "weakenTime": 37993.92097264437,
-        "growTime": 30395.1367781155,
+        "randomValueForShuffle": 0.39974531970678195,
+        "hackTime": 9191.176470588236,
+        "weakenTime": 36764.705882352944,
+        "growTime": 29411.764705882357,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -524,7 +524,7 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": false,
-        "ramUsed": 15.75,
+        "ramUsed": 0,
         "maxRam": 16,
         "organizationName": "Joe's Guns",
         "purchasedByPlayer": false,
@@ -538,19 +538,19 @@
         "openPortCount": 0,
         "requiredHackingSkill": 10,
         "serverGrowth": 20,
-        "freeRam": 0.25,
+        "freeRam": 16,
         "path": [
             "joesguns"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.472916135894188,
-        "hackTime": 13297.87234042553,
-        "weakenTime": 53191.48936170212,
-        "growTime": 42553.1914893617,
+        "randomValueForShuffle": 0.6798290713579267,
+        "hackTime": 12867.647058823532,
+        "weakenTime": 51470.588235294126,
+        "growTime": 41176.4705882353,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -672,7 +672,7 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": false,
-        "ramUsed": 15.75,
+        "ramUsed": 0,
         "maxRam": 16,
         "organizationName": "Nectar Nightclub Network",
         "purchasedByPlayer": false,
@@ -686,20 +686,20 @@
         "openPortCount": 0,
         "requiredHackingSkill": 20,
         "serverGrowth": 25,
-        "freeRam": 0.25,
+        "freeRam": 16,
         "path": [
             "foodnstuff",
             "nectar-net"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.44096136451419654,
-        "hackTime": 22796.352583586628,
-        "weakenTime": 91185.41033434651,
-        "growTime": 72948.3282674772,
+        "randomValueForShuffle": 0.3382584595902749,
+        "hackTime": 22058.82352941177,
+        "weakenTime": 88235.29411764708,
+        "growTime": 70588.23529411767,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -821,7 +821,7 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": false,
-        "ramUsed": 15.75,
+        "ramUsed": 0,
         "maxRam": 16,
         "organizationName": "HongFang Teahouse",
         "purchasedByPlayer": false,
@@ -835,19 +835,19 @@
         "openPortCount": 0,
         "requiredHackingSkill": 30,
         "serverGrowth": 20,
-        "freeRam": 0.25,
+        "freeRam": 16,
         "path": [
             "hong-fang-tea"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.20563998694529118,
-        "hackTime": 24696.048632218848,
-        "weakenTime": 98784.19452887539,
-        "growTime": 79027.35562310032,
+        "randomValueForShuffle": 0.9056112911912666,
+        "hackTime": 23897.058823529413,
+        "weakenTime": 95588.23529411765,
+        "growTime": 76470.58823529413,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -969,7 +969,7 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": false,
-        "ramUsed": 15.75,
+        "ramUsed": 0,
         "maxRam": 16,
         "organizationName": "HaraKiri Sushi Bar Network",
         "purchasedByPlayer": false,
@@ -983,19 +983,19 @@
         "openPortCount": 0,
         "requiredHackingSkill": 40,
         "serverGrowth": 40,
-        "freeRam": 0.25,
+        "freeRam": 16,
         "path": [
             "harakiri-sushi"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 9,
+        "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.29607058295619204,
-        "hackTime": 30395.136778115502,
-        "weakenTime": 121580.54711246201,
-        "growTime": 97264.4376899696,
+        "randomValueForShuffle": 0.4930923951126971,
+        "hackTime": 29411.764705882357,
+        "weakenTime": 117647.05882352943,
+        "growTime": 94117.64705882354,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -1117,7 +1117,7 @@
         "hasAdminRights": true,
         "cpuCores": 3,
         "isConnectedTo": false,
-        "ramUsed": 31.5,
+        "ramUsed": 0,
         "maxRam": 32,
         "organizationName": "Neo Nightclub Network",
         "purchasedByPlayer": false,
@@ -1131,21 +1131,21 @@
         "openPortCount": 1,
         "requiredHackingSkill": 50,
         "serverGrowth": 25,
-        "freeRam": 0.5,
+        "freeRam": 32,
         "path": [
             "sigma-cosmetics",
             "max-hardware",
             "neo-net"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.4473320310571569,
-        "hackTime": 55091.18541033435,
-        "weakenTime": 220364.7416413374,
-        "growTime": 176291.7933130699,
+        "randomValueForShuffle": 0.9496298334412756,
+        "hackTime": 53308.82352941177,
+        "weakenTime": 213235.29411764708,
+        "growTime": 170588.23529411768,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -1267,7 +1267,7 @@
         "hasAdminRights": true,
         "cpuCores": 2,
         "isConnectedTo": false,
-        "ramUsed": 7,
+        "ramUsed": 0,
         "maxRam": 8,
         "organizationName": "CyberSec",
         "purchasedByPlayer": false,
@@ -1281,17 +1281,17 @@
         "openPortCount": 1,
         "requiredHackingSkill": 55,
         "serverGrowth": 1,
-        "freeRam": 1,
+        "freeRam": 8,
         "path": [
             "hong-fang-tea",
             "CSEC"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 4,
+        "possibleHackThreads": 4,
         "maxWeakenOrGrowThreads": 4,
         "maxHackThreads": 4,
-        "randomValueForShuffle": 0.9599298001030201
+        "randomValueForShuffle": 0.3590109156390915
     },
     {
         "hostname": "zer0",
@@ -1304,7 +1304,7 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": false,
-        "ramUsed": 31.5,
+        "ramUsed": 0,
         "maxRam": 32,
         "organizationName": "ZER0 Nightclub",
         "purchasedByPlayer": false,
@@ -1318,20 +1318,20 @@
         "openPortCount": 1,
         "requiredHackingSkill": 75,
         "serverGrowth": 40,
-        "freeRam": 0.5,
+        "freeRam": 32,
         "path": [
             "foodnstuff",
             "zer0"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.768438251459334,
-        "hackTime": 78837.38601823708,
-        "weakenTime": 315349.54407294834,
-        "growTime": 252279.63525835867,
+        "randomValueForShuffle": 0.0406348270290402,
+        "hackTime": 76286.76470588235,
+        "weakenTime": 305147.0588235294,
+        "growTime": 244117.64705882352,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -1453,7 +1453,7 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": false,
-        "ramUsed": 31.5,
+        "ramUsed": 0,
         "maxRam": 32,
         "organizationName": "Max Hardware Store",
         "purchasedByPlayer": false,
@@ -1467,20 +1467,20 @@
         "openPortCount": 1,
         "requiredHackingSkill": 80,
         "serverGrowth": 30,
-        "freeRam": 0.5,
+        "freeRam": 32,
         "path": [
             "sigma-cosmetics",
             "max-hardware"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.4238907534193648,
-        "hackTime": 53191.48936170212,
-        "weakenTime": 212765.9574468085,
-        "growTime": 170212.7659574468,
+        "randomValueForShuffle": 0.29302204891517714,
+        "hackTime": 51470.588235294126,
+        "weakenTime": 205882.3529411765,
+        "growTime": 164705.8823529412,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -1602,142 +1602,30 @@
         "hasAdminRights": true,
         "cpuCores": 1,
         "isConnectedTo": false,
-        "ramUsed": 31.5,
+        "ramUsed": 0,
         "maxRam": 32,
         "organizationName": "Iron Gym Network",
         "purchasedByPlayer": false,
         "backdoorInstalled": false,
         "baseDifficulty": 30,
-        "hackDifficulty": 13.415999999999991,
+        "hackDifficulty": 11.286000000000001,
         "minDifficulty": 10,
-        "moneyAvailable": 11701.142785959184,
+        "moneyAvailable": 0,
         "moneyMax": 500000000,
         "numOpenPortsRequired": 1,
         "openPortCount": 1,
         "requiredHackingSkill": 100,
         "serverGrowth": 20,
-        "freeRam": 0.5,
+        "freeRam": 32,
         "path": [
             "iron-gym"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.8881839864699732,
-        "hackTime": 58571.42857142854,
-        "weakenTime": 234285.71428571417,
-        "growTime": 187428.57142857133,
-        "threadsToHackMoneyAvailable": -1,
-        "threadsToReduceToMinDifficulty": [
-            {
-                "numberOfCores": 1,
-                "threadsNeeded": 69
-            },
-            {
-                "numberOfCores": 2,
-                "threadsNeeded": 65
-            },
-            {
-                "numberOfCores": 3,
-                "threadsNeeded": 61
-            },
-            {
-                "numberOfCores": 4,
-                "threadsNeeded": 58
-            },
-            {
-                "numberOfCores": 5,
-                "threadsNeeded": 55
-            },
-            {
-                "numberOfCores": 6,
-                "threadsNeeded": 53
-            },
-            {
-                "numberOfCores": 7,
-                "threadsNeeded": 50
-            },
-            {
-                "numberOfCores": 8,
-                "threadsNeeded": 48
-            },
-            {
-                "numberOfCores": 9,
-                "threadsNeeded": 46
-            },
-            {
-                "numberOfCores": 10,
-                "threadsNeeded": 44
-            },
-            {
-                "numberOfCores": 11,
-                "threadsNeeded": 43
-            },
-            {
-                "numberOfCores": 12,
-                "threadsNeeded": 41
-            },
-            {
-                "numberOfCores": 13,
-                "threadsNeeded": 40
-            }
-        ],
-        "threadsToIncreaseToMaxMoney": [
-            {
-                "numberOfCores": 1,
-                "threadsNeeded": 23869
-            },
-            {
-                "numberOfCores": 2,
-                "threadsNeeded": 22465
-            },
-            {
-                "numberOfCores": 3,
-                "threadsNeeded": 21217
-            },
-            {
-                "numberOfCores": 4,
-                "threadsNeeded": 20100
-            },
-            {
-                "numberOfCores": 5,
-                "threadsNeeded": 19095
-            },
-            {
-                "numberOfCores": 6,
-                "threadsNeeded": 18186
-            },
-            {
-                "numberOfCores": 7,
-                "threadsNeeded": 17359
-            },
-            {
-                "numberOfCores": 8,
-                "threadsNeeded": 16605
-            },
-            {
-                "numberOfCores": 9,
-                "threadsNeeded": 15913
-            },
-            {
-                "numberOfCores": 10,
-                "threadsNeeded": 15276
-            },
-            {
-                "numberOfCores": 11,
-                "threadsNeeded": 14689
-            },
-            {
-                "numberOfCores": 12,
-                "threadsNeeded": 14145
-            },
-            {
-                "numberOfCores": 13,
-                "threadsNeeded": 13640
-            }
-        ]
+        "randomValueForShuffle": 0.4542386779442731
     },
     {
         "hostname": "phantasy",
@@ -1750,7 +1638,7 @@
         "hasAdminRights": true,
         "cpuCores": 3,
         "isConnectedTo": false,
-        "ramUsed": 31.5,
+        "ramUsed": 0,
         "maxRam": 32,
         "organizationName": "Phantasy Club",
         "purchasedByPlayer": false,
@@ -1764,21 +1652,21 @@
         "openPortCount": 2,
         "requiredHackingSkill": 100,
         "serverGrowth": 35,
-        "freeRam": 0.5,
+        "freeRam": 32,
         "path": [
             "foodnstuff",
             "nectar-net",
             "phantasy"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.1258638724043999,
-        "hackTime": 83586.62613981763,
-        "weakenTime": 334346.5045592705,
-        "growTime": 267477.2036474164,
+        "randomValueForShuffle": 0.158453714036922,
+        "hackTime": 80882.35294117646,
+        "weakenTime": 323529.41176470584,
+        "growTime": 258823.5294117647,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -1900,7 +1788,7 @@
         "hasAdminRights": true,
         "cpuCores": 2,
         "isConnectedTo": false,
-        "ramUsed": 63,
+        "ramUsed": 0,
         "maxRam": 64,
         "organizationName": "Silver Helix",
         "purchasedByPlayer": false,
@@ -1914,21 +1802,21 @@
         "openPortCount": 2,
         "requiredHackingSkill": 150,
         "serverGrowth": 30,
-        "freeRam": 1,
+        "freeRam": 64,
         "path": [
             "sigma-cosmetics",
             "max-hardware",
             "silver-helix"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 36,
+        "possibleHackThreads": 37,
         "maxWeakenOrGrowThreads": 36,
         "maxHackThreads": 37,
-        "randomValueForShuffle": 0.5234243006704622,
-        "hackTime": 178571.42857142858,
-        "weakenTime": 714285.7142857143,
-        "growTime": 571428.5714285715,
+        "randomValueForShuffle": 0.7657987591007687,
+        "hackTime": 172794.11764705885,
+        "weakenTime": 691176.4705882354,
+        "growTime": 552941.1764705883,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2050,7 +1938,7 @@
         "hasAdminRights": true,
         "cpuCores": 2,
         "isConnectedTo": false,
-        "ramUsed": 127.75,
+        "ramUsed": 0,
         "maxRam": 128,
         "organizationName": "NiteSec",
         "purchasedByPlayer": false,
@@ -2064,7 +1952,7 @@
         "openPortCount": 2,
         "requiredHackingSkill": 211,
         "serverGrowth": 1,
-        "freeRam": 0.25,
+        "freeRam": 128,
         "path": [
             "foodnstuff",
             "nectar-net",
@@ -2072,11 +1960,11 @@
             "avmnite-02h"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 73,
+        "possibleHackThreads": 75,
         "maxWeakenOrGrowThreads": 73,
         "maxHackThreads": 75,
-        "randomValueForShuffle": 0.1509715930478568
+        "randomValueForShuffle": 0.3363705549983824
     },
     {
         "hostname": "omega-net",
@@ -2089,7 +1977,7 @@
         "hasAdminRights": true,
         "cpuCores": 3,
         "isConnectedTo": false,
-        "ramUsed": 31.5,
+        "ramUsed": 0,
         "maxRam": 32,
         "organizationName": "Omega Software",
         "purchasedByPlayer": false,
@@ -2103,21 +1991,21 @@
         "openPortCount": 2,
         "requiredHackingSkill": 214,
         "serverGrowth": 37,
-        "freeRam": 0.5,
+        "freeRam": 32,
         "path": [
             "foodnstuff",
             "nectar-net",
             "omega-net"
         ],
         "reservedRam": 0,
-        "possibleWeakenOrGrowThreads": 0,
-        "possibleHackThreads": 0,
+        "possibleWeakenOrGrowThreads": 18,
+        "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.1778039405434071,
-        "hackTime": 218996.9604863222,
-        "weakenTime": 875987.8419452888,
-        "growTime": 700790.273556231,
+        "randomValueForShuffle": 0.9831059471391621,
+        "hackTime": 211911.76470588235,
+        "weakenTime": 847647.0588235294,
+        "growTime": 678117.6470588235,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2265,10 +2153,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.5083423298785914,
-        "hackTime": 465501.5197568389,
-        "weakenTime": 1862006.0790273556,
-        "growTime": 1489604.8632218845,
+        "randomValueForShuffle": 0.5768307736649179,
+        "hackTime": 450441.1764705883,
+        "weakenTime": 1801764.7058823532,
+        "growTime": 1441411.7647058826,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2416,10 +2304,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.5654834804116113,
-        "hackTime": 417933.1306990881,
-        "weakenTime": 1671732.5227963524,
-        "growTime": 1337386.018237082,
+        "randomValueForShuffle": 0.5969750810556136,
+        "hackTime": 404411.7647058823,
+        "weakenTime": 1617647.0588235292,
+        "growTime": 1294117.6470588234,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2567,10 +2455,10 @@
         "possibleHackThreads": 37,
         "maxWeakenOrGrowThreads": 36,
         "maxHackThreads": 37,
-        "randomValueForShuffle": 0.9296426768928097,
-        "hackTime": 425151.9756838906,
-        "weakenTime": 1700607.9027355623,
-        "growTime": 1360486.3221884498,
+        "randomValueForShuffle": 0.43162934716237644,
+        "hackTime": 411397.0588235294,
+        "weakenTime": 1645588.2352941176,
+        "growTime": 1316470.5882352942,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2718,10 +2606,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.6565400162611932,
-        "hackTime": 815159.5744680851,
-        "weakenTime": 3260638.2978723403,
-        "growTime": 2608510.6382978726,
+        "randomValueForShuffle": 0.9765923082260775,
+        "hackTime": 788786.7647058823,
+        "weakenTime": 3155147.058823529,
+        "growTime": 2524117.6470588236,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2870,7 +2758,7 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.5690022503332353
+        "randomValueForShuffle": 0.6902171544733064
     },
     {
         "hostname": "netlink",
@@ -2909,10 +2797,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.8023832984358781,
-        "hackTime": 1026215.8054711247,
-        "weakenTime": 4104863.221884499,
-        "growTime": 3283890.5775075993,
+        "randomValueForShuffle": 0.18508057567433345,
+        "hackTime": 993014.7058823529,
+        "weakenTime": 3972058.8235294116,
+        "growTime": 3177647.0588235296,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3061,10 +2949,10 @@
         "possibleHackThreads": 37,
         "maxWeakenOrGrowThreads": 36,
         "maxHackThreads": 37,
-        "randomValueForShuffle": 0.9529975276479326,
-        "hackTime": 727659.5744680851,
-        "weakenTime": 2910638.2978723403,
-        "growTime": 2328510.6382978726,
+        "randomValueForShuffle": 0.5931171216173783,
+        "hackTime": 704117.6470588234,
+        "weakenTime": 2816470.5882352935,
+        "growTime": 2253176.470588235,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3213,10 +3101,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.20565152644635853,
-        "hackTime": 978115.5015197567,
-        "weakenTime": 3912462.006079027,
-        "growTime": 3129969.6048632218,
+        "randomValueForShuffle": 0.45998833210320256,
+        "hackTime": 946470.588235294,
+        "weakenTime": 3785882.352941176,
+        "growTime": 3028705.882352941,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3366,10 +3254,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.48525425578519044,
-        "hackTime": 1200151.9756838907,
-        "weakenTime": 4800607.902735563,
-        "growTime": 3840486.32218845,
+        "randomValueForShuffle": 0.699305095277994,
+        "hackTime": 1161323.5294117646,
+        "weakenTime": 4645294.117647058,
+        "growTime": 3716235.2941176468,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3518,10 +3406,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.45803537865482213,
-        "hackTime": 1020402.73556231,
-        "weakenTime": 4081610.94224924,
-        "growTime": 3265288.753799392,
+        "randomValueForShuffle": 0.21219050166494613,
+        "hackTime": 987389.7058823529,
+        "weakenTime": 3949558.8235294116,
+        "growTime": 3159647.0588235296,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3671,10 +3559,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.7902606201322149,
-        "hackTime": 938449.8480243161,
-        "weakenTime": 3753799.3920972645,
-        "growTime": 3003039.5136778117,
+        "randomValueForShuffle": 0.3753164903043169,
+        "hackTime": 908088.2352941177,
+        "weakenTime": 3632352.941176471,
+        "growTime": 2905882.3529411764,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3824,10 +3712,10 @@
         "possibleHackThreads": 37,
         "maxWeakenOrGrowThreads": 36,
         "maxHackThreads": 37,
-        "randomValueForShuffle": 0.21875604392475867,
-        "hackTime": 1361322.188449848,
-        "weakenTime": 5445288.753799392,
-        "growTime": 4356231.003039514,
+        "randomValueForShuffle": 0.3613411570536611,
+        "hackTime": 1317279.4117647058,
+        "weakenTime": 5269117.647058823,
+        "growTime": 4215294.117647058,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3977,10 +3865,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.9359996457700774,
-        "hackTime": 997758.358662614,
-        "weakenTime": 3991033.434650456,
-        "growTime": 3192826.747720365,
+        "randomValueForShuffle": 0.3430973790841845,
+        "hackTime": 965477.9411764706,
+        "weakenTime": 3861911.7647058824,
+        "growTime": 3089529.4117647065,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4135,7 +4023,7 @@
         "possibleHackThreads": 150,
         "maxWeakenOrGrowThreads": 146,
         "maxHackThreads": 150,
-        "randomValueForShuffle": 0.7786988098040164
+        "randomValueForShuffle": 0.23274555092362204
     },
     {
         "hostname": ".",
@@ -4183,7 +4071,7 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.21810747639496553
+        "randomValueForShuffle": 0.3195215750239475
     },
     {
         "hostname": "syscore",
@@ -4223,10 +4111,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.47226745282358173,
-        "hackTime": 1870060.790273556,
-        "weakenTime": 7480243.161094224,
-        "growTime": 5984194.52887538,
+        "randomValueForShuffle": 0.7049660524963783,
+        "hackTime": 1809558.823529412,
+        "weakenTime": 7238235.294117648,
+        "growTime": 5790588.2352941185,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4376,10 +4264,10 @@
         "possibleHackThreads": 37,
         "maxWeakenOrGrowThreads": 36,
         "maxHackThreads": 37,
-        "randomValueForShuffle": 0.9947467677211519,
-        "hackTime": 1857446.8085106383,
-        "weakenTime": 7429787.234042553,
-        "growTime": 5943829.787234043,
+        "randomValueForShuffle": 0.24736366928805253,
+        "hackTime": 1797352.9411764708,
+        "weakenTime": 7189411.764705883,
+        "growTime": 5751529.4117647065,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4528,10 +4416,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.48517203072927795,
-        "hackTime": 2275683.8905775077,
-        "weakenTime": 9102735.56231003,
-        "growTime": 7282188.449848025,
+        "randomValueForShuffle": 0.6366434292009142,
+        "hackTime": 2202058.8235294116,
+        "weakenTime": 8808235.294117646,
+        "growTime": 7046588.235294118,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4682,10 +4570,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.31875703625300655,
-        "hackTime": 1144376.8996960486,
-        "weakenTime": 4577507.598784194,
-        "growTime": 3662006.079027356,
+        "randomValueForShuffle": 0.9198159532705428,
+        "hackTime": 1107352.9411764706,
+        "weakenTime": 4429411.764705882,
+        "growTime": 3543529.411764706,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4838,10 +4726,10 @@
         "possibleHackThreads": 75,
         "maxWeakenOrGrowThreads": 73,
         "maxHackThreads": 75,
-        "randomValueForShuffle": 0.8175706848895559,
-        "hackTime": 2097568.389057751,
-        "weakenTime": 8390273.556231003,
-        "growTime": 6712218.844984802,
+        "randomValueForShuffle": 0.14877944420063183,
+        "hackTime": 2029705.8823529412,
+        "weakenTime": 8118823.529411765,
+        "growTime": 6495058.823529413,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4995,10 +4883,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.9071259987238762,
-        "hackTime": 1694642.8571428573,
-        "weakenTime": 6778571.428571429,
-        "growTime": 5422857.142857144,
+        "randomValueForShuffle": 0.13274513770844942,
+        "hackTime": 1639816.176470588,
+        "weakenTime": 6559264.705882352,
+        "growTime": 5247411.764705882,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5149,10 +5037,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.6780544020616794,
-        "hackTime": 2378419.4528875384,
-        "weakenTime": 9513677.811550153,
-        "growTime": 7610942.249240123,
+        "randomValueForShuffle": 0.8187669322201949,
+        "hackTime": 2301470.588235294,
+        "weakenTime": 9205882.352941176,
+        "growTime": 7364705.882352942,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5307,10 +5195,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.7883915363230762,
-        "hackTime": 2201519.7568389056,
-        "weakenTime": 8806079.027355623,
-        "growTime": 7044863.221884498,
+        "randomValueForShuffle": 0.700806410534518,
+        "hackTime": 2130294.117647059,
+        "weakenTime": 8521176.470588235,
+        "growTime": 6816941.176470589,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5465,10 +5353,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.18038860448949867,
-        "hackTime": 2251405.7750759874,
-        "weakenTime": 9005623.10030395,
-        "growTime": 7204498.480243161,
+        "randomValueForShuffle": 0.6595808016877662,
+        "hackTime": 2178566.1764705884,
+        "weakenTime": 8714264.705882354,
+        "growTime": 6971411.764705883,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5621,10 +5509,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.7909496042451147,
-        "hackTime": 2626709.726443769,
-        "weakenTime": 10506838.905775076,
-        "growTime": 8405471.124620061,
+        "randomValueForShuffle": 0.3376567725843278,
+        "hackTime": 2541727.941176471,
+        "weakenTime": 10166911.764705883,
+        "growTime": 8133529.4117647065,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5777,10 +5665,10 @@
         "possibleHackThreads": 75,
         "maxWeakenOrGrowThreads": 73,
         "maxHackThreads": 75,
-        "randomValueForShuffle": 0.7962413055362598,
-        "hackTime": 2500000,
-        "weakenTime": 10000000,
-        "growTime": 8000000,
+        "randomValueForShuffle": 0.22185477911605567,
+        "hackTime": 2419117.6470588236,
+        "weakenTime": 9676470.588235294,
+        "growTime": 7741176.470588235,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5932,10 +5820,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.6393373767028381,
-        "hackTime": 2415311.5501519754,
-        "weakenTime": 9661246.200607901,
-        "growTime": 7728996.960486322,
+        "randomValueForShuffle": 0.5937821821898528,
+        "hackTime": 2337169.117647059,
+        "weakenTime": 9348676.470588235,
+        "growTime": 7478941.176470589,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6090,10 +5978,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.05398158993271629,
-        "hackTime": 2349620.060790274,
-        "weakenTime": 9398480.243161095,
-        "growTime": 7518784.194528877,
+        "randomValueForShuffle": 0.37364029858112136,
+        "hackTime": 2273602.941176471,
+        "weakenTime": 9094411.764705883,
+        "growTime": 7275529.4117647065,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6247,10 +6135,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.15644890371095044,
-        "hackTime": 2162310.0303951367,
-        "weakenTime": 8649240.121580547,
-        "growTime": 6919392.097264438,
+        "randomValueForShuffle": 0.9074264987894021,
+        "hackTime": 2092352.9411764708,
+        "weakenTime": 8369411.764705883,
+        "growTime": 6695529.4117647065,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6406,10 +6294,10 @@
         "possibleHackThreads": 75,
         "maxWeakenOrGrowThreads": 73,
         "maxHackThreads": 75,
-        "randomValueForShuffle": 0.3981683553192541,
-        "hackTime": 2993313.069908814,
-        "weakenTime": 11973252.279635256,
-        "growTime": 9578601.823708206,
+        "randomValueForShuffle": 0.838825867203757,
+        "hackTime": 2896470.5882352935,
+        "weakenTime": 11585882.352941174,
+        "growTime": 9268705.88235294,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6561,10 +6449,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.6948150378813593,
-        "hackTime": 2500151.9756838907,
-        "weakenTime": 10000607.902735563,
-        "growTime": 8000486.322188451,
+        "randomValueForShuffle": 0.9636342265893365,
+        "hackTime": 2419264.7058823532,
+        "weakenTime": 9677058.823529413,
+        "growTime": 7741647.058823531,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6715,10 +6603,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.16593182007604446,
-        "hackTime": 2136398.176291793,
-        "weakenTime": 8545592.705167172,
-        "growTime": 6836474.164133739,
+        "randomValueForShuffle": 0.4595289629329624,
+        "hackTime": 2067279.4117647058,
+        "weakenTime": 8269117.647058823,
+        "growTime": 6615294.117647059,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6874,10 +6762,10 @@
         "possibleHackThreads": 75,
         "maxWeakenOrGrowThreads": 73,
         "maxHackThreads": 75,
-        "randomValueForShuffle": 0.9090010463585487,
-        "hackTime": 3006458.966565349,
-        "weakenTime": 12025835.866261397,
-        "growTime": 9620668.693009118,
+        "randomValueForShuffle": 0.9887267938146942,
+        "hackTime": 2909191.1764705884,
+        "weakenTime": 11636764.705882354,
+        "growTime": 9309411.764705883,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -7028,10 +6916,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.45180913126279965,
-        "hackTime": 3054331.306990882,
-        "weakenTime": 12217325.227963528,
-        "growTime": 9773860.182370821,
+        "randomValueForShuffle": 0.5971300678270528,
+        "hackTime": 2955514.7058823532,
+        "weakenTime": 11822058.823529413,
+        "growTime": 9457647.05882353,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -7184,10 +7072,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.4577057278692662,
-        "hackTime": 2941793.313069909,
-        "weakenTime": 11767173.252279636,
-        "growTime": 9413738.601823708,
+        "randomValueForShuffle": 0.3639989164358639,
+        "hackTime": 2846617.647058824,
+        "weakenTime": 11386470.588235296,
+        "growTime": 9109176.470588235,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -7339,10 +7227,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.6248485564499391,
-        "hackTime": 3047530.3951367782,
-        "weakenTime": 12190121.580547113,
-        "growTime": 9752097.26443769,
+        "randomValueForShuffle": 0.7801045189953635,
+        "hackTime": 2948933.8235294116,
+        "weakenTime": 11795735.294117646,
+        "growTime": 9436588.235294117,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -7495,10 +7383,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.05099355049557919,
-        "hackTime": 2886322.188449848,
-        "weakenTime": 11545288.753799392,
-        "growTime": 9236231.003039515,
+        "randomValueForShuffle": 0.7324061551577421,
+        "hackTime": 2792941.1764705884,
+        "weakenTime": 11171764.705882354,
+        "growTime": 8937411.764705883,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -7652,10 +7540,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.91275328179746,
-        "hackTime": 2446428.5714285714,
-        "weakenTime": 9785714.285714285,
-        "growTime": 7828571.428571429,
+        "randomValueForShuffle": 0.5921616458177812,
+        "hackTime": 2367279.411764706,
+        "weakenTime": 9469117.647058824,
+        "growTime": 7575294.117647059,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -7809,10 +7697,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.9789089105296356,
-        "hackTime": 2516109.4224924007,
-        "weakenTime": 10064437.689969603,
-        "growTime": 8051550.151975684,
+        "randomValueForShuffle": 0.47566370161815574,
+        "hackTime": 2434705.882352941,
+        "weakenTime": 9738823.529411765,
+        "growTime": 7791058.823529412,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -7971,7 +7859,7 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.476733256700397
+        "randomValueForShuffle": 0.38270420565538155
     },
     {
         "hostname": "omnitek",
@@ -8019,10 +7907,10 @@
         "possibleHackThreads": 301,
         "maxWeakenOrGrowThreads": 292,
         "maxHackThreads": 301,
-        "randomValueForShuffle": 0.509176017156127,
-        "hackTime": 3396162.6139817624,
-        "weakenTime": 13584650.45592705,
-        "growTime": 10867720.36474164,
+        "randomValueForShuffle": 0.8595541437212988,
+        "hackTime": 3286286.7647058824,
+        "weakenTime": 13145147.05882353,
+        "growTime": 10516117.647058826,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -8180,10 +8068,10 @@
         "possibleHackThreads": 301,
         "maxWeakenOrGrowThreads": 292,
         "maxHackThreads": 301,
-        "randomValueForShuffle": 0.1011264183061591,
-        "hackTime": 3619300.911854103,
-        "weakenTime": 14477203.647416413,
-        "growTime": 11581762.91793313,
+        "randomValueForShuffle": 0.7853282042638106,
+        "hackTime": 3502205.8823529417,
+        "weakenTime": 14008823.529411767,
+        "growTime": 11207058.823529413,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -8340,10 +8228,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.3121033703727938,
-        "hackTime": 3749848.0243161093,
-        "weakenTime": 14999392.097264437,
-        "growTime": 11999513.67781155,
+        "randomValueForShuffle": 0.5136585936412741,
+        "hackTime": 3628529.4117647065,
+        "weakenTime": 14514117.647058826,
+        "growTime": 11611294.117647061,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -8501,10 +8389,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.9594974087756201,
-        "hackTime": 2238221.8844984802,
-        "weakenTime": 8952887.537993921,
-        "growTime": 7162310.030395138,
+        "randomValueForShuffle": 0.9330406955841792,
+        "hackTime": 2165808.8235294116,
+        "weakenTime": 8663235.294117646,
+        "growTime": 6930588.235294118,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -8660,10 +8548,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.36701833070249434,
-        "hackTime": 3356572.9483282673,
-        "weakenTime": 13426291.79331307,
-        "growTime": 10741033.434650455,
+        "randomValueForShuffle": 0.016939093334772393,
+        "hackTime": 3247977.941176471,
+        "weakenTime": 12991911.764705883,
+        "growTime": 10393529.411764706,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -8821,10 +8709,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.8431648609921771,
-        "hackTime": 3478267.477203647,
-        "weakenTime": 13913069.908814589,
-        "growTime": 11130455.92705167,
+        "randomValueForShuffle": 0.13614032060966452,
+        "hackTime": 3365735.2941176468,
+        "weakenTime": 13462941.176470587,
+        "growTime": 10770352.94117647,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -8981,10 +8869,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.71775939947496,
-        "hackTime": 2554103.343465045,
-        "weakenTime": 10216413.37386018,
-        "growTime": 8173130.699088146,
+        "randomValueForShuffle": 0.43148318351032766,
+        "hackTime": 2471470.588235294,
+        "weakenTime": 9885882.352941176,
+        "growTime": 7908705.882352942,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -9142,10 +9030,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.1624124394536326,
-        "hackTime": 4340729.483282675,
-        "weakenTime": 17362917.9331307,
-        "growTime": 13890334.34650456,
+        "randomValueForShuffle": 0.28917980504081164,
+        "hackTime": 4200294.117647058,
+        "weakenTime": 16801176.470588233,
+        "growTime": 13440941.176470587,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -9303,10 +9191,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.003902509261527465,
-        "hackTime": 2695288.753799392,
-        "weakenTime": 10781155.015197568,
-        "growTime": 8624924.012158055,
+        "randomValueForShuffle": 0.4591529751069179,
+        "hackTime": 2608088.2352941176,
+        "weakenTime": 10432352.94117647,
+        "growTime": 8345882.352941177,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -9462,10 +9350,10 @@
         "possibleHackThreads": 1204,
         "maxWeakenOrGrowThreads": 1170,
         "maxHackThreads": 1204,
-        "randomValueForShuffle": 0.8456945349815255,
-        "hackTime": 4437462.006079027,
-        "weakenTime": 17749848.02431611,
-        "growTime": 14199878.419452889,
+        "randomValueForShuffle": 0.34027009112346907,
+        "hackTime": 4293897.05882353,
+        "weakenTime": 17175588.23529412,
+        "growTime": 13740470.588235296,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -9624,10 +9512,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.3282988725907763,
-        "hackTime": 4675493.920972644,
-        "weakenTime": 18701975.683890577,
-        "growTime": 14961580.547112463,
+        "randomValueForShuffle": 0.5531203369785547,
+        "hackTime": 4524227.94117647,
+        "weakenTime": 18096911.76470588,
+        "growTime": 14477529.411764706,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -9786,10 +9674,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.5628292692742385,
-        "hackTime": 4998974.164133739,
-        "weakenTime": 19995896.656534955,
-        "growTime": 15996717.325227965,
+        "randomValueForShuffle": 0.33206851012192784,
+        "hackTime": 4837242.647058823,
+        "weakenTime": 19348970.588235293,
+        "growTime": 15479176.470588235,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -9948,10 +9836,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.9990670959747339,
-        "hackTime": 5141907.294832827,
-        "weakenTime": 20567629.179331306,
-        "growTime": 16454103.343465045,
+        "randomValueForShuffle": 0.23051260579366217,
+        "hackTime": 4975551.470588235,
+        "weakenTime": 19902205.88235294,
+        "growTime": 15921764.705882354,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {

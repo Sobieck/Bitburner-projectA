@@ -50,7 +50,7 @@ export async function main(ns: NS): Promise<void> {
 
                 if (command.commandType !== DispatchType.Hack) {
                     if (server.cpuCores > 1) {
-                        
+
                         const cpuCores = server.cpuCores
                         let threadsTable = targetServer.threadsToIncreaseToMaxMoney
 
@@ -58,17 +58,17 @@ export async function main(ns: NS): Promise<void> {
                             threadsTable = targetServer.threadsToReduceToMinDifficulty
                         }
 
-                        const threadsAnalysis = getThreadsToExecuteAndThreadEquivilant(threadsTable, cpuCores, threadsToExecute)
-                        threadsToExecute = threadsAnalysis.threadsToExecute
-                        threadEquivilantRatio = threadsAnalysis.threadEquivilantRatio
+                        if (threadsTable) {
+                            const threadsAnalysis = getThreadsAnalysis(threadsTable, cpuCores, threadsToExecute)
+                            threadsToExecute = threadsAnalysis.threadsToExecute
+                            threadEquivilantRatio = threadsAnalysis.threadEquivilantRatio
+                        }
                     }
 
                     if (threadsToExecute > server.possibleWeakenOrGrowThreads) {
                         threadsToExecute = server.possibleWeakenOrGrowThreads
                     }
                 } else {
-                    
-
                     if (threadsToExecute > server.possibleHackThreads) {
                         threadsToExecute = server.possibleHackThreads
                     }
@@ -83,7 +83,7 @@ export async function main(ns: NS): Promise<void> {
                 if (command.commandType !== DispatchType.Hack) {
                     const hackThreadRatio = server.possibleHackThreads / server.possibleWeakenOrGrowThreads
 
-                    server.possibleWeakenOrGrowThreads -= threadsToExecute 
+                    server.possibleWeakenOrGrowThreads -= threadsToExecute
                     server.possibleHackThreads = Math.floor(server.possibleWeakenOrGrowThreads * hackThreadRatio)
 
                 } else {
@@ -101,15 +101,15 @@ export async function main(ns: NS): Promise<void> {
     ns.write(FilePaths.data.dispatchQueue, JSON.stringify(dispatchQueue), "w")
 }
 
-function getThreadsToExecuteAndThreadEquivilant(threadsTable: ThreadsNeeded[], cpuCores: number, threadsToExecute: number) {
-    const threadsNeedPer1Core = threadsTable.find(x => x.numberOfCores === 1)?.threadsNeeded;
-    const threadsNeededPerThisServersCores = threadsTable.find(x => x.numberOfCores === cpuCores)?.threadsNeeded;
+function getThreadsAnalysis(threadsTable: ThreadsNeeded[], cpuCores: number, threadsToExecute: number) {
+    const threadsNeedPer1Core = threadsTable.find(x => x.numberOfCores === 1);
+    const threadsNeededPerThisServersCores = threadsTable.find(x => x.numberOfCores === cpuCores);
     let threadEquivilantRatio = 1
 
-    if (threadsNeedPer1Core && threadsNeededPerThisServersCores) {
-        threadsToExecute = Math.ceil((threadsNeededPerThisServersCores / threadsNeedPer1Core) * threadsToExecute);
-        threadEquivilantRatio = threadsNeedPer1Core / threadsNeededPerThisServersCores;
+    if (threadsNeedPer1Core && threadsNeededPerThisServersCores && threadsNeedPer1Core.threadsNeeded && threadsNeededPerThisServersCores.threadsNeeded) {
+        threadsToExecute = Math.ceil((threadsNeededPerThisServersCores.threadsNeeded / threadsNeedPer1Core.threadsNeeded) * threadsToExecute);
+        threadEquivilantRatio = threadsNeedPer1Core.threadsNeeded / threadsNeededPerThisServersCores.threadsNeeded;
     }
 
-    return { threadsToExecute, threadEquivilantRatio } 
+    return { threadsToExecute, threadEquivilantRatio }
 }
