@@ -1,4 +1,4 @@
-import { main } from "../../../../src/scripts/hacking/algorithms/firstAlgorithm"
+import { main } from "../../../../src/scripts/hacking/algorithms/prepareForBatch"
 import { NS } from "@ns"
 import { nsMock } from "../../../utilities/nsMock.testUtility"
 

@@ -12,6 +12,7 @@ export async function main(ns: NS): Promise<void> {
         'scripts/runLoop/enrichEnvironment.js',
         'scripts/runLoop/scriptCost.js',
         'scripts/runLoop/getPlayer.js',
+        'scripts/runLoop/enrichEnvironmentForHacking.js',
         
         //hacking scripts 
         'scripts/hacking/dispatch/dispatchCleaner.js',
@@ -27,5 +28,4 @@ export async function main(ns: NS): Promise<void> {
     ]
 
     ns.write(FilePaths.data.scriptsToRun, JSON.stringify(scriptsToRun), "w")
-
 }

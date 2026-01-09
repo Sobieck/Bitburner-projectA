@@ -12,6 +12,28 @@ export interface ServerWithAdditionalInfo extends Server {
     possibleWeakenOrGrowThreads: number; //1.75
     possibleHackThreads: number; //1.7
 
+    maxWeakenOrGrowThreads: number;
+    maxHackThreads: number 
+
     usedWeakenOrGrowThreads: number
     usedHackThreads: number
+
+
+    hackTime: number;
+    weakenTime: number;
+    growTime: number;
+
+
+    threadsToHackMaxMoney: number;
+    threadsToHackMoneyAvailable: number;
+
+    threadsToReduceToMinDifficulty: ThreadsNeeded[];
+    threadsToIncreaseToMaxMoney: ThreadsNeeded[];
+}
+
+export class ThreadsNeeded {
+    constructor(
+        public numberOfCores: number,
+        public threadsNeeded: number, 
+    ) { }
 }

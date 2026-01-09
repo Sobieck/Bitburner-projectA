@@ -26,22 +26,47 @@ export async function main(ns: NS): Promise<void> {
             server.reservedRam = 0
         }
 
-        server.possibleWeakenOrGrowThreads = Math.floor((server.freeRam - server.reservedRam) / 1.75)
-        server.possibleHackThreads = Math.floor((server.freeRam - server.reservedRam) / 1.7)
-
-        if (server.possibleHackThreads < 0) {
-            server.possibleHackThreads = 0
-        }
-
-        if (server.possibleWeakenOrGrowThreads < 0) {
-            server.possibleWeakenOrGrowThreads = 0
-        }
-
+        calculateAllThreads(server);
 
         server.randomValueForShuffle = Math.random()
+        
     }
 
 
     await ns.write(FilePaths.data.environment, JSON.stringify(environment), "w")
 
+}
+
+function calculateAllThreads(server: ServerWithAdditionalInfo) {
+    const weakenAndGrowCost = 1.75;
+    const hackCost = 1.7;
+    const freeRam = server.freeRam;
+
+    server.possibleWeakenOrGrowThreads = calculateThreads(freeRam, server, weakenAndGrowCost);
+    server.possibleHackThreads = calculateThreads(freeRam, server, hackCost);
+
+    if (server.possibleHackThreads < 0) {
+        server.possibleHackThreads = 0;
+    }
+
+    if (server.possibleWeakenOrGrowThreads < 0) {
+        server.possibleWeakenOrGrowThreads = 0;
+    }
+
+    const maxRam = server.maxRam;
+
+    server.maxWeakenOrGrowThreads = calculateThreads(maxRam, server, weakenAndGrowCost);
+    server.maxHackThreads = calculateThreads(maxRam, server, hackCost);
+
+    if (server.maxHackThreads < 0) {
+        server.maxHackThreads = 0;
+    }
+
+    if (server.maxWeakenOrGrowThreads < 0) {
+        server.maxWeakenOrGrowThreads = 0;
+    }
+}
+
+function calculateThreads(freeRam: number, server: ServerWithAdditionalInfo, weakenAndGrowCost: number): number {
+    return Math.floor((freeRam - server.reservedRam) / weakenAndGrowCost);
 }

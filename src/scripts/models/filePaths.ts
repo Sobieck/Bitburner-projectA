@@ -12,6 +12,7 @@ export class Data {
     public scriptsToRun = "data/runLoop/scripts-to-run.json"
     public scriptRamCost = "data/runLoop/script-ram-cost.json"
     public player = "data/runLoop/player.json"
+    
     public dispatchQueue = "data/hacking/dispatch/dispatch-queue.json"
 }
 

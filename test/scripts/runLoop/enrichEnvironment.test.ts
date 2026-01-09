@@ -9,17 +9,20 @@ describe('enrichEnvironment', () => {
 
     const home = {
         hostname: "home",
-        freeRam: 100
+        freeRam: 100,
+        maxRam: 100,
     }
 
     const server1 = {
         hostname: "server1",
-        freeRam: 1000
+        freeRam: 1000,
+        maxRam: 20000,
     }
 
     const server2 = {
         hostname: "server2",
-        freeRam: 1.69
+        freeRam: 1.69,
+        maxRam: 0
     }
 
     const script1 = "scripts1" // lower not run loop
@@ -79,22 +82,31 @@ describe('enrichEnvironment', () => {
                 hostname: server1.hostname,
                 freeRam: 1000,
                 reservedRam: 0,
+                maxRam: 20000,
                 possibleWeakenOrGrowThreads: 571,
                 possibleHackThreads: 588,
+                maxWeakenOrGrowThreads: 11428,
+                maxHackThreads: 11764,
             },
             {
                 hostname: home.hostname,
                 freeRam: 100,
                 reservedRam: 19,
+                maxRam: 100,
                 possibleWeakenOrGrowThreads: 46,
                 possibleHackThreads: 47,
+                maxWeakenOrGrowThreads: 46,
+                maxHackThreads: 47,
             },
             {
                 hostname: server2.hostname,
                 freeRam: 1.69,
                 reservedRam: 0,
+                maxRam: 0,
                 possibleWeakenOrGrowThreads: 0,
                 possibleHackThreads: 0,
+                maxWeakenOrGrowThreads: 0,
+                maxHackThreads: 0,
             },
         ]
 
@@ -119,22 +131,31 @@ describe('enrichEnvironment', () => {
                     hostname: server1.hostname,
                     freeRam: 1000,
                     reservedRam: 0,
+                    maxRam: 20000,
                     possibleWeakenOrGrowThreads: 571,
                     possibleHackThreads: 588,
+                    maxWeakenOrGrowThreads: 11428,
+                    maxHackThreads: 11764,
                 },
                 {
                     hostname: home.hostname,
                     freeRam: 100,
                     reservedRam: 24,
+                    maxRam: 100,
                     possibleWeakenOrGrowThreads: 43,
                     possibleHackThreads: 44,
+                    maxWeakenOrGrowThreads: 43,
+                    maxHackThreads: 44,
                 },
                 {
                     hostname: server2.hostname,
                     freeRam: 1.69,
                     reservedRam: 0,
+                    maxRam: 0,
                     possibleWeakenOrGrowThreads: 0,
                     possibleHackThreads: 0,
+                    maxWeakenOrGrowThreads: 0,
+                    maxHackThreads: 0,
                 },
             ]
 
@@ -147,7 +168,7 @@ describe('enrichEnvironment', () => {
     })
 })
 
-function asserts(expectedResults: { hostname: string; freeRam: number; reservedRam: number; possibleWeakenOrGrowThreads: number; possibleHackThreads: number; }[], savedEvironment: ServerWithAdditionalInfo[]) {
+function asserts(expectedResults: { hostname: string; freeRam: number; reservedRam: number; possibleWeakenOrGrowThreads: number; possibleHackThreads: number; maxWeakenOrGrowThreads: number; maxHackThreads: number; }[], savedEvironment: ServerWithAdditionalInfo[]) {
     for (let i = 0; i < expectedResults.length; i++) {
         const expectedResult = expectedResults[i];
         const actualResult = savedEvironment[i];
@@ -159,5 +180,7 @@ function asserts(expectedResults: { hostname: string; freeRam: number; reservedR
         expect(actualResult.reservedRam).toBe(expectedResult.reservedRam);
         expect(actualResult.possibleWeakenOrGrowThreads).toBe(expectedResult.possibleWeakenOrGrowThreads);
         expect(actualResult.possibleHackThreads).toBe(expectedResult.possibleHackThreads);
+        expect(actualResult.maxWeakenOrGrowThreads).toBe(expectedResult.maxWeakenOrGrowThreads);
+        expect(actualResult.maxHackThreads).toBe(expectedResult.maxHackThreads);
     }
 }

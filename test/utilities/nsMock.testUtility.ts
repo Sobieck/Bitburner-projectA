@@ -256,4 +256,44 @@ export class nsMock {
 
     this.scpArgsPassed.push([JSON.stringify(files), destination, source])
   }
+
+
+  public getHackTimeReturns = new Map<string, number>()
+  public getHackTime(host: string): number {
+    this.callOrder.push("getHackTime")
+
+    return this.getHackTimeReturns.get(host)!
+  }
+
+
+
+  public getWeakenTimeReturns = new Map<string, number>()
+  public getWeakenTime(host: string): number {
+    this.callOrder.push("getWeakenTime")
+
+    return this.getWeakenTimeReturns.get(host)!
+  }
+
+
+
+  public getGrowTimeReturns = new Map<string, number>()
+  public getGrowTime(host: string): number {
+    this.callOrder.push("getGrowTime")
+
+    return this.getGrowTimeReturns.get(host)!
+  }
+
+
+
+  public hackAnalyzeThreadsReturns = new Map<string, number>()
+  public hackAnalyzeThreads(host: string, money: number): number {
+    this.callOrder.push("hackAnalyzeThreads")
+
+    return this.hackAnalyzeThreadsReturns.get(host + money)!
+  }
+
+
+  public weakenAnalyze(threads: number, cores: number) : number {
+    return (threads * 0.011) * cores
+  }
 }

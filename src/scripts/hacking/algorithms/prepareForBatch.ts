@@ -5,6 +5,10 @@ export async function main(ns: NS): Promise<void> {
 
     await ns.sleep()
 
+
+
+
+
 // use all the threads in the cluster to do all these. Second algo will make calculations
 
     // see if we are hacking a target in the firstAlgoFile
