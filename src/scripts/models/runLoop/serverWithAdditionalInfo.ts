@@ -24,7 +24,6 @@ export interface ServerWithAdditionalInfo extends Server {
     growTime: number;
 
 
-    threadsToHackMaxMoney: number;
     threadsToHackMoneyAvailable: number;
 
     threadsToReduceToMinDifficulty: ThreadsNeeded[];

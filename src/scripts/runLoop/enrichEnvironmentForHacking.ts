@@ -14,7 +14,6 @@ export async function main(ns: NS): Promise<void> {
             server.growTime = ns.getGrowTime(server.hostname)
 
 
-            server.threadsToHackMaxMoney = ns.hackAnalyzeThreads(server.hostname, server.moneyMax)
             server.threadsToHackMoneyAvailable = ns.hackAnalyzeThreads(server.hostname, server.moneyAvailable)
 
             const maxNumberOfCpus = environment.map(x => x.cpuCores).sort((a, b) => a - b).pop()

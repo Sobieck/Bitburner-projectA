@@ -113,7 +113,6 @@ describe('enrichEnvironmentForHacking', () => {
                     weakenTime: server1WeakenTime,
                     growTime: server1GrowTime,
 
-                    threadsToHackMaxMoney: server1MaxMoneyThreads,
                     threadsToHackMoneyAvailable: server1CurrentMoneyThreads,
 
                     threadsToReduceToMinDifficulty: [
@@ -145,7 +144,6 @@ describe('enrichEnvironmentForHacking', () => {
                     weakenTime: server2WeakenTime,
                     growTime: server2GrowTime,
 
-                    threadsToHackMaxMoney: server2MaxMoneyThreads,
                     threadsToHackMoneyAvailable: server2CurrentMoneyThreads,
 
                     threadsToReduceToMinDifficulty: [
