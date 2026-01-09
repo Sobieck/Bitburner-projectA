@@ -3,8 +3,8 @@ import { NS } from "@ns"
 import { nsMock } from "../../../utilities/nsMock.testUtility"
 import { DispatchBatch, DispatchCommand, DispatchOrigin, DispatchQueue, DispatchType } from "../../../../src/scripts/models/hacking/dispatch/dispatchQueue"
 import { RandomValues } from "../../../utilities/randomValues.testUtility"
-import { FilePaths } from "../../../../src/scripts/models/filePaths"
-import { hostname } from "os"
+import { FilePaths } from "../../../../src/scripts/constants"
+import { ThreadsNeeded } from "../../../../src/scripts/models/runLoop/serverWithAdditionalInfo"
 
 describe('dispatcher', () => {
 
@@ -16,7 +16,7 @@ describe('dispatcher', () => {
     const command3Dispatched = new DispatchCommand(180, DispatchType.Hack, 5, true)
     const command4Dispatched = new DispatchCommand(18, DispatchType.Hack, 5, true, [62, 5023, 5610])
     const command5Grow = new DispatchCommand(1400, DispatchType.Grow, randomValues.randomInt(), randomValues.randomBool())
-    const command6Hack = new DispatchCommand(67, DispatchType.Hack, randomValues.randomInt(), randomValues.randomBool())
+    const command6Hack = new DispatchCommand(142, DispatchType.Hack, randomValues.randomInt(), randomValues.randomBool())
     const command7Weaken = new DispatchCommand(365, DispatchType.Weaken, randomValues.randomInt(), randomValues.randomBool())
 
     const command5Pid1 = randomValues.randomInt()
@@ -46,9 +46,10 @@ describe('dispatcher', () => {
         },
         {
             hostname: "bigserver",
-            possibleWeakenOrGrowThreads: 730,
+            possibleWeakenOrGrowThreads: 730, // 1. gone || 1400 - 757 = 643
             possibleHackThreads: 750,
             hasAdminRights: true,
+            cpuCores: 2, 
         },
         {
             hostname: "asdfasdkl",
@@ -58,15 +59,35 @@ describe('dispatcher', () => {
         },
         {
             hostname: "server3",
-            possibleWeakenOrGrowThreads: 360,
+            possibleWeakenOrGrowThreads: 360, // 3. used these 300 - gone
             possibleHackThreads: 370,
             hasAdminRights: true,
+            cpuCores: 1,
         },
         {
             hostname: "bigserver2",
-            possibleWeakenOrGrowThreads: 730, // 60 // 55
-            possibleHackThreads: 750, // 61 // 55
+            possibleWeakenOrGrowThreads: 730, // 2. 598 used leaving 132 // step 4. 3 used leaving 129
+            possibleHackThreads: 750,         //                     135                           131  
             hasAdminRights: true,
+            cpuCores: 3,
+        },
+        {
+            hostname: targetName,
+            possibleWeakenOrGrowThreads: 0,
+            possibleHackThreads: 0,
+            hasAdminRights: true,
+            threadsToReduceToMinDifficulty: [
+                new ThreadsNeeded(1, 365),
+                new ThreadsNeeded(2, 360),
+                new ThreadsNeeded(3, 200),
+
+            ],
+
+            threadsToIncreaseToMaxMoney: [
+                new ThreadsNeeded(1, 1400),
+                new ThreadsNeeded(2, 1350),
+                new ThreadsNeeded(3, 1300),
+            ]
         },
     ]
 
@@ -130,7 +151,7 @@ describe('dispatcher', () => {
         const execArgs1 = mockedNs.execArgsPassed[1]
         expect(execArgs1[0]).toBe(command5Grow.commandType)
         expect(execArgs1[1]).toBe("bigserver2")
-        expect(execArgs1[2]).toBe(670)
+        expect(execArgs1[2]).toBe(598)
         expect(execArgs1[3][0]).toBe(targetName)
         expect(execArgs1[3][1]).toBe(command5Grow.msAdded)
         expect(execArgs1[3][2]).toBe(command5Grow.effectStockMarket)
@@ -150,7 +171,7 @@ describe('dispatcher', () => {
         // bigServer2 5
         expect(execArgs3[0]).toBe(command7Weaken.commandType)
         expect(execArgs3[1]).toBe("bigserver2")
-        expect(execArgs3[2]).toBe(5)
+        expect(execArgs3[2]).toBe(3)
         expect(execArgs3[3][0]).toBe(targetName)
         expect(execArgs3[3][1]).toBe(command7Weaken.msAdded)
         expect(execArgs3[3][2]).toBe(command7Weaken.effectStockMarket)
@@ -161,7 +182,7 @@ describe('dispatcher', () => {
         // bigServer2 56
         expect(execArgs4[0]).toBe(command6Hack.commandType)
         expect(execArgs4[1]).toBe("bigserver2")
-        expect(execArgs4[2]).toBe(55)
+        expect(execArgs4[2]).toBe(131)
         expect(execArgs4[3][0]).toBe(targetName)
         expect(execArgs4[3][1]).toBe(command6Hack.msAdded)
         expect(execArgs4[3][2]).toBe(command6Hack.effectStockMarket)
@@ -171,7 +192,7 @@ describe('dispatcher', () => {
         // server4 10
         expect(execArgs5[0]).toBe(command6Hack.commandType)
         expect(execArgs5[1]).toBe("server4")
-        expect(execArgs5[2]).toBe(12)
+        expect(execArgs5[2]).toBe(11)
         expect(execArgs5[3][0]).toBe(targetName)
         expect(execArgs5[3][1]).toBe(command6Hack.msAdded)
         expect(execArgs5[3][2]).toBe(command6Hack.effectStockMarket)
@@ -188,7 +209,7 @@ describe('dispatcher', () => {
             command5Pid2
         ]
 
-        expectedCommand5.threadsExecuting = command5Grow.threadsWanted
+        expectedCommand5.threadsExecuting = 1401
 
         expectedCommand6.pids = [
             command6Pid1,

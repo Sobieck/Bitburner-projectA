@@ -2,7 +2,7 @@
 
 import { NS, Player } from "@ns";
 import { ServerWithAdditionalInfo } from "/scripts/models/runLoop/serverWithAdditionalInfo";
-import { FilePaths } from "/scripts/models/filePaths";
+import { FilePaths } from "../constants";
 
 export async function main(ns: NS): Promise<void> {
 

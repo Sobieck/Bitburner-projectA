@@ -1,4 +1,4 @@
-import { FilePaths } from "../../src/scripts/models/filePaths"
+import { FilePaths } from "../../src/scripts/constants"
 
 export class nsMock {
 
@@ -293,7 +293,20 @@ export class nsMock {
   }
 
 
+
   public weakenAnalyze(threads: number, cores: number) : number {
+    this.callOrder.push("weakenAnalyze")
+
     return (threads * 0.011) * cores
+  }
+
+
+
+  public growthAnalyze(target: string, multiplier: number, cores: number){
+    this.callOrder.push("growthAnalyze")
+
+    const targetServerNumber = Number(target.substring(target.length - 1))
+
+    return multiplier + cores + targetServerNumber
   }
 }

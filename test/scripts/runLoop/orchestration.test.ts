@@ -2,7 +2,7 @@ import { main } from "../../../src/scripts/runLoop/orchestration"
 import { NS } from "@ns";
 import { nsMock } from "../../utilities/nsMock.testUtility";
 import { RandomValues } from "../../utilities/randomValues.testUtility";
-import { FilePaths } from "../../../src/scripts/models/filePaths";
+import { FilePaths } from "../../../src/scripts/constants";
 
 
 describe('Orchestration', () => {

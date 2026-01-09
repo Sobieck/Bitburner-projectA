@@ -18,7 +18,7 @@
         "baseDifficulty": 1,
         "hackDifficulty": 1,
         "minDifficulty": 1,
-        "moneyAvailable": 2064405850.2854676,
+        "moneyAvailable": 2699670942.0558996,
         "moneyMax": 0,
         "numOpenPortsRequired": 5,
         "openPortCount": 0,
@@ -26,12 +26,12 @@
         "serverGrowth": 1,
         "freeRam": 7.850000000000023,
         "path": [],
-        "reservedRam": 7,
+        "reservedRam": 8,
         "possibleWeakenOrGrowThreads": 0,
         "possibleHackThreads": 0,
-        "maxWeakenOrGrowThreads": 581,
-        "maxHackThreads": 598,
-        "randomValueForShuffle": 0.1839721224589972
+        "maxWeakenOrGrowThreads": 580,
+        "maxHackThreads": 597,
+        "randomValueForShuffle": 0.9056996958702321
     },
     {
         "hostname": "n00dles",
@@ -67,12 +67,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 2,
         "maxHackThreads": 2,
-        "randomValueForShuffle": 0.524324418693515,
-        "hackTime": 7730.7692307692305,
-        "weakenTime": 30923.076923076922,
-        "growTime": 24738.46153846154,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 242.42424242424244,
+        "randomValueForShuffle": 0.9469726317945506,
+        "hackTime": 7636.77811550152,
+        "weakenTime": 30547.11246200608,
+        "growTime": 24437.689969604864,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -125,6 +124,60 @@
             {
                 "numberOfCores": 13,
                 "threadsNeeded": 1
+            }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 31
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 29
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 28
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 26
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 25
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 24
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 23
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 22
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 21
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 20
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 19
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 19
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 18
             }
         ]
     },
@@ -162,12 +215,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.2851906866434992,
-        "hackTime": 8076.923076923076,
-        "weakenTime": 32307.692307692305,
-        "growTime": 25846.153846153848,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 266.66666666666663,
+        "randomValueForShuffle": 0.508595775588196,
+        "hackTime": 7978.723404255319,
+        "weakenTime": 31914.893617021276,
+        "growTime": 25531.914893617024,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -220,6 +272,60 @@
             {
                 "numberOfCores": 13,
                 "threadsNeeded": 80
+            }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 21492
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 20228
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 19104
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 18098
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 17194
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 16375
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 15631
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 14951
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 14328
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 13755
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 13226
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 12736
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 12281
             }
         ]
     },
@@ -257,7 +363,7 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.04048642767400956
+        "randomValueForShuffle": 0.3902316185296497
     },
     {
         "hostname": "sigma-cosmetics",
@@ -293,12 +399,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.024052413863482558,
-        "hackTime": 9615.384615384615,
-        "weakenTime": 38461.53846153846,
-        "growTime": 30769.23076923077,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 270.60270602706026,
+        "randomValueForShuffle": 0.05569850634376028,
+        "hackTime": 9498.480243161093,
+        "weakenTime": 37993.92097264437,
+        "growTime": 30395.1367781155,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -352,6 +457,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 80
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10746
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10114
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9552
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9049
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8597
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8188
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7816
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7476
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7164
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6878
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6613
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6368
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6141
+            }
         ]
     },
     {
@@ -388,12 +547,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.41607992674322203,
-        "hackTime": 13461.538461538463,
-        "weakenTime": 53846.15384615385,
-        "growTime": 43076.923076923085,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 291.90623617868204,
+        "randomValueForShuffle": 0.472916135894188,
+        "hackTime": 13297.87234042553,
+        "weakenTime": 53191.48936170212,
+        "growTime": 42553.1914893617,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -447,6 +605,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 115
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 8056
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 7582
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 7161
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 6784
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 6445
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 6138
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 5859
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 5604
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 5371
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 5156
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 4958
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 4774
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 4603
+            }
         ]
     },
     {
@@ -484,12 +696,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.22301248727868472,
-        "hackTime": 23076.923076923074,
-        "weakenTime": 92307.6923076923,
-        "growTime": 73846.15384615384,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 322.265625,
+        "randomValueForShuffle": 0.44096136451419654,
+        "hackTime": 22796.352583586628,
+        "weakenTime": 91185.41033434651,
+        "growTime": 72948.3282674772,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -543,6 +754,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 149
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 8591
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 8085
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 7636
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 7234
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 6873
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 6545
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 6248
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 5976
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 5727
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 5498
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 5287
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 5091
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 4909
+            }
         ]
     },
     {
@@ -579,12 +844,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.5500143614462594,
-        "hackTime": 25000,
-        "weakenTime": 100000,
-        "growTime": 80000,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 315.6384505021521,
+        "randomValueForShuffle": 0.20563998694529118,
+        "hackTime": 24696.048632218848,
+        "weakenTime": 98784.19452887539,
+        "growTime": 79027.35562310032,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -638,6 +902,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 115
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 8056
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 7582
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 7161
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 6784
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 6445
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 6138
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 5859
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 5604
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 5371
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 5156
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 4958
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 4774
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 4603
+            }
         ]
     },
     {
@@ -674,12 +992,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.6584482329393486,
-        "hackTime": 30769.23076923077,
-        "weakenTime": 123076.92307692308,
-        "growTime": 98461.53846153847,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 329.01296111665005,
+        "randomValueForShuffle": 0.29607058295619204,
+        "hackTime": 30395.136778115502,
+        "weakenTime": 121580.54711246201,
+        "growTime": 97264.4376899696,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -732,6 +1049,60 @@
             {
                 "numberOfCores": 13,
                 "threadsNeeded": 115
+            }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 4028
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 3791
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 3581
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 3392
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 3223
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 3069
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 2930
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 2802
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 2686
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 2578
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 2479
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 2387
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 2302
             }
         ]
     },
@@ -771,12 +1142,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.009983557661995102,
-        "hackTime": 55769.230769230766,
-        "weakenTime": 223076.92307692306,
-        "growTime": 178461.53846153844,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 389.38053097345136,
+        "randomValueForShuffle": 0.4473320310571569,
+        "hackTime": 55091.18541033435,
+        "weakenTime": 220364.7416413374,
+        "growTime": 176291.7933130699,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -829,6 +1199,60 @@
             {
                 "numberOfCores": 13,
                 "threadsNeeded": 195
+            }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10737
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10105
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9544
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9041
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8589
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8180
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7809
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7469
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7158
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6872
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6607
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6363
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6135
             }
         ]
     },
@@ -867,7 +1291,7 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 4,
         "maxHackThreads": 4,
-        "randomValueForShuffle": 0.24724033030837456
+        "randomValueForShuffle": 0.9599298001030201
     },
     {
         "hostname": "zer0",
@@ -904,12 +1328,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.6202147132662008,
-        "hackTime": 79807.69230769231,
-        "weakenTime": 319230.76923076925,
-        "growTime": 255384.61538461538,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 437.8109452736318,
+        "randomValueForShuffle": 0.768438251459334,
+        "hackTime": 78837.38601823708,
+        "weakenTime": 315349.54407294834,
+        "growTime": 252279.63525835867,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -963,6 +1386,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 195
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 6711
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 6316
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 5965
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 5651
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 5369
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 5113
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 4881
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 4668
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 4474
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 4295
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 4130
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 3977
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 3835
+            }
         ]
     },
     {
@@ -1000,12 +1477,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.08587011157673752,
-        "hackTime": 53846.15384615385,
-        "weakenTime": 215384.6153846154,
-        "growTime": 172307.69230769234,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 396.1584633853542,
+        "randomValueForShuffle": 0.4238907534193648,
+        "hackTime": 53191.48936170212,
+        "weakenTime": 212765.9574468085,
+        "growTime": 170212.7659574468,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -1059,6 +1535,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 115
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 5371
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 5055
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 4774
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 4523
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 4297
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 4092
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 3906
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 3736
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 3581
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 3437
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 3305
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 3183
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 3069
+            }
         ]
     },
     {
@@ -1080,7 +1610,7 @@
         "baseDifficulty": 30,
         "hackDifficulty": 13.415999999999991,
         "minDifficulty": 10,
-        "moneyAvailable": 2747732.1186855542,
+        "moneyAvailable": 11701.142785959184,
         "moneyMax": 500000000,
         "numOpenPortsRequired": 1,
         "openPortCount": 1,
@@ -1095,12 +1625,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.02021474301272863,
-        "hackTime": 59292.307692307666,
-        "weakenTime": 237169.23076923066,
-        "growTime": 189735.38461538454,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 433.10542363485166,
+        "randomValueForShuffle": 0.8881839864699732,
+        "hackTime": 58571.42857142854,
+        "weakenTime": 234285.71428571417,
+        "growTime": 187428.57142857133,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -1154,6 +1683,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 40
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 23869
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 22465
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 21217
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 20100
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 19095
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 18186
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 17359
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 16605
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 15913
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 15276
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 14689
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 14145
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 13640
+            }
         ]
     },
     {
@@ -1192,12 +1775,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.4329063287107493,
-        "hackTime": 84615.38461538461,
-        "weakenTime": 338461.53846153844,
-        "growTime": 270769.23076923075,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 468.75,
+        "randomValueForShuffle": 0.1258638724043999,
+        "hackTime": 83586.62613981763,
+        "weakenTime": 334346.5045592705,
+        "growTime": 267477.2036474164,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -1251,6 +1833,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 149
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 6136
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 5775
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 5455
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 5167
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 4909
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 4675
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 4463
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 4269
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 4091
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 3927
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 3776
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 3637
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 3507
+            }
         ]
     },
     {
@@ -1289,12 +1925,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 36,
         "maxHackThreads": 37,
-        "randomValueForShuffle": 0.28627063460410973,
-        "hackTime": 180769.23076923078,
-        "weakenTime": 723076.9230769231,
-        "growTime": 578461.5384615385,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 748.2993197278913,
+        "randomValueForShuffle": 0.5234243006704622,
+        "hackTime": 178571.42857142858,
+        "weakenTime": 714285.7142857143,
+        "growTime": 571428.5714285715,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -1348,6 +1983,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 229
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10735
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10104
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9543
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9040
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8588
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8180
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7808
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7468
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7157
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6871
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6607
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6362
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6135
+            }
         ]
     },
     {
@@ -1387,7 +2076,7 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 73,
         "maxHackThreads": 75,
-        "randomValueForShuffle": 0.5984221392606635
+        "randomValueForShuffle": 0.1509715930478568
     },
     {
         "hostname": "omega-net",
@@ -1425,12 +2114,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.0010454432337105857,
-        "hackTime": 221692.3076923077,
-        "weakenTime": 886769.2307692308,
-        "growTime": 709415.3846153846,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 1438.5353095030514,
+        "randomValueForShuffle": 0.1778039405434071,
+        "hackTime": 218996.9604863222,
+        "weakenTime": 875987.8419452888,
+        "growTime": 700790.273556231,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -1484,6 +2172,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 195
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 7545
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 7101
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 6706
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 6353
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 6036
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 5748
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 5487
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 5249
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 5030
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 4829
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 4643
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 4471
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 4311
+            }
         ]
     },
     {
@@ -1523,12 +2265,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.07830793293581073,
-        "hackTime": 471230.76923076925,
-        "weakenTime": 1884923.076923077,
-        "growTime": 1507938.4615384615,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 8730.158730158728,
+        "randomValueForShuffle": 0.5083423298785914,
+        "hackTime": 465501.5197568389,
+        "weakenTime": 1862006.0790273556,
+        "growTime": 1489604.8632218845,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -1582,6 +2323,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 355
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 12993
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 12229
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 11550
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 10942
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 10395
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 9900
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 9450
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 9039
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 8662
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 8316
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 7996
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 7700
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 7425
+            }
         ]
     },
     {
@@ -1621,12 +2416,11 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.4446332927837511,
-        "hackTime": 423076.9230769231,
-        "weakenTime": 1692307.6923076925,
-        "growTime": 1353846.153846154,
-        "threadsToHackMaxMoney": -1,
-        "threadsToHackMoneyAvailable": 18333.333333333332,
+        "randomValueForShuffle": 0.5654834804116113,
+        "hackTime": 417933.1306990881,
+        "weakenTime": 1671732.5227963524,
+        "growTime": 1337386.018237082,
+        "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
                 "numberOfCores": 1,
@@ -1680,6 +2474,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 309
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 15334
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 14432
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 13630
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 12913
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 12267
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 11683
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 11152
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 10667
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 10223
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 9814
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 9437
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 9087
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 8763
+            }
         ]
     },
     {
@@ -1719,11 +2567,10 @@
         "possibleHackThreads": 37,
         "maxWeakenOrGrowThreads": 36,
         "maxHackThreads": 37,
-        "randomValueForShuffle": 0.5767993882503559,
-        "hackTime": 430384.61538461543,
-        "weakenTime": 1721538.4615384617,
-        "growTime": 1377230.7692307695,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.9296426768928097,
+        "hackTime": 425151.9756838906,
+        "weakenTime": 1700607.9027355623,
+        "growTime": 1360486.3221884498,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -1778,6 +2625,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 263
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 8168
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 7687
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 7260
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 6878
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 6534
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 6223
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 5940
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 5682
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 5445
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 5228
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 5027
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 4840
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 4668
+            }
         ]
     },
     {
@@ -1817,11 +2718,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.5456330076932041,
-        "hackTime": 825192.3076923077,
-        "weakenTime": 3300769.230769231,
-        "growTime": 2640615.384615385,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.6565400162611932,
+        "hackTime": 815159.5744680851,
+        "weakenTime": 3260638.2978723403,
+        "growTime": 2608510.6382978726,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -1876,6 +2776,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 492
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 14843
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 13970
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 13194
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 12499
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 11874
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 11309
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 10795
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 10326
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 9895
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 9500
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 9134
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 8796
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 8482
+            }
         ]
     },
     {
@@ -1916,7 +2870,7 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.9020572895727872
+        "randomValueForShuffle": 0.5690022503332353
     },
     {
         "hostname": "netlink",
@@ -1955,11 +2909,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.9343895327614482,
-        "hackTime": 1038846.1538461538,
-        "weakenTime": 4155384.615384615,
-        "growTime": 3324307.6923076925,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.8023832984358781,
+        "hackTime": 1026215.8054711247,
+        "weakenTime": 4104863.221884499,
+        "growTime": 3283890.5775075993,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2014,6 +2967,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 538
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 15025
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 14141
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 13356
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 12653
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 12020
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 11448
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 10928
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 10452
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 10017
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 9616
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 9246
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 8904
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 8586
+            }
         ]
     },
     {
@@ -2054,11 +3061,10 @@
         "possibleHackThreads": 37,
         "maxWeakenOrGrowThreads": 36,
         "maxHackThreads": 37,
-        "randomValueForShuffle": 0.5361456277783898,
-        "hackTime": 736615.3846153845,
-        "weakenTime": 2946461.538461538,
-        "growTime": 2357169.2307692305,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.9529975276479326,
+        "hackTime": 727659.5744680851,
+        "weakenTime": 2910638.2978723403,
+        "growTime": 2328510.6382978726,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2113,6 +3119,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 355
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 11756
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 11064
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 10450
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9900
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 9405
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8957
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 8550
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 8178
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7837
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 7524
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 7235
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6967
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6718
+            }
         ]
     },
     {
@@ -2153,11 +3213,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.9215756122005274,
-        "hackTime": 990153.8461538462,
-        "weakenTime": 3960615.384615385,
-        "growTime": 3168492.307692308,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.20565152644635853,
+        "hackTime": 978115.5015197567,
+        "weakenTime": 3912462.006079027,
+        "growTime": 3129969.6048632218,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2212,6 +3271,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 469
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 23765
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 22367
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 21124
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 20012
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 19012
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 18106
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 17283
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 16532
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 15843
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 15210
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 14625
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 14083
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 13580
+            }
         ]
     },
     {
@@ -2253,11 +3366,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.5460201396699533,
-        "hackTime": 1214923.076923077,
-        "weakenTime": 4859692.307692308,
-        "growTime": 3887753.846153846,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.48525425578519044,
+        "hackTime": 1200151.9756838907,
+        "weakenTime": 4800607.902735563,
+        "growTime": 3840486.32218845,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2312,6 +3424,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 583
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 20391
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 19191
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 18125
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 17171
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 16313
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 15536
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 14830
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 14185
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 13594
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 13050
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 12548
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 12084
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 11652
+            }
         ]
     },
     {
@@ -2352,11 +3518,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.044810583500493495,
-        "hackTime": 1032961.5384615384,
-        "weakenTime": 4131846.1538461535,
-        "growTime": 3305476.923076923,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.45803537865482213,
+        "hackTime": 1020402.73556231,
+        "weakenTime": 4081610.94224924,
+        "growTime": 3265288.753799392,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2411,6 +3576,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 469
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 11691
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 11003
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 10392
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9845
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 9353
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8908
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 8503
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 8133
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7794
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 7482
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 7195
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6928
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6681
+            }
         ]
     },
     {
@@ -2452,11 +3671,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.008997858943319725,
-        "hackTime": 950000,
-        "weakenTime": 3800000,
-        "growTime": 3040000,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.7902606201322149,
+        "hackTime": 938449.8480243161,
+        "weakenTime": 3753799.3920972645,
+        "growTime": 3003039.5136778117,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2511,6 +3729,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 378
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 14609
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 13750
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 12986
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 12303
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 11687
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 11131
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 10625
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 10163
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 9740
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 9350
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 8990
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 8657
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 8348
+            }
         ]
     },
     {
@@ -2552,11 +3824,10 @@
         "possibleHackThreads": 37,
         "maxWeakenOrGrowThreads": 36,
         "maxHackThreads": 37,
-        "randomValueForShuffle": 0.29843560109175193,
-        "hackTime": 1378076.9230769232,
-        "weakenTime": 5512307.692307693,
-        "growTime": 4409846.153846155,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.21875604392475867,
+        "hackTime": 1361322.188449848,
+        "weakenTime": 5445288.753799392,
+        "growTime": 4356231.003039514,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2611,6 +3882,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 538
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 15025
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 14141
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 13356
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 12653
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 12020
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 11448
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 10928
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 10452
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 10017
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 9616
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 9246
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 8904
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 8586
+            }
         ]
     },
     {
@@ -2652,11 +3977,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.6030483042315007,
-        "hackTime": 1010038.4615384615,
-        "weakenTime": 4040153.846153846,
-        "growTime": 3232123.076923077,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.9359996457700774,
+        "hackTime": 997758.358662614,
+        "weakenTime": 3991033.434650456,
+        "growTime": 3192826.747720365,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2711,6 +4035,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 389
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 13685
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 12880
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 12164
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 11524
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 10948
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 10427
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 9953
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 9520
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 9123
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 8758
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 8422
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 8110
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 7820
+            }
         ]
     },
     {
@@ -2757,7 +4135,7 @@
         "possibleHackThreads": 150,
         "maxWeakenOrGrowThreads": 146,
         "maxHackThreads": 150,
-        "randomValueForShuffle": 0.7352190512176748
+        "randomValueForShuffle": 0.7786988098040164
     },
     {
         "hostname": ".",
@@ -2805,7 +4183,7 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.9398171709649987
+        "randomValueForShuffle": 0.21810747639496553
     },
     {
         "hostname": "syscore",
@@ -2845,11 +4223,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.3033136134133305,
-        "hackTime": 1893076.9230769232,
-        "weakenTime": 7572307.692307693,
-        "growTime": 6057846.153846155,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.47226745282358173,
+        "hackTime": 1870060.790273556,
+        "weakenTime": 7480243.161094224,
+        "growTime": 5984194.52887538,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -2904,6 +4281,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 583
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 11821
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 11126
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 10508
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9955
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 9457
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 9007
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 8597
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 8223
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7881
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 7566
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 7275
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 7005
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6755
+            }
         ]
     },
     {
@@ -2945,11 +4376,10 @@
         "possibleHackThreads": 37,
         "maxWeakenOrGrowThreads": 36,
         "maxHackThreads": 37,
-        "randomValueForShuffle": 0.5847678373123375,
-        "hackTime": 1880307.6923076925,
-        "weakenTime": 7521230.76923077,
-        "growTime": 6016984.615384616,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.9947467677211519,
+        "hackTime": 1857446.8085106383,
+        "weakenTime": 7429787.234042553,
+        "growTime": 5943829.787234043,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3004,6 +4434,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 515
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 12804
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 12050
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 11381
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 10782
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 10243
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 9755
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 9312
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 8907
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 8536
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 8194
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 7879
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 7587
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 7317
+            }
         ]
     },
     {
@@ -3044,11 +4528,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.9473499257933622,
-        "hackTime": 2303692.3076923075,
-        "weakenTime": 9214769.23076923,
-        "growTime": 7371815.384615385,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.48517203072927795,
+        "hackTime": 2275683.8905775077,
+        "weakenTime": 9102735.56231003,
+        "growTime": 7282188.449848025,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3103,6 +4586,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 629
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10353
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 9744
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9203
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 8719
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8283
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 7888
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7530
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7202
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 6902
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6626
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6371
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6135
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 5916
+            }
         ]
     },
     {
@@ -3145,11 +4682,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.01386802118616548,
-        "hackTime": 1158461.5384615383,
-        "weakenTime": 4633846.153846153,
-        "growTime": 3707076.923076923,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.31875703625300655,
+        "hackTime": 1144376.8996960486,
+        "weakenTime": 4577507.598784194,
+        "growTime": 3662006.079027356,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3204,6 +4740,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 309
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 8587
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 8082
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 7633
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 7232
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 6870
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 6543
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 6246
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 5974
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 5725
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 5496
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 5285
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 5089
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 4907
+            }
         ]
     },
     {
@@ -3248,11 +4838,10 @@
         "possibleHackThreads": 75,
         "maxWeakenOrGrowThreads": 73,
         "maxHackThreads": 75,
-        "randomValueForShuffle": 0.9556623723755,
-        "hackTime": 2123384.615384615,
-        "weakenTime": 8493538.46153846,
-        "growTime": 6794830.769230769,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.8175706848895559,
+        "hackTime": 2097568.389057751,
+        "weakenTime": 8390273.556231003,
+        "growTime": 6712218.844984802,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3307,6 +4896,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 549
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 9907
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 9324
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 8806
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 8343
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 7926
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 7548
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7205
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 6892
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 6605
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6341
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6097
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 5871
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 5661
+            }
         ]
     },
     {
@@ -3352,11 +4995,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.06463443098080734,
-        "hackTime": 1715500,
-        "weakenTime": 6862000,
-        "growTime": 5489600,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.9071259987238762,
+        "hackTime": 1694642.8571428573,
+        "weakenTime": 6778571.428571429,
+        "growTime": 5422857.142857144,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3411,6 +5053,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 435
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 8381
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 7888
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 7449
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 7057
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 6705
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 6385
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 6095
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 5830
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 5587
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 5364
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 5157
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 4966
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 4789
+            }
         ]
     },
     {
@@ -3453,11 +5149,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.5734742241382749,
-        "hackTime": 2407692.3076923075,
-        "weakenTime": 9630769.23076923,
-        "growTime": 7704615.384615385,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.6780544020616794,
+        "hackTime": 2378419.4528875384,
+        "weakenTime": 9513677.811550153,
+        "growTime": 7610942.249240123,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3512,6 +5207,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 595
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 9734
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 9161
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 8652
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 8197
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 7787
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 7416
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7079
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 6772
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 6489
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6230
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 5990
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 5768
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 5562
+            }
         ]
     },
     {
@@ -3558,11 +5307,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.6189592015880983,
-        "hackTime": 2228615.384615385,
-        "weakenTime": 8914461.53846154,
-        "growTime": 7131569.230769232,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.7883915363230762,
+        "hackTime": 2201519.7568389056,
+        "weakenTime": 8806079.027355623,
+        "growTime": 7044863.221884498,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3617,6 +5365,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 549
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10035
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 9445
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 8920
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 8451
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8028
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 7646
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7299
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 6981
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 6690
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6423
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6176
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 5947
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 5735
+            }
         ]
     },
     {
@@ -3663,11 +5465,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.9950735503917747,
-        "hackTime": 2279115.384615385,
-        "weakenTime": 9116461.53846154,
-        "growTime": 7293169.230769232,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.18038860448949867,
+        "hackTime": 2251405.7750759874,
+        "weakenTime": 9005623.10030395,
+        "growTime": 7204498.480243161,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3722,6 +5523,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 560
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10587
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 9965
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9411
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 8916
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8470
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8067
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7700
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7365
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7058
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6776
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6515
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6274
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6050
+            }
         ]
     },
     {
@@ -3766,11 +5621,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.8682527237338105,
-        "hackTime": 2659038.4615384615,
-        "weakenTime": 10636153.846153846,
-        "growTime": 8508923.076923076,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.7909496042451147,
+        "hackTime": 2626709.726443769,
+        "weakenTime": 10506838.905775076,
+        "growTime": 8405471.124620061,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3825,6 +5679,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 652
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 11547
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10868
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 10264
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9724
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 9238
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8798
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 8398
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 8033
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7698
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 7390
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 7106
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6843
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6599
+            }
         ]
     },
     {
@@ -3869,11 +5777,10 @@
         "possibleHackThreads": 75,
         "maxWeakenOrGrowThreads": 73,
         "maxHackThreads": 75,
-        "randomValueForShuffle": 0.2264936086785445,
-        "hackTime": 2530769.2307692305,
-        "weakenTime": 10123076.923076922,
-        "growTime": 8098461.538461538,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.7962413055362598,
+        "hackTime": 2500000,
+        "weakenTime": 10000000,
+        "growTime": 8000000,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -3928,6 +5835,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 606
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10732
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10101
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9540
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9038
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8586
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8177
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7805
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7466
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7155
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6869
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6605
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6360
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6133
+            }
         ]
     },
     {
@@ -3971,11 +5932,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.6515546149794893,
-        "hackTime": 2445038.4615384615,
-        "weakenTime": 9780153.846153846,
-        "growTime": 7824123.076923077,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.6393373767028381,
+        "hackTime": 2415311.5501519754,
+        "weakenTime": 9661246.200607901,
+        "growTime": 7728996.960486322,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4030,6 +5990,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 583
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10873
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10234
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9665
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9157
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8699
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8285
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7908
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7564
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7249
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6959
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6692
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6444
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6214
+            }
         ]
     },
     {
@@ -4076,11 +6090,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.7107464274231554,
-        "hackTime": 2378538.4615384615,
-        "weakenTime": 9514153.846153846,
-        "growTime": 7611323.076923077,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.05398158993271629,
+        "hackTime": 2349620.060790274,
+        "weakenTime": 9398480.243161095,
+        "growTime": 7518784.194528877,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4135,6 +6148,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 560
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 11186
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10528
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9943
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9420
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8949
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8523
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 8135
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7782
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7457
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 7159
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6884
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6629
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6392
+            }
         ]
     },
     {
@@ -4180,11 +6247,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.0661394613884978,
-        "hackTime": 2188923.076923077,
-        "weakenTime": 8755692.307692308,
-        "growTime": 7004553.846153847,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.15644890371095044,
+        "hackTime": 2162310.0303951367,
+        "weakenTime": 8649240.121580547,
+        "growTime": 6919392.097264438,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4239,6 +6305,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 515
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10732
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10101
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9540
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9038
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8586
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8177
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7806
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7466
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7155
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6869
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6605
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6360
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6133
+            }
         ]
     },
     {
@@ -4286,11 +6406,10 @@
         "possibleHackThreads": 75,
         "maxWeakenOrGrowThreads": 73,
         "maxHackThreads": 75,
-        "randomValueForShuffle": 0.5447876669542815,
-        "hackTime": 3030153.846153846,
-        "weakenTime": 12120615.384615384,
-        "growTime": 9696492.307692308,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.3981683553192541,
+        "hackTime": 2993313.069908814,
+        "weakenTime": 11973252.279635256,
+        "growTime": 9578601.823708206,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4345,6 +6464,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 720
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 13819
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 13006
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 12284
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 11637
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 11055
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 10529
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 10050
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 9613
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 9213
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 8844
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 8504
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 8189
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 7897
+            }
         ]
     },
     {
@@ -4388,11 +6561,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.3644305201354159,
-        "hackTime": 2530923.0769230765,
-        "weakenTime": 10123692.307692306,
-        "growTime": 8098953.846153846,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.6948150378813593,
+        "hackTime": 2500151.9756838907,
+        "weakenTime": 10000607.902735563,
+        "growTime": 8000486.322188451,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4447,6 +6619,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 583
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 14498
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 13645
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 12887
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 12209
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 11598
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 11046
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 10544
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 10085
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 9665
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 9279
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 8922
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 8591
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 8285
+            }
         ]
     },
     {
@@ -4489,11 +6715,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.9697174048113233,
-        "hackTime": 2162692.3076923075,
-        "weakenTime": 8650769.23076923,
-        "growTime": 6920615.384615385,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.16593182007604446,
+        "hackTime": 2136398.176291793,
+        "weakenTime": 8545592.705167172,
+        "growTime": 6836474.164133739,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4548,6 +6773,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 492
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 9060
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 8527
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 8053
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 7630
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 7248
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 6903
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 6589
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 6303
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 6040
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 5799
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 5576
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 5369
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 5177
+            }
         ]
     },
     {
@@ -4595,11 +6874,10 @@
         "possibleHackThreads": 75,
         "maxWeakenOrGrowThreads": 73,
         "maxHackThreads": 75,
-        "randomValueForShuffle": 0.5304808778346133,
-        "hackTime": 3043461.5384615385,
-        "weakenTime": 12173846.153846154,
-        "growTime": 9739076.923076924,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.9090010463585487,
+        "hackTime": 3006458.966565349,
+        "weakenTime": 12025835.866261397,
+        "growTime": 9620668.693009118,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4654,6 +6932,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 686
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 13798
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 12986
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 12265
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 11619
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 11038
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 10513
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 10035
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 9599
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 9199
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 8831
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 8491
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 8177
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 7885
+            }
         ]
     },
     {
@@ -4696,11 +7028,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.9292616332365276,
-        "hackTime": 3091923.0769230765,
-        "weakenTime": 12367692.307692306,
-        "growTime": 9894153.846153846,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.45180913126279965,
+        "hackTime": 3054331.306990882,
+        "weakenTime": 12217325.227963528,
+        "growTime": 9773860.182370821,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4754,6 +7085,60 @@
             {
                 "numberOfCores": 13,
                 "threadsNeeded": 686
+            }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 16370
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 15407
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 14552
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 13786
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 13096
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 12473
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 11906
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 11388
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 10914
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 10477
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 10074
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 9701
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 9355
             }
         ]
     },
@@ -4799,11 +7184,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.10467153083751168,
-        "hackTime": 2978000,
-        "weakenTime": 11912000,
-        "growTime": 9529600,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.4577057278692662,
+        "hackTime": 2941793.313069909,
+        "weakenTime": 11767173.252279636,
+        "growTime": 9413738.601823708,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4858,6 +7242,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 652
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10255
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 9652
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9116
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 8636
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8204
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 7813
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7458
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7134
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 6837
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6563
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6311
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6077
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 5860
+            }
         ]
     },
     {
@@ -4901,11 +7339,10 @@
         "possibleHackThreads": 9,
         "maxWeakenOrGrowThreads": 9,
         "maxHackThreads": 9,
-        "randomValueForShuffle": 0.4052684980270089,
-        "hackTime": 3085038.4615384615,
-        "weakenTime": 12340153.846153846,
-        "growTime": 9872123.076923076,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.6248485564499391,
+        "hackTime": 3047530.3951367782,
+        "weakenTime": 12190121.580547113,
+        "growTime": 9752097.26443769,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -4960,6 +7397,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 675
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 15919
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 14982
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 14150
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 13405
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 12735
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 12129
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 11577
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 11074
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 10613
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 10188
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 9796
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 9434
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 9097
+            }
         ]
     },
     {
@@ -5004,11 +7495,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.5934299131028431,
-        "hackTime": 2921846.153846154,
-        "weakenTime": 11687384.615384616,
-        "growTime": 9349907.692307692,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.05099355049557919,
+        "hackTime": 2886322.188449848,
+        "weakenTime": 11545288.753799392,
+        "growTime": 9236231.003039515,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5063,6 +7553,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 640
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 13659
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 12855
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 12141
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 11502
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 10927
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 10407
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 9934
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 9502
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 9106
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 8742
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 8406
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 8094
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 7805
+            }
         ]
     },
     {
@@ -5108,11 +7652,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.25237425454413365,
-        "hackTime": 2476538.4615384615,
-        "weakenTime": 9906153.846153846,
-        "growTime": 7924923.076923077,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.91275328179746,
+        "hackTime": 2446428.5714285714,
+        "weakenTime": 9785714.285714285,
+        "growTime": 7828571.428571429,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5167,6 +7710,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 538
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 9510
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 8950
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 8453
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 8008
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 7608
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 7246
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 6916
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 6616
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 6340
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6086
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 5852
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 5636
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 5434
+            }
         ]
     },
     {
@@ -5212,11 +7809,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.7762773119810278,
-        "hackTime": 2547076.923076923,
-        "weakenTime": 10188307.692307692,
-        "growTime": 8150646.153846154,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.9789089105296356,
+        "hackTime": 2516109.4224924007,
+        "weakenTime": 10064437.689969603,
+        "growTime": 8051550.151975684,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5271,6 +7867,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 549
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 18398
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 17316
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 16354
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 15493
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 14718
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 14018
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 13380
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 12799
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 12265
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 11775
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 11322
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 10903
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 10513
+            }
         ]
     },
     {
@@ -5321,7 +7971,7 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.31190106737172085
+        "randomValueForShuffle": 0.476733256700397
     },
     {
         "hostname": "omnitek",
@@ -5369,11 +8019,10 @@
         "possibleHackThreads": 301,
         "maxWeakenOrGrowThreads": 292,
         "maxHackThreads": 301,
-        "randomValueForShuffle": 0.7600502129357771,
-        "hackTime": 3437961.5384615385,
-        "weakenTime": 13751846.153846154,
-        "growTime": 11001476.923076924,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.509176017156127,
+        "hackTime": 3396162.6139817624,
+        "weakenTime": 13584650.45592705,
+        "growTime": 10867720.36474164,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5428,6 +8077,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 709
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10506
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 9888
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9339
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 8847
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8405
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8005
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7641
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7309
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7004
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6724
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6465
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6226
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6004
+            }
         ]
     },
     {
@@ -5477,11 +8180,10 @@
         "possibleHackThreads": 301,
         "maxWeakenOrGrowThreads": 292,
         "maxHackThreads": 301,
-        "randomValueForShuffle": 0.14455934255153657,
-        "hackTime": 3663846.1538461535,
-        "weakenTime": 14655384.615384614,
-        "growTime": 11724307.692307692,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.1011264183061591,
+        "hackTime": 3619300.911854103,
+        "weakenTime": 14477203.647416413,
+        "growTime": 11581762.91793313,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5536,6 +8238,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 743
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 13697
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 12891
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 12175
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 11534
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 10958
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 10436
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 9962
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 9528
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 9131
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 8766
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 8429
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 8117
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 7827
+            }
         ]
     },
     {
@@ -5584,11 +8340,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.7719068685704702,
-        "hackTime": 3796000,
-        "weakenTime": 15184000,
-        "growTime": 12147200,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.3121033703727938,
+        "hackTime": 3749848.0243161093,
+        "weakenTime": 14999392.097264437,
+        "growTime": 11999513.67781155,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5643,6 +8398,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 732
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 11447
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10774
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 10175
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9640
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 9158
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8722
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 8325
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7963
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7632
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 7326
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 7045
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6784
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6541
+            }
         ]
     },
     {
@@ -5692,11 +8501,10 @@
         "possibleHackThreads": 18,
         "maxWeakenOrGrowThreads": 18,
         "maxHackThreads": 18,
-        "randomValueForShuffle": 0.04931270145941857,
-        "hackTime": 2265769.2307692305,
-        "weakenTime": 9063076.923076922,
-        "growTime": 7250461.538461538,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.9594974087756201,
+        "hackTime": 2238221.8844984802,
+        "weakenTime": 8952887.537993921,
+        "growTime": 7162310.030395138,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5751,6 +8559,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 435
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10196
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 9597
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9063
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 8586
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8157
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 7769
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7416
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7093
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 6798
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6526
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6275
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6042
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 5827
+            }
         ]
     },
     {
@@ -5798,11 +8660,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.5206612703879863,
-        "hackTime": 3397884.615384615,
-        "weakenTime": 13591538.46153846,
-        "growTime": 10873230.76923077,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.36701833070249434,
+        "hackTime": 3356572.9483282673,
+        "weakenTime": 13426291.79331307,
+        "growTime": 10741033.434650455,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5857,6 +8718,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 652
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 11262
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10599
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 10011
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9484
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 9010
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8581
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 8191
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7835
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7508
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 7208
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6931
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6674
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6436
+            }
         ]
     },
     {
@@ -5906,11 +8821,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.3725913570809647,
-        "hackTime": 3521076.9230769235,
-        "weakenTime": 14084307.692307694,
-        "growTime": 11267446.153846154,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.8431648609921771,
+        "hackTime": 3478267.477203647,
+        "weakenTime": 13913069.908814589,
+        "growTime": 11130455.92705167,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -5965,6 +8879,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 629
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 14427
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 13578
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 12824
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 12149
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 11541
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 10992
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 10492
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 10036
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 9618
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 9233
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 8878
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 8549
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 8244
+            }
         ]
     },
     {
@@ -6013,11 +8981,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.5430905004900279,
-        "hackTime": 2585538.461538462,
-        "weakenTime": 10342153.846153848,
-        "growTime": 8273723.076923079,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.71775939947496,
+        "hackTime": 2554103.343465045,
+        "weakenTime": 10216413.37386018,
+        "growTime": 8173130.699088146,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6072,6 +9039,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 446
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 6959
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 6550
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 6186
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 5860
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 5567
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 5302
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 5061
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 4841
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 4639
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 4454
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 4283
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 4124
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 3977
+            }
         ]
     },
     {
@@ -6121,11 +9142,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.303274107061797,
-        "hackTime": 4394153.846153846,
-        "weakenTime": 17576615.384615384,
-        "growTime": 14061292.307692308,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.1624124394536326,
+        "hackTime": 4340729.483282675,
+        "weakenTime": 17362917.9331307,
+        "growTime": 13890334.34650456,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6180,6 +9200,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 755
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 11675
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10988
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 10378
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9832
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 9340
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8895
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 8491
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 8122
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7784
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 7472
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 7185
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6919
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6672
+            }
         ]
     },
     {
@@ -6229,11 +9303,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.10416124577484287,
-        "hackTime": 2728461.5384615385,
-        "weakenTime": 10913846.153846154,
-        "growTime": 8731076.923076924,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.003902509261527465,
+        "hackTime": 2695288.753799392,
+        "weakenTime": 10781155.015197568,
+        "growTime": 8624924.012158055,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6288,6 +9361,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 458
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 9907
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 9324
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 8806
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 8343
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 7926
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 7548
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7205
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 6892
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 6605
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6341
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6097
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 5871
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 5661
+            }
         ]
     },
     {
@@ -6335,11 +9462,10 @@
         "possibleHackThreads": 1204,
         "maxWeakenOrGrowThreads": 1170,
         "maxHackThreads": 1204,
-        "randomValueForShuffle": 0.7443897619840019,
-        "hackTime": 4492076.923076923,
-        "weakenTime": 17968307.692307692,
-        "growTime": 14374646.153846154,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.8456945349815255,
+        "hackTime": 4437462.006079027,
+        "weakenTime": 17749848.02431611,
+        "growTime": 14199878.419452889,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6394,6 +9520,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 743
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 11193
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10535
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9950
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9426
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8955
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8528
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 8141
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7787
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7462
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 7164
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6888
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6633
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6396
+            }
         ]
     },
     {
@@ -6444,11 +9624,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.34925770634934583,
-        "hackTime": 4733038.461538462,
-        "weakenTime": 18932153.846153848,
-        "growTime": 15145723.07692308,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.3282988725907763,
+        "hackTime": 4675493.920972644,
+        "weakenTime": 18701975.683890577,
+        "growTime": 14961580.547112463,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6502,6 +9681,60 @@
             {
                 "numberOfCores": 13,
                 "threadsNeeded": 755
+            }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 1062390
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 999897
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 944347
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 894645
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 849912
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 809440
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 772648
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 739054
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 708260
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 679930
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 653779
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 629565
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 607080
             }
         ]
     },
@@ -6553,11 +9786,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.9443383320339926,
-        "hackTime": 5060500,
-        "weakenTime": 20242000,
-        "growTime": 16193600,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.5628292692742385,
+        "hackTime": 4998974.164133739,
+        "weakenTime": 19995896.656534955,
+        "growTime": 15996717.325227965,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6612,6 +9844,60 @@
                 "numberOfCores": 13,
                 "threadsNeeded": 755
             }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10732
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10100
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9539
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9037
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8585
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8177
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7805
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7466
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7155
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6868
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6604
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6360
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6133
+            }
         ]
     },
     {
@@ -6662,11 +9948,10 @@
         "possibleHackThreads": 0,
         "maxWeakenOrGrowThreads": 0,
         "maxHackThreads": 0,
-        "randomValueForShuffle": 0.05900784195487274,
-        "hackTime": 5205192.307692307,
-        "weakenTime": 20820769.23076923,
-        "growTime": 16656615.384615382,
-        "threadsToHackMaxMoney": -1,
+        "randomValueForShuffle": 0.9990670959747339,
+        "hackTime": 5141907.294832827,
+        "weakenTime": 20567629.179331306,
+        "growTime": 16454103.343465045,
         "threadsToHackMoneyAvailable": -1,
         "threadsToReduceToMinDifficulty": [
             {
@@ -6720,6 +10005,60 @@
             {
                 "numberOfCores": 13,
                 "threadsNeeded": 755
+            }
+        ],
+        "threadsToIncreaseToMaxMoney": [
+            {
+                "numberOfCores": 1,
+                "threadsNeeded": 10732
+            },
+            {
+                "numberOfCores": 2,
+                "threadsNeeded": 10100
+            },
+            {
+                "numberOfCores": 3,
+                "threadsNeeded": 9539
+            },
+            {
+                "numberOfCores": 4,
+                "threadsNeeded": 9037
+            },
+            {
+                "numberOfCores": 5,
+                "threadsNeeded": 8585
+            },
+            {
+                "numberOfCores": 6,
+                "threadsNeeded": 8177
+            },
+            {
+                "numberOfCores": 7,
+                "threadsNeeded": 7805
+            },
+            {
+                "numberOfCores": 8,
+                "threadsNeeded": 7466
+            },
+            {
+                "numberOfCores": 9,
+                "threadsNeeded": 7155
+            },
+            {
+                "numberOfCores": 10,
+                "threadsNeeded": 6868
+            },
+            {
+                "numberOfCores": 11,
+                "threadsNeeded": 6604
+            },
+            {
+                "numberOfCores": 12,
+                "threadsNeeded": 6360
+            },
+            {
+                "numberOfCores": 13,
+                "threadsNeeded": 6133
             }
         ]
     }

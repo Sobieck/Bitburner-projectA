@@ -1,7 +1,7 @@
 import { main } from "../../../src/scripts/runLoop/enrichEnvironmentForHacking"
 import { NS } from "@ns";
 import { nsMock } from "../../utilities/nsMock.testUtility";
-import { FilePaths } from "../../../src/scripts/models/filePaths"
+import { FilePaths } from "../../../src/scripts/constants"
 import { ServerWithAdditionalInfo, ThreadsNeeded } from "../../../src/scripts/models/runLoop/serverWithAdditionalInfo"
 import { RandomValues } from "../../utilities/randomValues.testUtility";
 
@@ -17,8 +17,8 @@ describe('enrichEnvironmentForHacking', () => {
         hostname: "server1",
         purchasedByPlayer: false,
         cpuCores: 8,
-        moneyMax: 162,
-        moneyAvailable: 2,
+        moneyMax: 1000,
+        moneyAvailable: 900,
         minDifficulty: 9,
         hackDifficulty: 19,
     }
@@ -27,8 +27,8 @@ describe('enrichEnvironmentForHacking', () => {
         hostname: "server2",
         purchasedByPlayer: false,
         cpuCores: 2,
-        moneyMax: 126,
-        moneyAvailable: 6,
+        moneyMax: 2000,
+        moneyAvailable: 100,
         minDifficulty: 90,
         hackDifficulty: 190,
     }
@@ -79,11 +79,8 @@ describe('enrichEnvironmentForHacking', () => {
         nsSetup.getGrowTimeReturns.set(server1.hostname, server1GrowTime)
         nsSetup.getGrowTimeReturns.set(server2.hostname, server2GrowTime)
 
-        nsSetup.hackAnalyzeThreadsReturns.set(server1.hostname + server1.moneyMax, server1MaxMoneyThreads)
-        nsSetup.hackAnalyzeThreadsReturns.set(server2.hostname + server2.moneyMax, server2MaxMoneyThreads)
-
-        nsSetup.hackAnalyzeThreadsReturns.set(server1.hostname + server1.moneyAvailable, server1CurrentMoneyThreads)
-        nsSetup.hackAnalyzeThreadsReturns.set(server2.hostname + server2.moneyAvailable, server2CurrentMoneyThreads)
+        nsSetup.hackAnalyzeThreadsReturns.set(server1.hostname + (server1.moneyAvailable - (server1.moneyMax * 0.05)), server1CurrentMoneyThreads)
+        nsSetup.hackAnalyzeThreadsReturns.set(server2.hostname + (server2.moneyAvailable - (server2.moneyMax * 0.05)), server2CurrentMoneyThreads)
 
 
         const ns = nsSetup as unknown
@@ -125,6 +122,17 @@ describe('enrichEnvironmentForHacking', () => {
                         new ThreadsNeeded(7, 130),
                         new ThreadsNeeded(8, 114),
                     ],
+
+                    threadsToIncreaseToMaxMoney: [
+                        new ThreadsNeeded(1, 4),
+                        new ThreadsNeeded(2, 5),
+                        new ThreadsNeeded(3, 6),
+                        new ThreadsNeeded(4, 7),
+                        new ThreadsNeeded(5, 8),
+                        new ThreadsNeeded(6, 9),
+                        new ThreadsNeeded(7, 10),
+                        new ThreadsNeeded(8, 11),
+                    ]
                 },
                 {
                     hostname: "home",
@@ -155,6 +163,17 @@ describe('enrichEnvironmentForHacking', () => {
                         new ThreadsNeeded(6, 1516),
                         new ThreadsNeeded(7, 1299),
                         new ThreadsNeeded(8, 1137),
+                    ],
+
+                    threadsToIncreaseToMaxMoney: [
+                        new ThreadsNeeded(1, 23),
+                        new ThreadsNeeded(2, 24),
+                        new ThreadsNeeded(3, 25),
+                        new ThreadsNeeded(4, 26),
+                        new ThreadsNeeded(5, 27),
+                        new ThreadsNeeded(6, 28),
+                        new ThreadsNeeded(7, 29),
+                        new ThreadsNeeded(8, 30),
                     ],
                 },
             ]

@@ -1,5 +1,5 @@
 import { NS } from "@ns";
-import { FilePaths } from "/scripts/models/filePaths";
+import { Constants, FilePaths } from "../constants";
 import { ServerWithAdditionalInfo, ThreadsNeeded } from "/scripts/models/runLoop/serverWithAdditionalInfo";
 
 export async function main(ns: NS): Promise<void> {
@@ -14,7 +14,7 @@ export async function main(ns: NS): Promise<void> {
             server.growTime = ns.getGrowTime(server.hostname)
 
 
-            server.threadsToHackMoneyAvailable = ns.hackAnalyzeThreads(server.hostname, server.moneyAvailable)
+            server.threadsToHackMoneyAvailable = ns.hackAnalyzeThreads(server.hostname, server.moneyAvailable - (server.moneyMax * Constants.ratioOfMoneyMaxToLeaveOnTheServer))
 
             const maxNumberOfCpus = environment.map(x => x.cpuCores).sort((a, b) => a - b).pop()
 
@@ -22,6 +22,9 @@ export async function main(ns: NS): Promise<void> {
                 const amountToReduce = server.hackDifficulty - server.minDifficulty
 
                 server.threadsToReduceToMinDifficulty = []
+                server.threadsToIncreaseToMaxMoney = []
+
+                const growthMultiplier = server.moneyMax / server.moneyAvailable
 
                 for (let i = 1; i <= maxNumberOfCpus; i++) {
                     let threads = 1
@@ -31,16 +34,16 @@ export async function main(ns: NS): Promise<void> {
                     }
 
                     server.threadsToReduceToMinDifficulty.push(new ThreadsNeeded(i, threads))
+
+                    server.threadsToIncreaseToMaxMoney.push(new ThreadsNeeded(
+                        i,
+                        Math.ceil(ns.growthAnalyze(server.hostname, growthMultiplier, i))
+                    ))
                 }
+
             }
         }
     }
 
     ns.write(FilePaths.data.environment, JSON.stringify(environment), "w")
-
-    // console.log(ns.weakenAnalyze(1136, 8))
-
-    // ns.growthAnalyze()
-
-
 }

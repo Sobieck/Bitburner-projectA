@@ -2,7 +2,7 @@ import { main } from "../../../src/scripts/runLoop/enrichEnvironment"
 import { NS } from "@ns";
 import { nsMock } from "../../utilities/nsMock.testUtility";
 import { ScriptRamCost } from "../../../src/scripts/models/runLoop/scriptRamCost"
-import { FilePaths } from "../../../src/scripts/models/filePaths"
+import { FilePaths } from "../../../src/scripts/constants"
 import { ServerWithAdditionalInfo } from "../../../src/scripts/models/runLoop/serverWithAdditionalInfo"
 
 describe('enrichEnvironment', () => {

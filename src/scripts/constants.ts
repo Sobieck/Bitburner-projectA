@@ -1,4 +1,4 @@
-export class Scripts {
+export class ScriptPaths {
     public orchestration = "scripts/runLoop/orchestration.js"
     public scriptsToRun = "scripts/runLoop/scriptsToRun.js"
 
@@ -7,7 +7,7 @@ export class Scripts {
     public weaken = "scripts/hacking/weaken.js"
 }
 
-export class Data {
+export class DataPaths {
     public environment = "data/runLoop/environment.json"
     public scriptsToRun = "data/runLoop/scripts-to-run.json"
     public scriptRamCost = "data/runLoop/script-ram-cost.json"
@@ -17,6 +17,11 @@ export class Data {
 }
 
 export abstract class FilePaths {
-    public static scripts = new Scripts()
-    public static data = new Data()
+    public static scripts = new ScriptPaths()
+    public static data = new DataPaths()
+}
+
+
+export abstract class Constants {
+    public static ratioOfMoneyMaxToLeaveOnTheServer = 0.05
 }

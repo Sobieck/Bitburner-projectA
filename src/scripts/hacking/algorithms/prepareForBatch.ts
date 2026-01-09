@@ -5,7 +5,7 @@ export async function main(ns: NS): Promise<void> {
 
     await ns.sleep(1)
 
-
+// ns.growthAnalyze()
 
 // use all the threads in the cluster to do all these. Second algo will make calculations
 

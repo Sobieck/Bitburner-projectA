@@ -1,8 +1,8 @@
 
 import { NS } from "@ns";
-import { FilePaths } from "/scripts/models/filePaths";
+import { FilePaths } from "../../constants";
 import { DispatchQueue, DispatchType } from "/scripts/models/hacking/dispatch/dispatchQueue";
-import { ServerWithAdditionalInfo } from "/scripts/models/runLoop/serverWithAdditionalInfo";
+import { ServerWithAdditionalInfo, ThreadsNeeded } from "/scripts/models/runLoop/serverWithAdditionalInfo";
 
 export async function main(ns: NS): Promise<void> {
 
@@ -30,7 +30,11 @@ export async function main(ns: NS): Promise<void> {
         return bPriority - aPriority
     })
 
+    const targetServer = environment.find(x => x.hostname === unexecutedRequest.target)
 
+    if (targetServer === undefined) {
+        return
+    }
 
     for (const command of sortedCommands) {
         const serversAvailible = environment.filter(x => x.hasAdminRights && x.possibleHackThreads > 0).sort((a, b) => b.possibleHackThreads - a.possibleHackThreads)
@@ -41,14 +45,30 @@ export async function main(ns: NS): Promise<void> {
 
             if (threadsExecuting < command.threadsWanted) {
 
-
                 let threadsToExecute = command.threadsWanted - threadsExecuting
+                let threadEquivilantRatio = 1
 
                 if (command.commandType !== DispatchType.Hack) {
+                    if (server.cpuCores > 1) {
+                        
+                        const cpuCores = server.cpuCores
+                        let threadsTable = targetServer.threadsToIncreaseToMaxMoney
+
+                        if (command.commandType === DispatchType.Weaken) {
+                            threadsTable = targetServer.threadsToReduceToMinDifficulty
+                        }
+
+                        const threadsAnalysis = getThreadsToExecuteAndThreadEquivilant(threadsTable, cpuCores, threadsToExecute)
+                        threadsToExecute = threadsAnalysis.threadsToExecute
+                        threadEquivilantRatio = threadsAnalysis.threadEquivilantRatio
+                    }
+
                     if (threadsToExecute > server.possibleWeakenOrGrowThreads) {
                         threadsToExecute = server.possibleWeakenOrGrowThreads
                     }
                 } else {
+                    
+
                     if (threadsToExecute > server.possibleHackThreads) {
                         threadsToExecute = server.possibleHackThreads
                     }
@@ -58,17 +78,18 @@ export async function main(ns: NS): Promise<void> {
 
                 command.pids.push(pid)
 
-                threadsExecuting += threadsToExecute
+                threadsExecuting += Math.floor(threadsToExecute * threadEquivilantRatio)
 
                 if (command.commandType !== DispatchType.Hack) {
                     const hackThreadRatio = server.possibleHackThreads / server.possibleWeakenOrGrowThreads
 
-                    server.possibleWeakenOrGrowThreads -= threadsToExecute
+                    server.possibleWeakenOrGrowThreads -= threadsToExecute 
                     server.possibleHackThreads = Math.floor(server.possibleWeakenOrGrowThreads * hackThreadRatio)
 
                 } else {
                     server.possibleHackThreads -= threadsToExecute
                 }
+
             }
         }
 
@@ -78,4 +99,17 @@ export async function main(ns: NS): Promise<void> {
     unexecutedRequest.dispatched = true
 
     ns.write(FilePaths.data.dispatchQueue, JSON.stringify(dispatchQueue), "w")
+}
+
+function getThreadsToExecuteAndThreadEquivilant(threadsTable: ThreadsNeeded[], cpuCores: number, threadsToExecute: number) {
+    const threadsNeedPer1Core = threadsTable.find(x => x.numberOfCores === 1)?.threadsNeeded;
+    const threadsNeededPerThisServersCores = threadsTable.find(x => x.numberOfCores === cpuCores)?.threadsNeeded;
+    let threadEquivilantRatio = 1
+
+    if (threadsNeedPer1Core && threadsNeededPerThisServersCores) {
+        threadsToExecute = Math.ceil((threadsNeededPerThisServersCores / threadsNeedPer1Core) * threadsToExecute);
+        threadEquivilantRatio = threadsNeedPer1Core / threadsNeededPerThisServersCores;
+    }
+
+    return { threadsToExecute, threadEquivilantRatio } 
 }

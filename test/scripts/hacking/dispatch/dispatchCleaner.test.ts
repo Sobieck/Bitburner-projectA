@@ -1,7 +1,7 @@
 import { main } from "../../../../src/scripts/hacking/dispatch/dispatchCleaner"
 import { NS } from "@ns"
 import { nsMock } from "../../../utilities/nsMock.testUtility"
-import { FilePaths } from "../../../../src/scripts/models/filePaths"
+import { FilePaths } from "../../../../src/scripts/constants"
 import { DispatchBatch, DispatchCommand, DispatchOrigin, DispatchQueue, DispatchType } from "../../../../src/scripts/models/hacking/dispatch/dispatchQueue"
 import { RandomValues } from "../../../utilities/randomValues.testUtility"
 

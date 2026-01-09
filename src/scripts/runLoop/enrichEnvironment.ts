@@ -1,6 +1,6 @@
 
 import { NS } from "@ns";
-import { FilePaths } from "/scripts/models/filePaths";
+import { FilePaths } from "../constants";
 import { ServerWithAdditionalInfo } from "/scripts/models/runLoop/serverWithAdditionalInfo";
 import { ScriptRamCost } from "/scripts/models/runLoop/scriptRamCost";
 

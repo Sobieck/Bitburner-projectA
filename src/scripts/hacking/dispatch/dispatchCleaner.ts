@@ -1,6 +1,6 @@
 
 import { NS } from "@ns";
-import { FilePaths } from "/scripts/models/filePaths";
+import { FilePaths } from "../../constants";
 import { DispatchQueue } from "/scripts/models/hacking/dispatch/dispatchQueue";
 
 export async function main(ns: NS): Promise<void> {

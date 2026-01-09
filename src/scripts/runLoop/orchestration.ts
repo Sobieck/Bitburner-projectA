@@ -1,7 +1,7 @@
 /** @param {NS} ns **/
 
 import { NS } from "@ns";
-import { FilePaths } from "../models/filePaths";
+import { FilePaths } from "../constants";
 
 export async function main(ns: NS): Promise<void> {
     ns.run(FilePaths.scripts.scriptsToRun)

@@ -2,7 +2,7 @@
 
 import { NS } from "@ns";
 import { ScriptRamCost } from "/scripts/models/runLoop/scriptRamCost";
-import { FilePaths } from "/scripts/models/filePaths";
+import { FilePaths } from "../constants";
 
 export async function main(ns: NS) : Promise<void> {
 

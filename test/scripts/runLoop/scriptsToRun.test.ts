@@ -1,7 +1,7 @@
 import { main } from "../../../src/scripts/runLoop/scriptsToRun"
 import { NS } from "@ns";
 import { nsMock } from "../../utilities/nsMock.testUtility";
-import { FilePaths } from "../../../src/scripts/models/filePaths";
+import { FilePaths } from "../../../src/scripts/constants";
 
 
 describe('ScriptsToRun', () => {

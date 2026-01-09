@@ -2,7 +2,7 @@
 
 
 import { NS } from "@ns";
-import { FilePaths } from "/scripts/models/filePaths";
+import { FilePaths } from "../../constants";
 import { DispatchBatch, DispatchCommand, DispatchOrigin, DispatchQueue, DispatchType } from "/scripts/models/hacking/dispatch/dispatchQueue";
 import { ServerWithAdditionalInfo } from "/scripts/models/runLoop/serverWithAdditionalInfo";
 
