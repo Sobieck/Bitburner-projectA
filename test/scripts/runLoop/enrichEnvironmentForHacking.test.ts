@@ -37,24 +37,22 @@ describe('enrichEnvironmentForHacking', () => {
 
     let mockedNs = new nsMock()
 
-    const randomValues = new RandomValues()
+    const server1HackTime = RandomValues.randomInt()
+    const server2HackTime = RandomValues.randomInt()
 
-    const server1HackTime = randomValues.randomInt()
-    const server2HackTime = randomValues.randomInt()
+    const server1WeakenTime = RandomValues.randomInt()
+    const server2WeakenTime = RandomValues.randomInt()
 
-    const server1WeakenTime = randomValues.randomInt()
-    const server2WeakenTime = randomValues.randomInt()
-
-    const server1GrowTime = randomValues.randomInt()
-    const server2GrowTime = randomValues.randomInt()
+    const server1GrowTime = RandomValues.randomInt()
+    const server2GrowTime = RandomValues.randomInt()
 
 
 
-    const server1MaxMoneyThreads = randomValues.randomInt()
-    const server2MaxMoneyThreads = randomValues.randomInt()
+    const server1MaxMoneyThreads = RandomValues.randomInt()
+    const server2MaxMoneyThreads = RandomValues.randomInt()
 
-    const server1CurrentMoneyThreads = randomValues.randomInt()
-    const server2CurrentMoneyThreads = randomValues.randomInt()
+    const server1CurrentMoneyThreads = RandomValues.randomInt()
+    const server2CurrentMoneyThreads = RandomValues.randomInt()
 
 
 

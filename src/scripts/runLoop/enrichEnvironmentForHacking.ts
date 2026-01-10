@@ -1,9 +1,10 @@
 import { NS } from "@ns";
 import { Constants, FilePaths } from "../constants";
-import { ServerWithAdditionalInfo, ThreadsNeeded } from "/scripts/models/runLoop/serverWithAdditionalInfo";
+import { ServerWithAdditionalInfo, ThreadsNeeded } from "../models/runLoop/serverWithAdditionalInfo";
+import { Utilities } from "/scripts/utilities";
 
 export async function main(ns: NS): Promise<void> {
-    const environment = JSON.parse(ns.read(FilePaths.data.environment)) as ServerWithAdditionalInfo[]
+    const environment = Utilities.readAndParse<ServerWithAdditionalInfo[]>(ns, FilePaths.data.environment)
 
     const potentiallyHackableServers = environment.filter(x => x.purchasedByPlayer === false)
 

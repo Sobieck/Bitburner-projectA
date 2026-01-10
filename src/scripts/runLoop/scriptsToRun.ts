@@ -21,6 +21,11 @@ export async function main(ns: NS): Promise<void> {
         // hacking algos
         'scripts/hacking/algorithms/junk.js',
 
+        // batch - I want batch to be able to grab onto a prepared - 
+        
+        // clean queue for prepareForBatch        
+        // prepareForBatch 
+
         // dispatch
         'scripts/hacking/dispatch/dispatcher.js',
         

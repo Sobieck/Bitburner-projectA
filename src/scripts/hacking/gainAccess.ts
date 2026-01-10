@@ -1,13 +1,14 @@
 /** @param {NS} ns **/
 
 import { NS, Player } from "@ns";
-import { ServerWithAdditionalInfo } from "/scripts/models/runLoop/serverWithAdditionalInfo";
+import { ServerWithAdditionalInfo } from "../models/runLoop/serverWithAdditionalInfo";
 import { FilePaths } from "../constants";
+import { Utilities } from "/scripts/utilities";
 
 export async function main(ns: NS): Promise<void> {
 
-    const environment = JSON.parse(ns.read(FilePaths.data.environment)) as ServerWithAdditionalInfo[]
-    const player = JSON.parse(ns.read(FilePaths.data.player)) as Player
+    const environment = Utilities.readAndParse<ServerWithAdditionalInfo[]>(ns, FilePaths.data.environment)
+    const player = Utilities.readAndParse<Player>(ns, FilePaths.data.player)
 
     const serversWithinOurSkillAndNoAdminRights = environment
         .filter(x =>

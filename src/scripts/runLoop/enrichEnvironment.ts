@@ -1,14 +1,15 @@
 
 import { NS } from "@ns";
 import { FilePaths } from "../constants";
-import { ServerWithAdditionalInfo } from "/scripts/models/runLoop/serverWithAdditionalInfo";
-import { ScriptRamCost } from "/scripts/models/runLoop/scriptRamCost";
+import { ServerWithAdditionalInfo } from "../models/runLoop/serverWithAdditionalInfo";
+import { ScriptRamCost } from "../models/runLoop/scriptRamCost";
+import { Utilities } from "/scripts/utilities";
 
 export async function main(ns: NS): Promise<void> {
 
-    const environment = JSON.parse(ns.read(FilePaths.data.environment)) as ServerWithAdditionalInfo[]
-    const scriptCosts = JSON.parse(ns.read(FilePaths.data.scriptRamCost)) as ScriptRamCost[]
-    const scriptsToRun = JSON.parse(ns.read(FilePaths.data.scriptsToRun)) as string[]
+    const environment = Utilities.readAndParse<ServerWithAdditionalInfo[]>(ns, FilePaths.data.environment)
+    const scriptCosts = Utilities.readAndParse<ScriptRamCost[]>(ns, FilePaths.data.scriptRamCost)
+    const scriptsToRun = Utilities.readAndParse<string[]>(ns, FilePaths.data.scriptsToRun)
 
     const orchestrationCost = Math.ceil(scriptCosts.filter(x => x.scriptPath === FilePaths.scripts.orchestration)[0].ramCost)
     const mostExpensiveScriptCost = Math.ceil(scriptCosts.filter(x => scriptsToRun.includes(x.scriptPath)).sort((x, y) => y.ramCost - x.ramCost)[0].ramCost)

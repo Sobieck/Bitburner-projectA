@@ -1,6 +1,6 @@
-import { main } from "../../../../src/scripts/hacking/algorithms/prepareForBatch"
+import { main } from "../../../../../src/scripts/hacking/algorithms/prepareForBatch/pfb"
 import { NS } from "@ns"
-import { nsMock } from "../../../utilities/nsMock.testUtility"
+import { nsMock } from "../../../../utilities/nsMock.testUtility"
 
 
 describe('first hacking algorithm', () => {

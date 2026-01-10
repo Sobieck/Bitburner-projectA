@@ -1,22 +1,20 @@
-//possibleWeakenOrGrowThreads = 186
-
-
 import { NS } from "@ns";
 import { FilePaths } from "../../constants";
-import { DispatchBatch, DispatchCommand, DispatchOrigin, DispatchQueue, DispatchType } from "/scripts/models/hacking/dispatch/dispatchQueue";
-import { ServerWithAdditionalInfo } from "/scripts/models/runLoop/serverWithAdditionalInfo";
+import { DispatchBatch, DispatchCommand, DispatchOrigin, DispatchQueue, DispatchType } from "../../models/hacking/dispatch/dispatchQueue";
+import { ServerWithAdditionalInfo } from "../../models/runLoop/serverWithAdditionalInfo";
+import { Utilities } from "/scripts/utilities";
 
 export async function main(ns: NS): Promise<void> {
 
 
-    const environment = JSON.parse(ns.read(FilePaths.data.environment)) as ServerWithAdditionalInfo[]
+    const environment = Utilities.readAndParse<ServerWithAdditionalInfo[]>(ns, FilePaths.data.environment)
 
     const totalPossibleThreads = environment
         .filter(x => x.hasAdminRights)
         .reduce((x, y) => x + y.possibleWeakenOrGrowThreads, 0)
 
 
-    if (totalPossibleThreads < 30) {
+    if (totalPossibleThreads < 200) {
         return
     }
 
@@ -32,7 +30,7 @@ export async function main(ns: NS): Promise<void> {
         }
     }
 
-    const dispatchQueue = JSON.parse(ns.read(FilePaths.data.dispatchQueue)) as DispatchQueue
+    const dispatchQueue = Utilities.readAndParse<DispatchQueue>(ns, FilePaths.data.dispatchQueue)
 
     dispatchQueue.batches.push(
         new DispatchBatch(

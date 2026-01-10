@@ -12,7 +12,7 @@ describe('Orchestration', () => {
   beforeEach(async () => {
     const nsSetup = new nsMock()
     
-    numberOfScriptsToRun = new RandomValues().randomInt(20)
+    numberOfScriptsToRun = RandomValues.randomInt(20)
 
     const runScripts = []
 

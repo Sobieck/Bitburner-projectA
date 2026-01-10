@@ -8,28 +8,25 @@ import { ThreadsNeeded } from "../../../../src/scripts/models/runLoop/serverWith
 
 describe('dispatcher', () => {
 
-
-    const randomValues = new RandomValues()
-
     const command1Dispatched = new DispatchCommand(20, DispatchType.Grow, 7, true, [1, 12])
     const command2Dispatched = new DispatchCommand(19, DispatchType.Weaken, 4, false, [42])
     const command3Dispatched = new DispatchCommand(180, DispatchType.Hack, 5, true)
     const command4Dispatched = new DispatchCommand(18, DispatchType.Hack, 5, true, [62, 5023, 5610])
-    const command5Grow = new DispatchCommand(1400, DispatchType.Grow, randomValues.randomInt(), randomValues.randomBool())
-    const command6Hack = new DispatchCommand(142, DispatchType.Hack, randomValues.randomInt(), randomValues.randomBool())
-    const command7Weaken = new DispatchCommand(365, DispatchType.Weaken, randomValues.randomInt(), randomValues.randomBool())
+    const command5Grow = new DispatchCommand(1400, DispatchType.Grow, RandomValues.randomInt(), RandomValues.randomBool())
+    const command6Hack = new DispatchCommand(142, DispatchType.Hack, RandomValues.randomInt(), RandomValues.randomBool())
+    const command7Weaken = new DispatchCommand(365, DispatchType.Weaken, RandomValues.randomInt(), RandomValues.randomBool())
 
-    const command5Pid1 = randomValues.randomInt()
-    const command5Pid2 = randomValues.randomInt()
+    const command5Pid1 = RandomValues.randomInt()
+    const command5Pid2 = RandomValues.randomInt()
 
-    const command6Pid1 = randomValues.randomInt()
-    const command6Pid2 = randomValues.randomInt()
+    const command6Pid1 = RandomValues.randomInt()
+    const command6Pid2 = RandomValues.randomInt()
 
-    const command7Pid1 = randomValues.randomInt()
-    const command7Pid2 = randomValues.randomInt()
+    const command7Pid1 = RandomValues.randomInt()
+    const command7Pid2 = RandomValues.randomInt()
 
 
-    const targetName = randomValues.randomString()
+    const targetName = RandomValues.randomString()
 
     const environment = [
         {

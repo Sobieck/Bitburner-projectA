@@ -1,14 +1,14 @@
-export class RandomValues {
-    public randomInt(max: number = 10): number {
+export abstract class RandomValues {
+    public static randomInt(max: number = 10): number {
         return Math.floor(1 + Math.random() * max)
     }
 
-    public randomBool() : boolean {
+    public static randomBool() : boolean {
         return this.randomInt(10) % 2 === 0
     }
 
     // https://stackoverflow.com/a/1349426
-    public randomString(): string {
+    public static randomString(): string {
         let result = '';
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
         const charactersLength = characters.length;

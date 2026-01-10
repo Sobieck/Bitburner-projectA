@@ -2,6 +2,7 @@
 
 import { NS } from "@ns";
 import { FilePaths } from "../constants";
+import { Utilities } from "/scripts/utilities";
 
 export async function main(ns: NS): Promise<void> {
     ns.run(FilePaths.scripts.scriptsToRun)
@@ -9,7 +10,7 @@ export async function main(ns: NS): Promise<void> {
     
     const sleepAmount = 600
 
-    const scriptsToRun = JSON.parse(ns.read(FilePaths.data.scriptsToRun)) as string[]
+    const scriptsToRun = Utilities.readAndParse<string[]>(ns, FilePaths.data.scriptsToRun)
 
     for (const script of scriptsToRun) {
         await ns.sleep(sleepAmount)

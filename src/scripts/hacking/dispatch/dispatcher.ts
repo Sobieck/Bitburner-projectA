@@ -1,15 +1,14 @@
 
 import { NS } from "@ns";
 import { FilePaths } from "../../constants";
-import { DispatchQueue, DispatchType } from "/scripts/models/hacking/dispatch/dispatchQueue";
-import { ServerWithAdditionalInfo, ThreadsNeeded } from "/scripts/models/runLoop/serverWithAdditionalInfo";
+import { DispatchQueue, DispatchType } from "../../models/hacking/dispatch/dispatchQueue";
+import { ServerWithAdditionalInfo, ThreadsNeeded } from "../../models/runLoop/serverWithAdditionalInfo";
+import { Utilities } from "/scripts/utilities";
 
 export async function main(ns: NS): Promise<void> {
 
-    const dispatchQueue = JSON.parse(ns.read(FilePaths.data.dispatchQueue)) as DispatchQueue
-    const environment = JSON.parse(ns.read(FilePaths.data.environment)) as ServerWithAdditionalInfo[]
-
-    // ns.exec("/scr/scripts/hacking/grow.js", "host", "threads", "target", "additionalMsec", "effectStock")
+    const environment = Utilities.readAndParse<ServerWithAdditionalInfo[]>(ns, FilePaths.data.environment)
+    const dispatchQueue = Utilities.readAndParse<DispatchQueue>(ns, FilePaths.data.dispatchQueue)
 
     const unexecutedRequest = dispatchQueue.batches.find(x => x.dispatched === false)
 

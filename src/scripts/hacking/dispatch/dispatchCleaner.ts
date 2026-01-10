@@ -1,7 +1,8 @@
 
 import { NS } from "@ns";
 import { FilePaths } from "../../constants";
-import { DispatchQueue } from "/scripts/models/hacking/dispatch/dispatchQueue";
+import { DispatchQueue } from "../../models/hacking/dispatch/dispatchQueue";
+import { Utilities } from "/scripts/utilities";
 
 export async function main(ns: NS): Promise<void> {
 
@@ -11,7 +12,7 @@ export async function main(ns: NS): Promise<void> {
     }
 
 
-    const dispatchQueue = JSON.parse(ns.read(FilePaths.data.dispatchQueue)) as DispatchQueue
+    const dispatchQueue = Utilities.readAndParse<DispatchQueue>(ns, FilePaths.data.dispatchQueue)
 
     for (const batch of dispatchQueue.batches) {
         for (const command of batch.dispatchCommands) {

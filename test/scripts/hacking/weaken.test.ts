@@ -8,12 +8,10 @@ describe('weaken', () => {
     it('run the weaken command with the correct args passed in.', async () => {
         const nsSetup = new nsMock()
 
-        const randomGenerator = new RandomValues()
-
-        const target = randomGenerator.randomString()
+        const target = RandomValues.randomString()
         nsSetup.args.push(target)
 
-        const additionalMsec = randomGenerator.randomInt(100)
+        const additionalMsec = RandomValues.randomInt(100)
         nsSetup.args.push(additionalMsec)
 
         let stock = false

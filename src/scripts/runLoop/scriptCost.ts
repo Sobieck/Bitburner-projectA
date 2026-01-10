@@ -1,7 +1,7 @@
 /** @param {NS} ns **/
 
 import { NS } from "@ns";
-import { ScriptRamCost } from "/scripts/models/runLoop/scriptRamCost";
+import { ScriptRamCost } from "../models/runLoop/scriptRamCost";
 import { FilePaths } from "../constants";
 
 export async function main(ns: NS) : Promise<void> {
