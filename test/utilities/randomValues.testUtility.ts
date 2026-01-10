@@ -8,7 +8,7 @@ export abstract class RandomValues {
     }
 
     // https://stackoverflow.com/a/1349426
-    public static randomString(): string {
+    public static string(): string {
         let result = '';
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
         const charactersLength = characters.length;

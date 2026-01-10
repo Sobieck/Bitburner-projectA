@@ -29,7 +29,7 @@ export enum DispatchType {
 }
 
 export enum DispatchOrigin {
-    First = "first",
+    PrepareForBatch = "pfb",
     Batch = "batch",
     Junk = "junk",
 }

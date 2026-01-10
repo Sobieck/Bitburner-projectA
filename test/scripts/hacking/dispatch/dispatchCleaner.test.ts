@@ -73,7 +73,7 @@ describe('dispatchCleaner', () => {
         )
 
         const dispatchBatch2 = new DispatchBatch(
-            DispatchOrigin.First,
+            DispatchOrigin.PrepareForBatch,
             "target2",
             [
                 new DispatchCommand(
@@ -154,7 +154,7 @@ describe('dispatchCleaner', () => {
                 ]
             ),
             new DispatchBatch(
-                DispatchOrigin.First,
+                DispatchOrigin.PrepareForBatch,
                 "target2",
                 [
                     new DispatchCommand(
@@ -230,7 +230,7 @@ describe('dispatchCleaner', () => {
         )
 
         const dispatchBatch2 = new DispatchBatch(
-            DispatchOrigin.First,
+            DispatchOrigin.PrepareForBatch,
             "target2",
             [
                 new DispatchCommand(
@@ -287,7 +287,7 @@ describe('dispatchCleaner', () => {
         expect(mockedNs.writeTuples[0][0]).toBe(FilePaths.data.dispatchQueue)
         expect(mockedNs.writeTuples[0][1]).toBe(JSON.stringify(new DispatchQueue([
             new DispatchBatch(
-                DispatchOrigin.First,
+                DispatchOrigin.PrepareForBatch,
                 "target2",
                 [
                     new DispatchCommand(

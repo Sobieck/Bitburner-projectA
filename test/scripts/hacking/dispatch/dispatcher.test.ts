@@ -26,7 +26,7 @@ describe('dispatcher', () => {
     const command7Pid2 = RandomValues.randomInt()
 
 
-    const targetName = RandomValues.randomString()
+    const targetName = RandomValues.string()
 
     const environment = [
         {
@@ -91,7 +91,7 @@ describe('dispatcher', () => {
     it('should not do anything if there are no uncompleted dispatch requests', async () => {
         const batches = [
             new DispatchBatch(
-                DispatchOrigin.First,
+                DispatchOrigin.PrepareForBatch,
                 "af",
                 [
                     command1Dispatched
@@ -121,7 +121,7 @@ describe('dispatcher', () => {
                     true
                 ),
                 new DispatchBatch(
-                    DispatchOrigin.First,
+                    DispatchOrigin.PrepareForBatch,
                     targetName,
                     [
                         command6Hack,
@@ -236,7 +236,7 @@ describe('dispatcher', () => {
                 true
             ),
             new DispatchBatch(
-                DispatchOrigin.First,
+                DispatchOrigin.PrepareForBatch,
                 targetName,
                 [
                     expectedCommand5,

@@ -8,7 +8,7 @@ describe('hack', () => {
     it('run the hack command with the correct args passed in.', async () => {
         const nsSetup = new nsMock()
 
-        const target = RandomValues.randomString()
+        const target = RandomValues.string()
         nsSetup.args.push(target)
 
         const additionalMsec = RandomValues.randomInt(100)

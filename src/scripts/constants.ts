@@ -14,6 +14,8 @@ export class DataPaths {
     public player = "data/runLoop/player.json"
     
     public dispatchQueue = "data/hacking/dispatch/dispatch-queue.json"
+    public prepareForBatchQueue = "data/hacking/algorithms/prepareForBatch/pfb-queue.json"
+    public batchQueue = "data/hacking/algorithms/batch/batch-queue.json"
 }
 
 export abstract class FilePaths {

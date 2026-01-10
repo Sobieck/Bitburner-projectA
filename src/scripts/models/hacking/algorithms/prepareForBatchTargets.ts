@@ -1,5 +1,7 @@
 export class PrepareForBatchData {
-    public targets: PrepareForBatchTarget[] = []
+    constructor(
+        public targets: PrepareForBatchTarget[] = []
+    ){}
 }
 
 export class PrepareForBatchTarget {
