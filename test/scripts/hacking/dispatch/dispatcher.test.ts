@@ -12,18 +12,18 @@ describe('dispatcher', () => {
     const command2Dispatched = new DispatchCommand(19, DispatchType.Weaken, 4, false, [42])
     const command3Dispatched = new DispatchCommand(180, DispatchType.Hack, 5, true)
     const command4Dispatched = new DispatchCommand(18, DispatchType.Hack, 5, true, [62, 5023, 5610])
-    const command5Grow = new DispatchCommand(1400, DispatchType.Grow, RandomValues.randomInt(), RandomValues.randomBool())
-    const command6Hack = new DispatchCommand(142, DispatchType.Hack, RandomValues.randomInt(), RandomValues.randomBool())
-    const command7Weaken = new DispatchCommand(365, DispatchType.Weaken, RandomValues.randomInt(), RandomValues.randomBool())
+    const command5Grow = new DispatchCommand(1400, DispatchType.Grow, RandomValues.int(), RandomValues.randomBool())
+    const command6Hack = new DispatchCommand(142, DispatchType.Hack, RandomValues.int(), RandomValues.randomBool())
+    const command7Weaken = new DispatchCommand(365, DispatchType.Weaken, RandomValues.int(), RandomValues.randomBool())
 
-    const command5Pid1 = RandomValues.randomInt()
-    const command5Pid2 = RandomValues.randomInt()
+    const command5Pid1 = RandomValues.int()
+    const command5Pid2 = RandomValues.int()
 
-    const command6Pid1 = RandomValues.randomInt()
-    const command6Pid2 = RandomValues.randomInt()
+    const command6Pid1 = RandomValues.int()
+    const command6Pid2 = RandomValues.int()
 
-    const command7Pid1 = RandomValues.randomInt()
-    const command7Pid2 = RandomValues.randomInt()
+    const command7Pid1 = RandomValues.int()
+    const command7Pid2 = RandomValues.int()
 
 
     const targetName = RandomValues.string()

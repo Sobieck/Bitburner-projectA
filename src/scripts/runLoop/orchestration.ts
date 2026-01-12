@@ -8,7 +8,7 @@ export async function main(ns: NS): Promise<void> {
     ns.run(FilePaths.scripts.scriptsToRun)
     await ns.sleep(1000)
     
-    const sleepAmount = 600
+    const sleepAmount = 250
 
     const scriptsToRun = Utilities.readAndParse<string[]>(ns, FilePaths.data.scriptsToRun)
 

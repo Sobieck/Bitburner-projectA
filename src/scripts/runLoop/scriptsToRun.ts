@@ -7,26 +7,24 @@ export async function main(ns: NS): Promise<void> {
 
     const scriptsToRun = [
 
-        //setting up environment for scripts to run
+        // SETTING UP ENVIRONMENT
         'scripts/runLoop/mapEnvironment.js',
         'scripts/runLoop/enrichEnvironment.js',
         'scripts/runLoop/scriptCost.js',
         'scripts/runLoop/getPlayer.js',
         'scripts/runLoop/enrichEnvironmentForHacking.js',
         
-        //hacking scripts 
+        // BASIC HACKING SCRIPTS
         'scripts/hacking/dispatch/dispatchCleaner.js',
         'scripts/hacking/gainAccess.js',
 
-        // hacking algos
-        'scripts/hacking/algorithms/junk.js',
-
-        // batch - I want batch to be able to grab onto a prepared - 
+        // HACKING ALGOS BY PRIORITY
+        // BATCH IS HIGHEST PRIORITY
         
-        // clean queue for prepareForBatch        
-        // prepareForBatch 
+        'scripts/hacking/algorithms/prepareForBatch/pfbCleaner.js',
+        'scripts/hacking/algorithms/prepareForBatch/pfb.js',
 
-        // dispatch
+        // DISPATCH
         'scripts/hacking/dispatch/dispatcher.js',
         
         // singularity stuff and purchasing decisions

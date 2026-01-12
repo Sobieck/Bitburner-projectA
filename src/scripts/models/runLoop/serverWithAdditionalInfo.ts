@@ -1,7 +1,6 @@
 
 import { Server } from "@ns";
 
-
 export interface ServerWithAdditionalInfo extends Server {
     path?: string[];
     freeRam: number;
@@ -15,16 +14,12 @@ export interface ServerWithAdditionalInfo extends Server {
     maxWeakenOrGrowThreads: number;
     maxHackThreads: number 
 
-    usedWeakenOrGrowThreads: number
-    usedHackThreads: number
-
-
     hackTime: number;
     weakenTime: number;
     growTime: number;
 
 
-    threadsToHackMoneyAvailable: number;
+    threadsToHackMoneyAvailable?: number;
 
     threadsToReduceToMinDifficulty?: ThreadsNeeded[];
     threadsToIncreaseToMaxMoney?: ThreadsNeeded[];

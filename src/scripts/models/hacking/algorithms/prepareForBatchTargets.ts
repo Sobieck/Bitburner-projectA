@@ -1,4 +1,4 @@
-export class PrepareForBatchData {
+export class PrepareForBatchQueue {
     constructor(
         public targets: PrepareForBatchTarget[] = []
     ){}
@@ -7,9 +7,10 @@ export class PrepareForBatchData {
 export class PrepareForBatchTarget {
     constructor(
         public target: string, 
-        public timeDispatched = Date.now(), 
-        public allThreadsNeeded = false,
-        public pidsActive = false,
+        public targetsMoneyMax: number,
+        public timeDispatched = Date.now(),
+        public waitForMoreThreads = false,
+        public pidsActive = true,
         public inBatchProcess = false,
     ) { }
 }

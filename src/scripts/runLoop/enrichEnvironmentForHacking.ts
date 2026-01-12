@@ -15,7 +15,7 @@ export async function main(ns: NS): Promise<void> {
             server.growTime = ns.getGrowTime(server.hostname)
 
 
-            server.threadsToHackMoneyAvailable = ns.hackAnalyzeThreads(server.hostname, server.moneyAvailable - (server.moneyMax * Constants.ratioOfMoneyMaxToLeaveOnTheServer))
+            server.threadsToHackMoneyAvailable = Math.ceil(ns.hackAnalyzeThreads(server.hostname, server.moneyAvailable - (server.moneyMax * Constants.ratioOfMoneyMaxToLeaveOnTheServer)) + 5)
 
             const maxNumberOfCpus = environment.map(x => x.cpuCores).sort((a, b) => a - b).pop()
 
@@ -34,11 +34,11 @@ export async function main(ns: NS): Promise<void> {
                         threads++
                     }
 
-                    server.threadsToReduceToMinDifficulty.push(new ThreadsNeeded(i, threads))
+                    server.threadsToReduceToMinDifficulty.push(new ThreadsNeeded(i, threads + 5))
 
                     server.threadsToIncreaseToMaxMoney.push(new ThreadsNeeded(
                         i,
-                        Math.ceil(ns.growthAnalyze(server.hostname, growthMultiplier, i))
+                        Math.ceil(ns.growthAnalyze(server.hostname, growthMultiplier, i) + 5)
                     ))
                 }
 

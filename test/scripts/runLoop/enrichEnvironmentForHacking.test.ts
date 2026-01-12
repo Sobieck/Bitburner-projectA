@@ -37,22 +37,22 @@ describe('enrichEnvironmentForHacking', () => {
 
     let mockedNs = new nsMock()
 
-    const server1HackTime = RandomValues.randomInt()
-    const server2HackTime = RandomValues.randomInt()
+    const server1HackTime = RandomValues.int()
+    const server2HackTime = RandomValues.int()
 
-    const server1WeakenTime = RandomValues.randomInt()
-    const server2WeakenTime = RandomValues.randomInt()
+    const server1WeakenTime = RandomValues.int()
+    const server2WeakenTime = RandomValues.int()
 
-    const server1GrowTime = RandomValues.randomInt()
-    const server2GrowTime = RandomValues.randomInt()
+    const server1GrowTime = RandomValues.int()
+    const server2GrowTime = RandomValues.int()
 
 
 
-    const server1MaxMoneyThreads = RandomValues.randomInt()
-    const server2MaxMoneyThreads = RandomValues.randomInt()
+    const server1MaxMoneyThreads = RandomValues.int()
+    const server2MaxMoneyThreads = RandomValues.int()
 
-    const server1CurrentMoneyThreads = RandomValues.randomInt()
-    const server2CurrentMoneyThreads = RandomValues.randomInt()
+    const server1CurrentMoneyThreads = RandomValues.int()
+    const server2CurrentMoneyThreads = RandomValues.int()
 
 
 
@@ -77,7 +77,7 @@ describe('enrichEnvironmentForHacking', () => {
         nsSetup.getGrowTimeReturns.set(server1.hostname, server1GrowTime)
         nsSetup.getGrowTimeReturns.set(server2.hostname, server2GrowTime)
 
-        nsSetup.hackAnalyzeThreadsReturns.set(server1.hostname + (server1.moneyAvailable - (server1.moneyMax * 0.05)), server1CurrentMoneyThreads)
+        nsSetup.hackAnalyzeThreadsReturns.set(server1.hostname + (server1.moneyAvailable - (server1.moneyMax * 0.05)), server1CurrentMoneyThreads + .01)
         nsSetup.hackAnalyzeThreadsReturns.set(server2.hostname + (server2.moneyAvailable - (server2.moneyMax * 0.05)), server2CurrentMoneyThreads)
 
 
@@ -108,28 +108,28 @@ describe('enrichEnvironmentForHacking', () => {
                     weakenTime: server1WeakenTime,
                     growTime: server1GrowTime,
 
-                    threadsToHackMoneyAvailable: server1CurrentMoneyThreads,
+                    threadsToHackMoneyAvailable: server1CurrentMoneyThreads + 5 + 1,
 
                     threadsToReduceToMinDifficulty: [
-                        new ThreadsNeeded(1, 910),
-                        new ThreadsNeeded(2, 455),
-                        new ThreadsNeeded(3, 304),
-                        new ThreadsNeeded(4, 228),
-                        new ThreadsNeeded(5, 182),
-                        new ThreadsNeeded(6, 152),
-                        new ThreadsNeeded(7, 130),
-                        new ThreadsNeeded(8, 114),
+                        new ThreadsNeeded(1, 910 + 5),
+                        new ThreadsNeeded(2, 455 + 5),
+                        new ThreadsNeeded(3, 304 + 5),
+                        new ThreadsNeeded(4, 228 + 5),
+                        new ThreadsNeeded(5, 182 + 5),
+                        new ThreadsNeeded(6, 152 + 5),
+                        new ThreadsNeeded(7, 130 + 5),
+                        new ThreadsNeeded(8, 114 + 5),
                     ],
 
                     threadsToIncreaseToMaxMoney: [
-                        new ThreadsNeeded(1, 4),
-                        new ThreadsNeeded(2, 5),
-                        new ThreadsNeeded(3, 6),
-                        new ThreadsNeeded(4, 7),
-                        new ThreadsNeeded(5, 8),
-                        new ThreadsNeeded(6, 9),
-                        new ThreadsNeeded(7, 10),
-                        new ThreadsNeeded(8, 11),
+                        new ThreadsNeeded(1, 4 + 5),
+                        new ThreadsNeeded(2, 5 + 5),
+                        new ThreadsNeeded(3, 6 + 5),
+                        new ThreadsNeeded(4, 7 + 5),
+                        new ThreadsNeeded(5, 8 + 5),
+                        new ThreadsNeeded(6, 9 + 5),
+                        new ThreadsNeeded(7, 10 + 5),
+                        new ThreadsNeeded(8, 11 + 5),
                     ]
                 },
                 {
@@ -150,28 +150,28 @@ describe('enrichEnvironmentForHacking', () => {
                     weakenTime: server2WeakenTime,
                     growTime: server2GrowTime,
 
-                    threadsToHackMoneyAvailable: server2CurrentMoneyThreads,
+                    threadsToHackMoneyAvailable: server2CurrentMoneyThreads + 5,
 
                     threadsToReduceToMinDifficulty: [
-                        new ThreadsNeeded(1, 9091),
-                        new ThreadsNeeded(2, 4546),
-                        new ThreadsNeeded(3, 3031),
-                        new ThreadsNeeded(4, 2273),
-                        new ThreadsNeeded(5, 1819),
-                        new ThreadsNeeded(6, 1516),
-                        new ThreadsNeeded(7, 1299),
-                        new ThreadsNeeded(8, 1137),
+                        new ThreadsNeeded(1, 9091 + 5),
+                        new ThreadsNeeded(2, 4546 + 5),
+                        new ThreadsNeeded(3, 3031 + 5),
+                        new ThreadsNeeded(4, 2273 + 5),
+                        new ThreadsNeeded(5, 1819 + 5),
+                        new ThreadsNeeded(6, 1516 + 5),
+                        new ThreadsNeeded(7, 1299 + 5),
+                        new ThreadsNeeded(8, 1137 + 5),
                     ],
 
                     threadsToIncreaseToMaxMoney: [
-                        new ThreadsNeeded(1, 23),
-                        new ThreadsNeeded(2, 24),
-                        new ThreadsNeeded(3, 25),
-                        new ThreadsNeeded(4, 26),
-                        new ThreadsNeeded(5, 27),
-                        new ThreadsNeeded(6, 28),
-                        new ThreadsNeeded(7, 29),
-                        new ThreadsNeeded(8, 30),
+                        new ThreadsNeeded(1, 23 + 5),
+                        new ThreadsNeeded(2, 24 + 5),
+                        new ThreadsNeeded(3, 25 + 5),
+                        new ThreadsNeeded(4, 26 + 5),
+                        new ThreadsNeeded(5, 27 + 5),
+                        new ThreadsNeeded(6, 28 + 5),
+                        new ThreadsNeeded(7, 29 + 5),
+                        new ThreadsNeeded(8, 30 + 5),
                     ],
                 },
             ]

@@ -32,7 +32,7 @@ describe('dispatchCleaner', () => {
 
         nsSetup.fileExistsReturns.set(FilePaths.data.dispatchQueue, true)
 
-        const pid0 = RandomValues.randomInt(10000)
+        const pid0 = RandomValues.int(10000)
         const pid1 = pid0 + 1
         const pid2ToDelete = pid0 + 2
         const pid3ToDelete = pid0 + 3
@@ -189,7 +189,7 @@ describe('dispatchCleaner', () => {
 
         nsSetup.fileExistsReturns.set(FilePaths.data.dispatchQueue, true)
 
-        const pid0ToDelete = RandomValues.randomInt(10000)
+        const pid0ToDelete = RandomValues.int(10000)
         const pid1ToDelete = pid0ToDelete + 1
         const pid2ToDelete = pid0ToDelete + 2
         const pid3ToDelete = pid0ToDelete + 3

@@ -12,7 +12,7 @@ describe('Orchestration', () => {
   beforeEach(async () => {
     const nsSetup = new nsMock()
     
-    numberOfScriptsToRun = RandomValues.randomInt(20)
+    numberOfScriptsToRun = RandomValues.int(20)
 
     const runScripts = []
 
@@ -66,7 +66,7 @@ describe('Orchestration', () => {
     expect(mockedNs.callOrder[4]).toBe("run")
 
     for (let i = 0; i < numberOfScriptsToRun - 1; i++) {
-      expect(mockedNs.sleepAmounts[i + 1]).toBe(600)
+      expect(mockedNs.sleepAmounts[i + 1]).toBe(250)
     }
     
     expect(mockedNs.runTuples.length).toBe(numberOfScriptsToRun + 2)

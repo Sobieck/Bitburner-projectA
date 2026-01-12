@@ -11,7 +11,7 @@ describe('weaken', () => {
         const target = RandomValues.string()
         nsSetup.args.push(target)
 
-        const additionalMsec = RandomValues.randomInt(100)
+        const additionalMsec = RandomValues.int(100)
         nsSetup.args.push(additionalMsec)
 
         let stock = false

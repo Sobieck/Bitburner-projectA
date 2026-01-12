@@ -1,0 +1,148 @@
+{
+    "targets": [
+        {
+            "target": "computek",
+            "targetsMoneyMax": 5586992500,
+            "timeDispatched": 1768221593000,
+            "waitForMoreThreads": false,
+            "pidsActive": true,
+            "inBatchProcess": false
+        },
+        {
+            "target": "the-hub",
+            "targetsMoneyMax": 4916653650,
+            "timeDispatched": 1768220980231,
+            "waitForMoreThreads": true,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "johnson-ortho",
+            "targetsMoneyMax": 1982044200,
+            "timeDispatched": 1768221498363,
+            "waitForMoreThreads": false,
+            "pidsActive": true,
+            "inBatchProcess": false
+        },
+        {
+            "target": "omega-net",
+            "targetsMoneyMax": 1703538100,
+            "timeDispatched": 1768220840546,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "crush-fitness",
+            "targetsMoneyMax": 1496501875,
+            "timeDispatched": 1768221119880,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "silver-helix",
+            "targetsMoneyMax": 1125000000,
+            "timeDispatched": 1768220854065,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "phantasy",
+            "targetsMoneyMax": 600000000,
+            "timeDispatched": 1768220845049,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "iron-gym",
+            "targetsMoneyMax": 500000000,
+            "timeDispatched": 1768220975728,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "max-hardware",
+            "targetsMoneyMax": 250000000,
+            "timeDispatched": 1768221502897,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "zer0",
+            "targetsMoneyMax": 187500000,
+            "timeDispatched": 1768223598121,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "neo-net",
+            "targetsMoneyMax": 125000000,
+            "timeDispatched": 1768220849557,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "harakiri-sushi",
+            "targetsMoneyMax": 100000000,
+            "timeDispatched": 1768223593618,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "hong-fang-tea",
+            "targetsMoneyMax": 75000000,
+            "timeDispatched": 1768220836047,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "nectar-net",
+            "targetsMoneyMax": 68750000,
+            "timeDispatched": 1768226103039,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "joesguns",
+            "targetsMoneyMax": 62500000,
+            "timeDispatched": 1768223607135,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "sigma-cosmetics",
+            "targetsMoneyMax": 57500000,
+            "timeDispatched": 1768220858570,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "foodnstuff",
+            "targetsMoneyMax": 50000000,
+            "timeDispatched": 1768226107543,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        },
+        {
+            "target": "n00dles",
+            "targetsMoneyMax": 1750000,
+            "timeDispatched": 1768223589112,
+            "waitForMoreThreads": false,
+            "pidsActive": false,
+            "inBatchProcess": false
+        }
+    ]
+}

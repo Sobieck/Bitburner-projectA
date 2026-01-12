@@ -1,8 +1,10 @@
 
 import { NS } from "@ns";
 import { FilePaths } from "/scripts/constants";
-import { DispatchQueue } from "/scripts/models/hacking/dispatch/dispatchQueue";
+import { DispatchBatch, DispatchCommand, DispatchOrigin, DispatchQueue, DispatchType } from "/scripts/models/hacking/dispatch/dispatchQueue";
 import { Utilities } from "/scripts/utilities";
+import { ServerWithAdditionalInfo } from "/scripts/models/runLoop/serverWithAdditionalInfo";
+import { PrepareForBatchQueue, PrepareForBatchTarget } from "/scripts/models/hacking/algorithms/prepareForBatchTargets";
 
 export async function main(ns: NS): Promise<void> {
 
@@ -13,48 +15,143 @@ export async function main(ns: NS): Promise<void> {
         return
     }
 
+    const environment = Utilities.readAndParse<ServerWithAdditionalInfo[]>(ns, FilePaths.data.environment)
 
-    await ns.sleep(1)
-    await ns.sleep(1)
+    const possibleWeakenOrGrowThreads = environment.filter(x => x.possibleWeakenOrGrowThreads > 0).map(x => x.possibleWeakenOrGrowThreads).reduce((a, b) => a + b, 0)
+    const possibleHackThreads = environment.filter(x => x.possibleWeakenOrGrowThreads > 0).map(x => x.possibleHackThreads).reduce((a, b) => a + b, 0)
 
-    // check to see if there are undispatched jobs 
+    if (possibleWeakenOrGrowThreads < 11) {
+        return
+    }
 
-    // if so skip
+    const prepareForBatchQueue = Utilities.readAndParse<PrepareForBatchQueue>(ns, FilePaths.data.prepareForBatchQueue)
+
+    prepareForBatchQueue.targets = prepareForBatchQueue.targets.sort((a, b) => b.targetsMoneyMax - a.targetsMoneyMax)
+
+    let prepareForBatchData: PrepareForBatchData | undefined;
+
+    for (const target of prepareForBatchQueue.targets.filter(x => x.pidsActive === false && x.inBatchProcess === false)) {
+        const targetServer = environment.filter(x => x.hostname === target.target).pop()
+
+        prepareForBatchData = selectActionType(targetServer)
+
+        if (prepareForBatchData && prepareForBatchData.maxMoney) {
+
+            const countOfLowerPriorityProcessesUsingResources = prepareForBatchQueue.targets
+                .filter(x =>
+                    prepareForBatchData?.maxMoney &&
+                    x.targetsMoneyMax < prepareForBatchData.maxMoney &&
+                    x.pidsActive
+                ).length
+
+            if (
+                (prepareForBatchData.type === DispatchType.Grow && possibleWeakenOrGrowThreads < prepareForBatchData.threadsNeeded) ||
+                (prepareForBatchData.type === DispatchType.Hack && possibleHackThreads < prepareForBatchData.threadsNeeded) ||
+                (prepareForBatchData.type === DispatchType.Weaken && possibleWeakenOrGrowThreads < prepareForBatchData.threadsNeeded)) {
+
+                if (countOfLowerPriorityProcessesUsingResources > 0) {
+                    target.waitForMoreThreads = true
+                    prepareForBatchData.waitForMoreThreads = true
+                    break
+                }
+            }
+
+            target.waitForMoreThreads = false
+            target.pidsActive = true
+            break
+        }
+    }
+
+    if (prepareForBatchData === undefined) {
+        const targetServer = environment
+            .filter(x =>
+                x.hasAdminRights &&
+                x.moneyMax && x.moneyMax > 0 &&
+                prepareForBatchQueue.targets.map(x => x.target).includes(x.hostname) === false
+            )
+            .sort((a, b) => a.randomValueForShuffle - b.randomValueForShuffle)
+            .pop()
 
 
+        prepareForBatchData = selectActionType(targetServer)
 
+        if (prepareForBatchData) {
+            prepareForBatchQueue.targets.push(new PrepareForBatchTarget(prepareForBatchData.hostname, prepareForBatchData.maxMoney))
+        }
+    }
 
-    // check to see if there is capacity to deploy more algorithms - more than 10 threads
+    if (prepareForBatchData) {
+        if (prepareForBatchData.waitForMoreThreads === false) {
+            dispatchQueue.batches.push(
+                new DispatchBatch(DispatchOrigin.PrepareForBatch, prepareForBatchData.hostname, [
+                    new DispatchCommand(prepareForBatchData.threadsNeeded, prepareForBatchData.type)
+                ])
+            )
 
-    // order by priority - max money is highest priority
+            Utilities.write(ns, FilePaths.data.dispatchQueue, dispatchQueue)
+        }
 
-    // deploy need attack if there is no higher priority hold
+        Utilities.write(ns, FilePaths.data.prepareForBatchQueue, prepareForBatchQueue)
+    }
+}
 
-    // if exhausted queue, select a new server to attack at random from attackable servers
+function selectActionType(targetServer: ServerWithAdditionalInfo | undefined): PrepareForBatchData | undefined {
 
-    // check to see if a priority project has a stock order on new threads 
-    // this happens when they have a hack/weaken/grow that needs more threads than available
+    let prepareForBatchData: PrepareForBatchData | undefined;
 
-    // check to see if we have anything in our queue that could be worked in
+    if (targetServer &&
+        targetServer.moneyMax &&
+        targetServer.hackDifficulty &&
+        targetServer.minDifficulty &&
+        targetServer.threadsToReduceToMinDifficulty &&
+        targetServer.threadsToHackMoneyAvailable &&
+        targetServer.threadsToIncreaseToMaxMoney &&
+        targetServer.moneyAvailable
+    ) {
 
-    // see if we are hacking a target in the firstAlgoFile
-    // if we are check out the dispatch queue to see if it is empty of that
-    // if it is determine what kind of job to dispatch
-    // most money one gets prioritized
-    // we hold for any job that needs more than the alloted threads if something is running - depending on priority
+        if (targetServer.hackDifficulty > targetServer.minDifficulty) {
+            const numberOfThreads = targetServer.threadsToReduceToMinDifficulty.filter(x => x.numberOfCores === 1).pop()
 
-    // pick target at random
-    // determine what kind of job to dispatch
+            if (numberOfThreads) {
+                prepareForBatchData = new PrepareForBatchData(
+                    targetServer.hostname,
+                    numberOfThreads.threadsNeeded,
+                    DispatchType.Weaken,
+                    targetServer.moneyMax
+                )
+            }
+        } else if (targetServer.hackDifficulty === targetServer.minDifficulty && targetServer.moneyAvailable < targetServer.moneyMax) {
+            const numberOfThreads = targetServer.threadsToIncreaseToMaxMoney.filter(x => x.numberOfCores === 1).pop()
 
-    // write to our first algo dispatch
+            if (numberOfThreads) {
+                prepareForBatchData = new PrepareForBatchData(
+                    targetServer.hostname,
+                    numberOfThreads.threadsNeeded,
+                    DispatchType.Grow,
+                    targetServer.moneyMax
+                )
+            }
 
-    // get to min resistence
-    // get to max money
-    // then hack
+        } else if (targetServer.hackDifficulty === targetServer.minDifficulty && targetServer.moneyAvailable === targetServer.moneyMax) {
+            prepareForBatchData = new PrepareForBatchData(
+                targetServer.hostname,
+                targetServer.threadsToHackMoneyAvailable,
+                DispatchType.Hack,
+                targetServer.moneyMax
+            )
+        }
 
+    }
 
+    return prepareForBatchData
+}
 
-    // priority 1 - is doing something 
-
-    // priority 2 
+class PrepareForBatchData {
+    constructor(
+        public hostname: string,
+        public threadsNeeded: number,
+        public type: DispatchType,
+        public maxMoney: number,
+        public waitForMoreThreads = false,
+    ) { }
 }

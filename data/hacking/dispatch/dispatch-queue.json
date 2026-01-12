@@ -1,32 +1,103 @@
 {
     "batches": [
         {
-            "origin": "batch",
-            "target": "iron-gym",
+            "origin": "pfb",
+            "target": "the-hub",
             "dispatchCommands": [
                 {
-                    "threadsWanted": 196,
+                    "threadsWanted": 18,
                     "commandType": "scripts/hacking/weaken.js",
                     "msAdded": 0,
                     "effectStockMarket": false,
                     "pids": [
-                        56445,
-                        56446,
-                        56447,
-                        56448,
-                        56449,
-                        56450,
-                        56451,
-                        56452,
-                        56453,
-                        56454,
-                        56455,
-                        56456,
-                        56457,
-                        56458,
-                        56459
+                        16794
                     ],
-                    "threadsExecuting": 196
+                    "threadsExecuting": 18
+                }
+            ],
+            "dispatched": true
+        },
+        {
+            "origin": "pfb",
+            "target": "silver-helix",
+            "dispatchCommands": [
+                {
+                    "threadsWanted": 6,
+                    "commandType": "scripts/hacking/weaken.js",
+                    "msAdded": 0,
+                    "effectStockMarket": false,
+                    "pids": [
+                        17392
+                    ],
+                    "threadsExecuting": 6
+                }
+            ],
+            "dispatched": true
+        },
+        {
+            "origin": "pfb",
+            "target": "computek",
+            "dispatchCommands": [
+                {
+                    "threadsWanted": 525,
+                    "commandType": "scripts/hacking/weaken.js",
+                    "msAdded": 0,
+                    "effectStockMarket": false,
+                    "pids": [
+                        17604
+                    ],
+                    "threadsExecuting": 525
+                }
+            ],
+            "dispatched": true
+        },
+        {
+            "origin": "pfb",
+            "target": "omega-net",
+            "dispatchCommands": [
+                {
+                    "threadsWanted": 8,
+                    "commandType": "scripts/hacking/weaken.js",
+                    "msAdded": 0,
+                    "effectStockMarket": false,
+                    "pids": [
+                        17653
+                    ],
+                    "threadsExecuting": 8
+                }
+            ],
+            "dispatched": true
+        },
+        {
+            "origin": "pfb",
+            "target": "johnson-ortho",
+            "dispatchCommands": [
+                {
+                    "threadsWanted": 3150,
+                    "commandType": "scripts/hacking/grow.js",
+                    "msAdded": 0,
+                    "effectStockMarket": false,
+                    "pids": [
+                        17678,
+                        17679,
+                        17680,
+                        17681,
+                        17682,
+                        17683,
+                        17684,
+                        17685,
+                        17686,
+                        17687,
+                        17688,
+                        17689,
+                        17690,
+                        17691,
+                        17692,
+                        17693,
+                        17694,
+                        17695
+                    ],
+                    "threadsExecuting": 857
                 }
             ],
             "dispatched": true

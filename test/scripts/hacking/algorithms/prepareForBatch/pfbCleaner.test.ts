@@ -1,10 +1,10 @@
-import { main } from "../../../../../src/scripts/hacking/algorithms/prepareForBatch/pfbCleaner"
 import { NS } from "@ns"
-import { nsMock } from "../../../../utilities/nsMock.testUtility"
 import { FilePaths } from "../../../../../src/scripts/constants"
-import { DispatchBatch, DispatchCommand, DispatchOrigin, DispatchQueue, DispatchType } from "../../../../../src/scripts/models/hacking/dispatch/dispatchQueue"
+import { main } from "../../../../../src/scripts/hacking/algorithms/prepareForBatch/pfbCleaner"
+import { PrepareForBatchQueue, PrepareForBatchTarget } from "../../../../../src/scripts/models/hacking/algorithms/prepareForBatchTargets"
+import { DispatchBatch, DispatchOrigin, DispatchQueue } from "../../../../../src/scripts/models/hacking/dispatch/dispatchQueue"
+import { nsMock } from "../../../../utilities/nsMock.testUtility"
 import { RandomValues } from "../../../../utilities/randomValues.testUtility"
-import { PrepareForBatchData, PrepareForBatchTarget } from "../../../../../src/scripts/models/hacking/algorithms/prepareForBatchTargets"
 
 
 describe('prepare for batch cleaner', () => {
@@ -57,7 +57,7 @@ describe('prepare for batch cleaner', () => {
             expect(mockedNs.writeTuples[0][0]).toBe(FilePaths.data.prepareForBatchQueue)
             expect(mockedNs.writeTuples[0][2]).toBe("w")
             expect(mockedNs.writeTuples[0][1]).toBe(JSON.stringify(
-                new PrepareForBatchData()
+                new PrepareForBatchQueue()
             ))
 
         })
@@ -69,11 +69,11 @@ describe('prepare for batch cleaner', () => {
 
             const targetStillInProcess = RandomValues.string()
             const targetStillInProcessDate = Date.now()
-            
+
             const targetNotInProcess = RandomValues.string()
             const targetNotInProcessDate = targetStillInProcessDate + 123
-           
-           
+
+
             nsSetup.readReturns.set(FilePaths.data.dispatchQueue, [JSON.stringify(
                 new DispatchQueue([
                     new DispatchBatch(DispatchOrigin.Batch, targetNotInProcess, [], true),
@@ -86,9 +86,9 @@ describe('prepare for batch cleaner', () => {
 
 
             nsSetup.readReturns.set(FilePaths.data.prepareForBatchQueue, [JSON.stringify(
-                new PrepareForBatchData([
-                    new PrepareForBatchTarget(targetStillInProcess, targetStillInProcessDate, false, true, false),
-                    new PrepareForBatchTarget(targetNotInProcess, targetNotInProcessDate, false, true, false),
+                new PrepareForBatchQueue([
+                    new PrepareForBatchTarget(targetStillInProcess, 12, targetStillInProcessDate, false, true, false),
+                    new PrepareForBatchTarget(targetNotInProcess, 13, targetNotInProcessDate, false, true, false),
                 ])
             )])
 
@@ -102,9 +102,9 @@ describe('prepare for batch cleaner', () => {
             expect(mockedNs.writeTuples[0][0]).toBe(FilePaths.data.prepareForBatchQueue)
             expect(mockedNs.writeTuples[0][2]).toBe("w")
             expect(mockedNs.writeTuples[0][1]).toBe(JSON.stringify(
-                new PrepareForBatchData([
-                    new PrepareForBatchTarget(targetStillInProcess, targetStillInProcessDate, false, true, false),
-                    new PrepareForBatchTarget(targetNotInProcess, targetNotInProcessDate, false, false, false),
+                new PrepareForBatchQueue([
+                    new PrepareForBatchTarget(targetStillInProcess, 12, targetStillInProcessDate, false, true, false),
+                    new PrepareForBatchTarget(targetNotInProcess, 13, targetNotInProcessDate, false, false, false),
                 ])
             ))
 

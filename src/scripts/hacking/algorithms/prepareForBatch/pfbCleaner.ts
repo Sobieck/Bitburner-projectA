@@ -1,9 +1,9 @@
 
 import { NS } from "@ns";
 import { FilePaths } from "/scripts/constants";
+import { PrepareForBatchQueue } from "/scripts/models/hacking/algorithms/prepareForBatchTargets";
 import { DispatchOrigin, DispatchQueue } from "/scripts/models/hacking/dispatch/dispatchQueue";
 import { Utilities } from "/scripts/utilities";
-import { PrepareForBatchData } from "/scripts/models/hacking/algorithms/prepareForBatchTargets";
 
 export async function main(ns: NS): Promise<void> {
 
@@ -14,11 +14,11 @@ export async function main(ns: NS): Promise<void> {
     }
 
     if (ns.fileExists(FilePaths.data.prepareForBatchQueue) === false) {
-        Utilities.write(ns, FilePaths.data.prepareForBatchQueue, new PrepareForBatchData())
+        Utilities.write(ns, FilePaths.data.prepareForBatchQueue, new PrepareForBatchQueue())
         return
     }
     
-    const prepareForBatchData = Utilities.readAndParse<PrepareForBatchData>(ns, FilePaths.data.prepareForBatchQueue)
+    const prepareForBatchData = Utilities.readAndParse<PrepareForBatchQueue>(ns, FilePaths.data.prepareForBatchQueue)
     const dispatchesForPrepareForBatches = dispatchQueue.batches.filter(x => x.origin === DispatchOrigin.PrepareForBatch)
 
     for (const target of prepareForBatchData.targets) {
