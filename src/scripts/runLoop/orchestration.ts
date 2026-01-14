@@ -6,7 +6,7 @@ import { Utilities } from "/scripts/utilities";
 
 export async function main(ns: NS): Promise<void> {
     ns.run(FilePaths.scripts.scriptsToRun)
-    await ns.sleep(1000)
+    await ns.sleep(500)
     
     const sleepAmount = 250
 
@@ -18,7 +18,7 @@ export async function main(ns: NS): Promise<void> {
         ns.run(script)
     }
 
-    await ns.sleep(1000)
+    await ns.sleep(500)
     ns.run(FilePaths.scripts.orchestration)
 
 }

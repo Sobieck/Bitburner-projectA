@@ -9,14 +9,16 @@ export async function main(ns: NS): Promise<void> {
 
         // SETTING UP ENVIRONMENT
         'scripts/runLoop/mapEnvironment.js',
-        'scripts/runLoop/enrichEnvironment.js',
         'scripts/runLoop/scriptCost.js',
         'scripts/runLoop/getPlayer.js',
+        'scripts/runLoop/enrichEnvironment.js',
         'scripts/runLoop/enrichEnvironmentForHacking.js',
         
         // BASIC HACKING SCRIPTS
         'scripts/hacking/dispatch/dispatchCleaner.js',
         'scripts/hacking/gainAccess.js',
+        // back door important servers
+
 
         // HACKING ALGOS BY PRIORITY
         // BATCH IS HIGHEST PRIORITY
