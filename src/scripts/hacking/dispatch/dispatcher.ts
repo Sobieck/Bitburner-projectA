@@ -22,6 +22,8 @@ export async function main(ns: NS): Promise<void> {
     // weaken
     // hack
 
+// BUG exec: threads must be a positive integer, was 0
+
     const sortedCommands = unexecutedRequest.dispatchCommands.sort((a, b) => {
         const aPriority = a.commandType === DispatchType.Grow ? 2 : a.commandType === DispatchType.Weaken ? 1 : 0
         const bPriority = b.commandType === DispatchType.Grow ? 2 : b.commandType === DispatchType.Weaken ? 1 : 0
