@@ -39,7 +39,7 @@ describe('Orchestration', () => {
 
   it("should then sleep for a second as the 2nd action", async () => {
     expect(mockedNs.callOrder[1]).toBe("sleep")
-    expect(mockedNs.sleepAmounts[0]).toBe(500)
+    expect(mockedNs.sleepAmounts[0]).toBe(60)
   })
 
   it("should run orchestrate last thing.", async () => {
@@ -57,7 +57,7 @@ describe('Orchestration', () => {
     const numberOfSleeps = mockedNs.sleepAmounts.length
 
     expect(mockedNs.callOrder[totalCalls - 2]).toBe("sleep")
-    expect(mockedNs.sleepAmounts[numberOfSleeps - 1]).toBe(500)
+    expect(mockedNs.sleepAmounts[numberOfSleeps - 1]).toBe(60)
   })
 
   it("should sleep and run the scripts", async () => {
@@ -66,7 +66,7 @@ describe('Orchestration', () => {
     expect(mockedNs.callOrder[4]).toBe("run")
 
     for (let i = 0; i < numberOfScriptsToRun - 1; i++) {
-      expect(mockedNs.sleepAmounts[i + 1]).toBe(250)
+      expect(mockedNs.sleepAmounts[i + 1]).toBe(50)
     }
     
     expect(mockedNs.runTuples.length).toBe(numberOfScriptsToRun + 2)

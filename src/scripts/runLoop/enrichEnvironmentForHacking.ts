@@ -9,13 +9,21 @@ export async function main(ns: NS): Promise<void> {
     const potentiallyHackableServers = environment.filter(x => x.purchasedByPlayer === false)
 
     for (const server of potentiallyHackableServers) {
-        if (server.moneyMax && server.moneyAvailable) {
+        if (server.moneyMax) {
+
+            if (server.moneyAvailable === undefined) {
+                server.moneyAvailable = 0
+            }
+
             server.hackTime = ns.getHackTime(server.hostname)
             server.weakenTime = ns.getWeakenTime(server.hostname)
             server.growTime = ns.getGrowTime(server.hostname)
 
+            const moneyToLeaveOnTheServer = server.moneyAvailable - (server.moneyMax * Constants.ratioOfMoneyMaxToLeaveOnTheServer)
 
-            server.threadsToHackMoneyAvailable = Math.ceil(ns.hackAnalyzeThreads(server.hostname, server.moneyAvailable - (server.moneyMax * Constants.ratioOfMoneyMaxToLeaveOnTheServer)) + 5)
+            if (moneyToLeaveOnTheServer > 0) {
+                server.threadsToHackMoneyAvailable = Math.ceil(ns.hackAnalyzeThreads(server.hostname, moneyToLeaveOnTheServer) + 5)
+            }
 
             const maxNumberOfCpus = environment.map(x => x.cpuCores).sort((a, b) => a - b).pop()
 
@@ -25,7 +33,11 @@ export async function main(ns: NS): Promise<void> {
                 server.threadsToReduceToMinDifficulty = []
                 server.threadsToIncreaseToMaxMoney = []
 
-                const growthMultiplier = server.moneyMax / server.moneyAvailable
+                let growthMultiplier = server.moneyMax / server.moneyAvailable
+
+                if (server.moneyAvailable === 0) {
+                    growthMultiplier = server.moneyMax / 1000
+                }
 
                 for (let i = 1; i <= maxNumberOfCpus; i++) {
                     let threads = 1

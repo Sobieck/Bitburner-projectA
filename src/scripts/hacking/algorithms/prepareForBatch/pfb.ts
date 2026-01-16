@@ -99,15 +99,18 @@ function selectActionType(targetServer: ServerWithAdditionalInfo | undefined): P
 
     let prepareForBatchData: PrepareForBatchData | undefined;
 
+
     if (targetServer &&
         targetServer.moneyMax &&
         targetServer.hackDifficulty &&
         targetServer.minDifficulty &&
         targetServer.threadsToReduceToMinDifficulty &&
-        targetServer.threadsToHackMoneyAvailable &&
-        targetServer.threadsToIncreaseToMaxMoney &&
-        targetServer.moneyAvailable
+        targetServer.threadsToIncreaseToMaxMoney
     ) {
+        
+        if (targetServer.moneyAvailable === undefined) {
+            targetServer.moneyAvailable = 0
+        }
 
         if (targetServer.hackDifficulty > targetServer.minDifficulty) {
             const numberOfThreads = targetServer.threadsToReduceToMinDifficulty.filter(x => x.numberOfCores === 1).pop()
@@ -132,7 +135,7 @@ function selectActionType(targetServer: ServerWithAdditionalInfo | undefined): P
                 )
             }
 
-        } else if (targetServer.hackDifficulty === targetServer.minDifficulty && targetServer.moneyAvailable === targetServer.moneyMax) {
+        } else if (targetServer.hackDifficulty === targetServer.minDifficulty && targetServer.moneyAvailable === targetServer.moneyMax && targetServer.threadsToHackMoneyAvailable) {
             prepareForBatchData = new PrepareForBatchData(
                 targetServer.hostname,
                 targetServer.threadsToHackMoneyAvailable,
