@@ -6,9 +6,9 @@ import { Utilities } from "/scripts/utilities";
 
 export async function main(ns: NS): Promise<void> {
     ns.run(FilePaths.scripts.scriptsToRun)
-    await ns.sleep(60)
+    await ns.sleep(30)
     
-    const sleepAmount = 50
+    const sleepAmount = 20
 
     const scriptsToRun = Utilities.readAndParse<string[]>(ns, FilePaths.data.scriptsToRun)
 
@@ -18,7 +18,7 @@ export async function main(ns: NS): Promise<void> {
         ns.run(script)
     }
 
-    await ns.sleep(60)
+    await ns.sleep(30)
     ns.run(FilePaths.scripts.orchestration)
 
 }
