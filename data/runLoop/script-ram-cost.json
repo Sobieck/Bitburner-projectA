@@ -1,14 +1,30 @@
 [
     {
-        "scriptPath": "scripts/hacking/algorithms/dispatchCleaner.js",
+        "scriptPath": "scripts/actions/priorities.js",
         "ramCost": 1.6
     },
     {
-        "scriptPath": "scripts/hacking/algorithms/dispatcher.js",
+        "scriptPath": "scripts/buyServer.js",
+        "ramCost": 1.85
+    },
+    {
+        "scriptPath": "scripts/constants.js",
         "ramCost": 1.6
     },
     {
-        "scriptPath": "scripts/hacking/algorithms/firstAlgorithm.js",
+        "scriptPath": "scripts/hacking/algorithms/junk.js",
+        "ramCost": 1.6
+    },
+    {
+        "scriptPath": "scripts/hacking/algorithms/prepareForBatch/pfb.js",
+        "ramCost": 1.6
+    },
+    {
+        "scriptPath": "scripts/hacking/algorithms/prepareForBatch/pfbCleaner.js",
+        "ramCost": 1.7
+    },
+    {
+        "scriptPath": "scripts/hacking/backdoor.js",
         "ramCost": 1.6
     },
     {
@@ -21,7 +37,7 @@
     },
     {
         "scriptPath": "scripts/hacking/gainAccess.js",
-        "ramCost": 2.4
+        "ramCost": 3
     },
     {
         "scriptPath": "scripts/hacking/grow.js",
@@ -36,16 +52,16 @@
         "ramCost": 1.75
     },
     {
-        "scriptPath": "scripts/junk.js",
-        "ramCost": 1.6
-    },
-    {
-        "scriptPath": "scripts/runLoop/addReservedSpace.js",
-        "ramCost": 1.6
+        "scriptPath": "scripts/purchases/blackMarket.js",
+        "ramCost": 2.1
     },
     {
         "scriptPath": "scripts/runLoop/enrichEnvironment.js",
         "ramCost": 1.6
+    },
+    {
+        "scriptPath": "scripts/runLoop/enrichEnvironmentForHacking.js",
+        "ramCost": 4.75
     },
     {
         "scriptPath": "scripts/runLoop/getPlayer.js",
@@ -66,5 +82,17 @@
     {
         "scriptPath": "scripts/runLoop/scriptsToRun.js",
         "ramCost": 1.6
+    },
+    {
+        "scriptPath": "scripts/utilities.js",
+        "ramCost": 1.6
+    },
+    {
+        "scriptPath": "scripts/utilities/killAll.js",
+        "ramCost": 2.1
+    },
+    {
+        "scriptPath": "scripts/utilities/startup.js",
+        "ramCost": 4.3
     }
 ]

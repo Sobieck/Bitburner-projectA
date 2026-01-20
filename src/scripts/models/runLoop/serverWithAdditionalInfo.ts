@@ -7,17 +7,18 @@ export interface ServerWithAdditionalInfo extends Server {
     reservedRam: number;
     randomValueForShuffle: number;
     
-
-    possibleWeakenOrGrowThreads: number; //1.75
-    possibleHackThreads: number; //1.7
+//ThreadsAbleToRunOnServer
+    possibleWeakenOrGrowThreads: number; 
+    possibleHackThreads: number; 
 
     maxWeakenOrGrowThreads: number;
     maxHackThreads: number 
 
+
+// THREADS NEEDED TO HACK SERVER -- refactor sometime? 
     hackTime: number;
     weakenTime: number;
     growTime: number;
-
 
     threadsToHackMoneyAvailable?: number;
 
@@ -30,4 +31,8 @@ export class ThreadsNeeded {
         public numberOfCores: number,
         public threadsNeeded: number, 
     ) { }
+}
+
+export class ThreadsAbleToRunOnServer {
+
 }

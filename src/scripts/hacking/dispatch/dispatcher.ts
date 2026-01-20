@@ -22,7 +22,7 @@ export async function main(ns: NS): Promise<void> {
     // weaken
     // hack
 
-// BUG exec: threads must be a positive integer, was 0
+    // BUG exec: threads must be a positive integer, was 0
 
     const sortedCommands = unexecutedRequest.dispatchCommands.sort((a, b) => {
         const aPriority = a.commandType === DispatchType.Grow ? 2 : a.commandType === DispatchType.Weaken ? 1 : 0
@@ -75,22 +75,23 @@ export async function main(ns: NS): Promise<void> {
                     }
                 }
 
-                const pid = ns.exec(command.commandType, server.hostname, threadsToExecute, unexecutedRequest.target, command.msAdded, command.effectStockMarket)
+                if (threadsToExecute > 0) {
+                    const pid = ns.exec(command.commandType, server.hostname, threadsToExecute, unexecutedRequest.target, command.msAdded, command.effectStockMarket)
 
-                command.pids.push(pid)
+                    command.pids.push(pid)
 
-                threadsExecuting += Math.floor(threadsToExecute * threadEquivilantRatio)
+                    threadsExecuting += Math.floor(threadsToExecute * threadEquivilantRatio)
 
-                if (command.commandType !== DispatchType.Hack) {
-                    const hackThreadRatio = server.possibleHackThreads / server.possibleWeakenOrGrowThreads
+                    if (command.commandType !== DispatchType.Hack) {
+                        const hackThreadRatio = server.possibleHackThreads / server.possibleWeakenOrGrowThreads
 
-                    server.possibleWeakenOrGrowThreads -= threadsToExecute
-                    server.possibleHackThreads = Math.floor(server.possibleWeakenOrGrowThreads * hackThreadRatio)
+                        server.possibleWeakenOrGrowThreads -= threadsToExecute
+                        server.possibleHackThreads = Math.floor(server.possibleWeakenOrGrowThreads * hackThreadRatio)
 
-                } else {
-                    server.possibleHackThreads -= threadsToExecute
+                    } else {
+                        server.possibleHackThreads -= threadsToExecute
+                    }
                 }
-
             }
         }
 
